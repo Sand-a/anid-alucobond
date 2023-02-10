@@ -1,0 +1,47 @@
+.colour-section {
+  min-height: 65vh;
+}
+.colour-headline {
+  margin-bottom: 4rem;
+}
+
+.colour-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.colour-container img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.colour-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.product-specification-title {
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.product-specification-list {
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+  line-height: 1.4;
+}
+.pdf-link {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: #222;
+}
+.pdf-link ion-icon {
+  font-size: 3rem;
+  position: absolute;
+  transform: translate(-110%, -25%);
+}
+.pdf-link p {
+  color: var(--text-color);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}

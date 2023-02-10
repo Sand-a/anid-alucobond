@@ -1,0 +1,75 @@
+.cards__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  padding: 2.4rem;
+}
+.cards__item {
+  box-shadow: 0 0.5rem 0.5rem rgba(34, 34, 34, 0.1);
+
+  overflow: hidden;
+}
+.cards__item__link {
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  padding-top: 70%;
+  overflow: hidden;
+}
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__pic-wrap::after {
+  content: "ALUCOBOND®";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 2rem;
+  opacity: 80%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #222;
+  box-sizing: border-box;
+}
+.project--info {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project--title {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.poject--materiel {
+  font-size: 1.6rem;
+  color: var(--light-grey);
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.project--description {
+  font-size: 1.42rem;
+  letter-spacing: 0.5px;
+  color: #222;
+}

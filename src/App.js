@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/pages/Home";
+import AboutUs from "./components/pages/AboutUs";
+import Services from "./components/pages/Services";
+import Contact from "./components/pages/Contact";
+import NotFound from "./components/pages/NotFound";
+import ProjectsPage from "./components/pages/ProjectsPage";
+import ProjectPage from "./components/pages/ProjectPage";
 
-function App() {
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+
+import "./App.css";
+
+import { Routes, Route } from "react-router-dom";
+import ColoursAndSurfacesRoutes from "./components/Routes/ColoursAndSurfacesRoutes";
+import ScrollToTop from "./components/ScrollToTop";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route
+          path="/colours-surfaces/*"
+          element={<ColoursAndSurfacesRoutes />}
+        />
+        <Route path="/projects">
+          <Route index element={<ProjectsPage />} />
+          <Route path=":id" element={<ProjectPage />} />
+        </Route>
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

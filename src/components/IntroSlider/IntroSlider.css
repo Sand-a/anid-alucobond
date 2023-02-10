@@ -1,0 +1,38 @@
+.intro-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  transition: all 1s ease-in-out;
+}
+.intro-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dots-container .dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.052);
+  box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.318);
+  margin: 0 5px;
+  position: relative;
+}
+
+.dots-container .dot.active {
+  background: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.318);
+}

@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  border-top: 1px solid;
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+}
+
+ion-icon {
+  font-size: 2.5rem;
+  color: #222;
+  transition: all 0.2s ease-in-out;
+}
+ion-icon:hover {
+  transform: scale(1.2);
+  color: #222;
+}
+.footer-link:link,
+.footer-link:visited {
+  color: rgb(168, 166, 163);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #fff;
+}
+
+.footer-link--name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-icon--name {
+  font-size: 1.8rem;
+  color: #222;
+  margin-left: 0.5rem;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  background-color: #222;
+  padding: 10rem 0 5rem 0;
+  color: rgb(168, 166, 163);
+  text-align: center;
+  font-weight: 200;
+}
+
+.my-name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}

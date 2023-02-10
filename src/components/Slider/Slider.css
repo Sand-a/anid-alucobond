@@ -1,0 +1,67 @@
+.slider {
+  width: 100%;
+  height: 77vh;
+  background-color: aqua;
+  margin-top: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.slide-auto {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.slide-auto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.slide-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
+  opacity: 0;
+  width: 50%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  animation: slide-up 1s ease 0, 5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    bottom: 3rem;
+  }
+  100% {
+    visibility: visible;
+    bottom: 0;
+  }
+}
+.slide-content > * {
+  color: #fff;
+}
+.current {
+  opacity: 1;
+  transform: translateX(0);
+}
+.current .slide-content {
+  opacity: 1;
+}
+.slider ion-icon {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+}

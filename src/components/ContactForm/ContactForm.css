@@ -1,0 +1,97 @@
+.wrap-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.wrap-address h1 {
+  font-size: 2.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin-bottom: 6rem;
+}
+.contact-list.grid--2-cols {
+  gap: 1rem;
+}
+.grid--2-cols--1 {
+  grid-column: 1/-1;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.contact-link ion-icon {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.contact-link ion-icon::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1.5px solid #222;
+}
+.contact-item {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+.pobox {
+  margin-top: 0.5rem;
+}
+
+.form-container {
+  min-width: 60rem;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid #222;
+  padding: 4rem;
+  margin-bottom: 5rem;
+}
+.form-container h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  align-self: flex-start;
+}
+.form-container input,
+.form-container textarea {
+  width: 100%;
+}
+
+.btn-form {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.8rem;
+  border: 1.4px solid #222;
+  background: none;
+  font-weight: 400;
+}
+.btn-form:hover {
+  color: var(--white);
+  background-color: #222;
+}

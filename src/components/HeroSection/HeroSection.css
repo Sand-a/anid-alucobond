@@ -1,0 +1,68 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 6rem 0;
+}
+.slider-container {
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+.item-container > h1 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  font-size: 3.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.item-container > p {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  width: 95%;
+  background-color: var(--text--bg);
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 200;
+  padding: 0.5rem 3rem;
+  align-self: flex-end;
+}
+
+.box-item {
+  width: 100%;
+  position: relative;
+}
+
+.item-logo {
+  position: absolute;
+  background-color: var(--image-darker);
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.item-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  z-index: -1;
+}
+.box-2-items {
+  display: flex;
+  height: 25rem;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 768px) {
+}

@@ -1,0 +1,28 @@
+.no-style-button {
+  background: none;
+  border: none;
+}
+.btn {
+  color: var(--text--bg);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.go-back-btn {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  text-decoration: none;
+  padding: 1rem 1.3rem 1rem 1.2rem;
+  border: 1.4px solid #222;
+
+  transition: all 0.3s;
+  z-index: 999;
+}
+.go-back-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+.btn-more {
+  color: #222;
+  margin-top: 1rem;
+}
