@@ -4,26 +4,31 @@
   gap: 2.5rem;
   padding: 6rem 0;
 }
+
 .slider-container {
   width: 100%;
   height: 45vh;
+  background-color: red;
   overflow: hidden;
+  position: relative;
 }
-.item-container > h1 {
+.project-description {
+  white-space: pre-line;
   position: absolute;
-  top: 2.5rem;
+  top: 3.2rem;
   left: 2.5rem;
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
-  line-height: 1.1;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.371);
 }
 
-.item-container > p {
+.project-details {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 2rem;
   right: 2rem;
   width: 95%;
@@ -40,19 +45,41 @@
   position: relative;
 }
 
-.item-logo {
+.section-headline {
   position: absolute;
-  background-color: var(--image-darker);
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 100%;
   height: 100%;
 }
+.section-headline > h1 {
+  padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: color;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  text-shadow: 1px 1px 2px rgb(3, 3, 3);
+}
+.section-headline:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.section-headline:hover > h1 {
+  text-shadow: 1px 1px 4px rgb(3, 3, 3);
+}
+
 .item-image {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top left;
+  object-position: center;
   z-index: -1;
 }
 .box-2-items {

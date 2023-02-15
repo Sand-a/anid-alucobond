@@ -1,15 +1,15 @@
 export const introProjectsData = [
   {
     _id: 1,
-    name: "carré rouge center",
+    name: "Carré Rouge Center",
     image: "/images/hero_image/carre_rouge.jpg",
     path: "/projects/1",
     region: "Zahleh, Lebanon",
-    description: "façade perforation",
+    description: "façade \n perforation",
   },
   {
     _id: 2,
-    name: "holcom",
+    name: "Holcom",
     image: "/images/hero_image/holcom_2.jpg",
     path: "/projects/1",
     region: "Beirut, Lebanon",
@@ -20,7 +20,7 @@ export const introProjectsData = [
     name: "Lambourghini & Jaguar Showroom",
     image: "/images/hero_image/lamborghini_jaguar.jpg",
     path: "/projects/1",
-    region: "sil nel fine, Lebanon",
+    region: "Sin nel file, Lebanon",
     description: "Build identity",
   },
   {
@@ -28,7 +28,7 @@ export const introProjectsData = [
     name: "Regent park",
     image: "/images/hero_image/regent_park.jpg",
     path: "/projects/1",
-    region: "fur el chebek, Lebanon",
-    description: "Façade cladding",
+    region: "Fernel  Chebek, Lebanon",
+    description: "Façade \n cladding",
   },
 ];

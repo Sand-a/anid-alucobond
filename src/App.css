@@ -26,7 +26,7 @@ body {
   --text-color: #4b4b4b;
   --text--bg: rgba(75, 75, 75, 0.8);
   --light-grey: rgb(168, 166, 163);
-  --image-darker: rgba(0, 0, 0, 0.3);
+  --image-darker: rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -58,6 +58,7 @@ body {
 
   gap: 2.4rem;
 }
+
 /* all Section Guides */
 .section {
   max-width: 120rem;

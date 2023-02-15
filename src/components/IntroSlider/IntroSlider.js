@@ -4,33 +4,33 @@ import "./IntroSlider.css";
 import { Link } from "react-router-dom";
 
 export default function IntroSlider({ projectImages }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   const slideLength = projectImages.length;
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currentSlide === slideLength - 1) {
-        setCurrentSlide(0);
+      if (currentSlide === slideLength) {
+        setCurrentSlide(1);
       } else {
         setCurrentSlide(currentSlide + 1);
       }
-    }, 4000);
+    }, 6000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
   const nextSlide = () => {
-    if (currentSlide !== slideLength - 1) {
+    if (currentSlide !== slideLength) {
       setCurrentSlide(currentSlide + 1);
-    } else if (currentSlide === slideLength - 1) {
-      setCurrentSlide(0);
+    } else if (currentSlide === slideLength) {
+      setCurrentSlide(1);
     }
   };
   const prevSlide = () => {
-    if (currentSlide !== 0) {
+    if (currentSlide !== 1) {
       setCurrentSlide(currentSlide - 1);
-    } else if (currentSlide === 0) {
-      setCurrentSlide(slideLength - 1);
+    } else if (currentSlide === 1) {
+      setCurrentSlide(slideLength);
     }
   };
   const onKeyPressed = (e) => {
@@ -48,25 +48,19 @@ export default function IntroSlider({ projectImages }) {
   return (
     <>
       {projectImages.map((img, i) => {
-        const styles = {
-          transform: `translateX(${i * 100}%)`,
-        };
         return (
           <div
             key={i}
             className={
-              currentSlide === 0
-                ? `intro-slide active intro-slide--${i + 1}`
-                : `intro-slide intro-slide--${i + 1}`
-            }
-            style={
-              currentSlide === 0
-                ? styles
-                : { transform: `translateX(${100 * (i - currentSlide)}%)` }
+              currentSlide === i + 1 ? `intro-slide active ` : `intro-slide`
             }
           >
             <Link to={img.path}>
+              <h1 className="project-description">{img.description}</h1>
               <img src={process.env.PUBLIC_URL + img.image} alt="" />
+              <p className="project-details">
+                {img.name} | {img.region}
+              </p>
             </Link>
           </div>
         );
@@ -76,8 +70,8 @@ export default function IntroSlider({ projectImages }) {
         {Array.from({ length: projectImages.length }).map((item, i) => (
           <div
             key={i}
-            onClick={() => moveDot(i)}
-            className={currentSlide === i ? "dot active" : "dot"}
+            onClick={() => moveDot(i + 1)}
+            className={currentSlide === i + 1 ? "dot active" : "dot"}
           ></div>
         ))}
       </div>

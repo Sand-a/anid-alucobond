@@ -15,22 +15,22 @@ const HeroSection = () => {
         </section>
         <section className="grid grid--4-cols--2">
           <figure className="box-item">
-            <Link to="/">
-              <img className="item-logo" id="logo" src={logo2} alt="logo" />
+            <Link className="section-headline" to="/about-us">
+              <h1>About ANID</h1>
             </Link>
             <img
               className="item-image"
-              src="./images/projects/img-1.jpg"
+              src="./images/hero_image/img-0.jpg"
               alt=""
             />
           </figure>
-          <figure className="box-item" to="/">
-            <Link>
-              <img className="item-logo" id="logo" src={logo2} alt="logo" />
+          <figure className="box-item">
+            <Link className="section-headline" to="/projects">
+              <h1>our projects</h1>
             </Link>
             <img
               className="item-image"
-              src="./images/projects/img-1.jpg"
+              src="./images/hero_image/holcom_1.jpg"
               alt=""
             />
           </figure>
@@ -40,37 +40,39 @@ const HeroSection = () => {
         <section className="grid grid--4-cols--1">
           <div className="box-2-items">
             <figure className="box-item">
-              <Link to="/">
-                <img className="item-logo" id="logo" src={logo2} alt="logo" />
+              <Link className="section-headline" to="/services">
+                <h1>our services</h1>
               </Link>
               <img
                 className="item-image item-image-square"
-                src="./images/projects/img-1.jpg"
+                src="./images/hero_image/img-2.jpg"
                 alt=""
               />
             </figure>
             <figure className="box-item">
-              <Link to="/">
-                <img className="item-logo" id="logo" src={logo2} alt="logo" />
+              <Link className="section-headline" to="/colours-surfaces">
+                <h1>colours & surfaces</h1>
               </Link>
               <img
                 className="item-image item-image-square"
-                src="./images/projects/img-1.jpg"
+                src="./images/hero_image/img-3.jpg"
                 alt=""
               />
             </figure>
           </div>
         </section>
         <section className="grid grid--4-cols--2">
-          <figure className="box-item" to="/">
-            <Link>
-              <img className="item-logo" id="logo" src={logo2} alt="logo" />
+          <figure className="box-item">
+            <Link className="section-headline" to="/">
+              <h1>
+                showroom & <br></br> mock-up
+              </h1>
+              <img
+                className="item-image item-image-square"
+                src="./images/hero_image/img-4.jpg"
+                alt=""
+              />
             </Link>
-            <img
-              className="item-image item-image-square"
-              src="./images/projects/img-1.jpg"
-              alt=""
-            />
           </figure>
         </section>
       </section>
