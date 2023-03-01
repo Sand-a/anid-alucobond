@@ -69,7 +69,7 @@ const HeroSection = () => {
               </Link>
               <img
                 className="item-image item-image-square"
-                src="./images/hero_image/img-3.jpg"
+                src="./images/hero_image/img-3.png"
                 alt=""
               />
             </figure>

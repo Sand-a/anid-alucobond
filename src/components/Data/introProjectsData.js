@@ -10,7 +10,7 @@ export const introProjectsData = [
   {
     _id: 2,
     name: "Holcom",
-    image: "/images/hero_image/holcom_2.jpg",
+    image: "/images/hero_image/holcom.jpg",
     path: "/projects/1",
     region: "Beirut, Lebanon",
     description: "façade grid",
@@ -20,7 +20,7 @@ export const introProjectsData = [
     name: "Lambourghini & Jaguar Showroom",
     image: "/images/hero_image/lamborghini_jaguar.jpg",
     path: "/projects/1",
-    region: "Sin nel file, Lebanon",
+    region: "Sin el fil, Lebanon",
     description: "Build identity",
   },
   {

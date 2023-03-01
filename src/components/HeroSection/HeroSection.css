@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  padding: 0 0 2rem 0;
 }
 
 .slider-container {
   width: 100%;
 
   background-color: rgba(0, 0, 0, 0.31);
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 .project-description {
-  white-space: pre-line;
   position: absolute;
   top: 3.2rem;
-  left: 1rem;
-  font-size: 3rem;
+  left: 2rem;
+  font-size: 2.4rem;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -32,7 +32,8 @@
   right: 2rem;
   width: 91%;
   background-color: var(--text--bg);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
   color: #fff;
   font-weight: 200;
   padding: 0.8rem 2rem;
@@ -78,8 +79,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  /* object-fit: cover; */
+  /* object-position: center; */
   z-index: -1;
 }
 .box-2-items {
@@ -98,7 +99,10 @@
   }
 
   .project-description {
-    left: 2.5rem;
+    white-space: pre-line;
+    top: 3.4rem;
+    left: 2rem;
+    font-size: 2.8rem;
   }
   .project-details {
     left: 2rem;
@@ -110,6 +114,6 @@
 
 @media (min-width: 1024px) {
   .hero-section {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
 }
