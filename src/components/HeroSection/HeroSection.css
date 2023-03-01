@@ -2,21 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 6rem 0;
 }
 
 .slider-container {
   width: 100%;
-  height: 45vh;
-  background-color: red;
-  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.31);
+  /* overflow: hidden; */
   position: relative;
 }
 .project-description {
   white-space: pre-line;
   position: absolute;
   top: 3.2rem;
-  left: 2.5rem;
+  left: 1rem;
   font-size: 3rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -29,19 +28,20 @@
 .project-details {
   position: absolute;
   bottom: 3rem;
-  left: 2rem;
+  left: 1.5rem;
   right: 2rem;
-  width: 95%;
+  width: 91%;
   background-color: var(--text--bg);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 200;
-  padding: 0.5rem 3rem;
+  padding: 0.8rem 2rem;
   align-self: flex-end;
 }
 
 .box-item {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -84,12 +84,32 @@
 }
 .box-2-items {
   display: flex;
+  flex-direction: column;
   height: 25rem;
   gap: 2.5rem;
 }
 
-@media screen and (max-width: 960px) {
+@media (min-width: 768px) {
+  .box-2-items {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+    gap: 2.5rem;
+  }
+
+  .project-description {
+    left: 2.5rem;
+  }
+  .project-details {
+    left: 2rem;
+    font-size: 2rem;
+    width: 95%;
+    padding: 0.5rem 3rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 6rem 0;
+  }
 }

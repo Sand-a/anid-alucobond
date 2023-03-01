@@ -10,10 +10,10 @@ const HeroSection = () => {
   return (
     <div className="container hero-section">
       <section className="grid grid--4-cols">
-        <section className="grid grid--4-cols--1 slider-container ">
+        <section className="grid-box-1 slider-container ">
           <IntroSlider projectImages={introProjectsData} />
         </section>
-        <section className="grid grid--4-cols--2">
+        <section className="grid-box-2">
           <figure className="box-item">
             <Link className="section-headline" to="/about-us">
               <h1>About ANID</h1>
@@ -24,6 +24,8 @@ const HeroSection = () => {
               alt=""
             />
           </figure>
+        </section>
+        <section className="grid-box-3">
           <figure className="box-item">
             <Link className="section-headline" to="/projects">
               <h1>our projects</h1>
@@ -35,9 +37,21 @@ const HeroSection = () => {
             />
           </figure>
         </section>
-      </section>
-      <section className="grid grid--4-cols">
-        <section className="grid grid--4-cols--1">
+        <section className="grid-box-5">
+          <figure className="box-item">
+            <Link className="section-headline" to="/">
+              <h1>
+                showroom & <br></br> mock-up
+              </h1>
+              <img
+                className="item-image item-image-square"
+                src="./images/hero_image/img-4.jpg"
+                alt=""
+              />
+            </Link>
+          </figure>
+        </section>
+        <section className="grid-box-4">
           <div className="box-2-items">
             <figure className="box-item">
               <Link className="section-headline" to="/services">
@@ -60,20 +74,6 @@ const HeroSection = () => {
               />
             </figure>
           </div>
-        </section>
-        <section className="grid grid--4-cols--2">
-          <figure className="box-item">
-            <Link className="section-headline" to="/">
-              <h1>
-                showroom & <br></br> mock-up
-              </h1>
-              <img
-                className="item-image item-image-square"
-                src="./images/hero_image/img-4.jpg"
-                alt=""
-              />
-            </Link>
-          </figure>
         </section>
       </section>
     </div>
