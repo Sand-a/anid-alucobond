@@ -5,6 +5,7 @@ import "./DropdownMenu.css";
 function DropdownMenu({ data }) {
   return (
     <>
+      <h1 className="dropdown-title">Colours & Surfaces</h1>
       <ul className="dropdown--menu">
         {data.map((item, i) => {
           return (

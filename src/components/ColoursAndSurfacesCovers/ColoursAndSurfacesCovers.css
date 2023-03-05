@@ -60,3 +60,19 @@
   border-top-color: var(--tooltip-color);
   transform-origin: top center;
 }
+.cover-name {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .cover-name {
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0.2rem 0 0 0.2rem;
+    color: #222;
+  }
+  .colours-surface-links {
+    text-decoration: none;
+  }
+}
