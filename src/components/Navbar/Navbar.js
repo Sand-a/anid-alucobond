@@ -33,8 +33,8 @@ function Navbar() {
                   <li
                     key={item._id}
                     className="nav-items"
-                    onMouseEnter={showDropdown}
-                    onMouseLeave={closeDropdown}
+                    onMouseEnter={!open && showDropdown}
+                    onMouseLeave={!open && closeDropdown}
                   >
                     <NavLink
                       exact="true"

@@ -58,7 +58,7 @@ export default function ImageSlider({ projectImages }) {
           <div
             key={i}
             className={
-              currentSlide === 0
+              currentSlide === i + 1
                 ? `slide active slide--${i + 1}`
                 : `slide slide--${i + 1}`
             }

@@ -16,8 +16,8 @@
   position: absolute;
   top: 3.2rem;
   left: 2rem;
-  font-size: 2.4rem;
-  font-weight: 200;
+  font-size: 2.6rem;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
@@ -32,10 +32,10 @@
   right: 2rem;
   width: 91%;
   background-color: var(--text--bg);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.4;
   color: #fff;
-  font-weight: 200;
+  font-weight: 300;
   padding: 0.8rem 2rem;
   align-self: flex-end;
 }
@@ -100,20 +100,28 @@
 
   .project-description {
     white-space: pre-line;
-    top: 3.4rem;
+    top: 2.4rem;
     left: 2rem;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    font-weight: 300;
   }
   .project-details {
     left: 2rem;
     font-size: 2rem;
     width: 95%;
     padding: 0.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 200;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-section {
     padding: 5rem 0;
+  }
+  .project-description {
+    left: 2rem;
+    top: 3rem;
+    font-weight: 200;
   }
 }

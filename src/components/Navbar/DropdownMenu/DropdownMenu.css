@@ -58,7 +58,7 @@
     padding: 1rem 0 0 0;
     column-gap: 0;
     row-gap: 1rem;
-    top: 11rem;
+    top: 10.9rem;
   }
   .dropdown--menu li {
     min-height: 3.5rem;
@@ -74,10 +74,10 @@
     justify-content: center;
     align-items: center;
     background-color: #222;
-    height: 4rem;
+    height: 4.4rem;
     font-weight: 300;
     text-transform: uppercase;
-    font-weight: 300;
+
     color: #fff;
     font-size: 2rem;
     padding-bottom: 2rem;
@@ -86,7 +86,7 @@
   .dropdown-title::after {
     position: absolute;
     content: "";
-    width: 24%;
+    width: 19rem;
 
     height: 2px;
     background-color: var(--line-color);
