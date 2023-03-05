@@ -32,3 +32,9 @@
   font-size: 1.8rem;
   font-weight: 200;
 }
+
+@media screen and (max-width: 600px) {
+  .searchfield {
+    font-size: 1.6rem;
+  }
+}

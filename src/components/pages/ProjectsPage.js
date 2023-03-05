@@ -6,7 +6,7 @@ import "../../App.css";
 const ProjectsPage = () => {
   return (
     <>
-      <section className="margin-top section-contact">
+      <section className="margin-top">
         <h1 className="primary-headline">ALL Projects</h1>
         <SearchBox />
         <ProjectList />

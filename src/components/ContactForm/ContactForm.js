@@ -9,8 +9,7 @@ const ContactForm = () => {
     <>
       <div className="wrap-address">
         <h1>ALUCOBOND® Lebanon</h1>
-        <ul className="contact-list grid grid--2-cols">
-          <li className="contact-items grid--2-cols--1"></li>
+        <ul className="contact-list grid--2-cols">
           <li className="contact-items grid--2-cols--1">
             <a
               target="_blank"

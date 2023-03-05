@@ -6,7 +6,7 @@ import "./Surfaces.css";
 const Surfaces = ({ item }) => {
   return (
     <>
-      <div className="margin-top surface-section">
+      <div className="margin-c-s surface-section">
         <h1 className="primary-headline">{item.title}</h1>
         <div className="img-box">
           <img src={item.image} alt="Façade" />

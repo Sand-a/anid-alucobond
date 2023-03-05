@@ -80,7 +80,7 @@
 
 .container-dots {
   position: absolute;
-  bottom: 3rem;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -100,4 +100,10 @@
   background: #fff;
   border: 2px solid #fff;
   box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.318);
+}
+
+@media screen and (max-width: 540px) {
+  .container-dots {
+    bottom: 10rem;
+  }
 }
