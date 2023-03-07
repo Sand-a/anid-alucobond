@@ -9,7 +9,7 @@ import { introProjectsData } from "../Data/introProjectsData";
 const HeroSection = () => {
   return (
     <div className="container hero-section">
-      <section className="grid grid--4-cols">
+      <section className="grid grid-intro grid--4-cols">
         <section className="grid-box-1 slider-container ">
           <IntroSlider projectImages={introProjectsData} />
         </section>
