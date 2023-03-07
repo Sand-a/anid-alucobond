@@ -1,16 +1,17 @@
 import React from "react";
 import "./SearchBox.css";
 
-const SearchBox = () => {
+const SearchBox = ({ searchChange }) => {
   return (
     <>
       <form className="searchfield-container">
-        <label className="search-text">Project Name :</label>
+        {/* <label className="search-text">Project Name :</label> */}
         <input
-          type="text"
-          placeholder="Search"
+          type="search"
+          placeholder="Search project"
           name="query"
           className="searchfield"
+          onChange={searchChange}
         />
 
         <ion-icon className="search-icon" name="search-outline"></ion-icon>

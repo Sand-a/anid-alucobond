@@ -3,10 +3,10 @@ import ProjectCard from "./ProjectCard";
 import { projectsData } from "../Data/projectsData";
 import "./ProjectList.css";
 
-const ProjectList = () => {
+const ProjectList = ({ data }) => {
   return (
     <ul className="cards__container">
-      {projectsData.map((project) => (
+      {data.map((project) => (
         <ProjectCard
           key={project._id}
           name={project.name}

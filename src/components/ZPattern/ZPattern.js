@@ -40,6 +40,24 @@ const ZPattern = () => {
             <img src={aboutUsData[1].image} alt="ALUCOBOND® façade" />
           </figure>
         </section>
+
+        {/*   step  */}
+
+        <section className="grid grid--2-cols">
+          <figure className="img-box-zp ">
+            <img src={aboutUsData[2].image} alt="ALUCOBOND® façade" />
+          </figure>
+
+          <div className="text-box ">
+            <h1 className="secondary-headline">{aboutUsData[2].headline}</h1>
+            <p className="bodytext display-linebreak">
+              {aboutUsData[2].bodytext}
+            </p>
+            <Link className="btn btn-more" to={aboutUsData[2].path}>
+              {aboutUsData[2].link}
+            </Link>
+          </div>
+        </section>
       </section>
     </>
   );

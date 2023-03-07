@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     _id: 111,
-    name: "carré rouge",
+    name: "carre rouge",
     path: "/projects/1",
     materiel: "Anodice Look",
     image: [
