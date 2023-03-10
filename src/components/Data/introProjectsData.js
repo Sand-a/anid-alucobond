@@ -17,7 +17,7 @@ export const introProjectsData = [
   },
   {
     _id: 3,
-    name: "Lambourghini & Jaguar Showroom",
+    name: "Lambourghini & Jaguar showroom",
     image: "/images/hero_image/lamborghini_jaguar.jpg",
     path: "/projects/1",
     region: "Sin el fil, Lebanon",

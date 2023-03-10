@@ -22,15 +22,15 @@
 
 .dots-container {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 1.8rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   z-index: 2;
 }
 .dots-container .dot {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.052);
@@ -50,6 +50,11 @@
     object-fit: cover;
     object-position: center;
   }
-}
-@media (min-width: 1080px) {
+  .dots-container {
+    bottom: 2rem;
+  }
+  .dots-container .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
 }
