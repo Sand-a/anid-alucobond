@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { menuData } from "../Data/menuData";
-import logo1 from "../../logo-icon-white.svg";
-import logo2 from "../../logo-white.svg";
+
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import "../../App.css";
 import "./Navbar.css";
@@ -66,8 +65,18 @@ function Navbar() {
           </ul>
 
           <Link className="navbar-logos" to="/">
-            <img className="logo-name" id="logo" src={logo2} alt="logo" />
-            <img className="logo-icon" id="logo" src={logo1} alt="logo" />
+            <img
+              className="logo-name"
+              id="logo"
+              src="./images/logo/logo-white2.svg"
+              alt="logo"
+            />
+            <img
+              className="logo-icon"
+              id="logo"
+              src="./images/logo/logo-icon-white.svg"
+              alt="logo"
+            />
           </Link>
         </div>
       </nav>

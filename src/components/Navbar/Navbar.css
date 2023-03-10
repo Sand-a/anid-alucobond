@@ -19,7 +19,7 @@ nav.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem 0 3rem;
-  height: 9rem;
+  height: 10rem;
 
   width: 100vw;
 }
@@ -75,7 +75,7 @@ a.active::after {
     position: relative;
     padding: 0 1rem;
 
-    height: 7rem;
+    height: 8rem;
   }
 
   .nav-menu {
@@ -146,19 +146,26 @@ a.active::after {
     transition: 250ms;
   }
   .logo-name {
-    height: 2.4rem;
-  }
-  .logo-icon {
-    height: 3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo-name {
-    height: 3rem;
+    height: 3.8rem;
   }
   .logo-icon {
     height: 4rem;
+  }
+}
+@media (min-width: 370px) {
+  .logo-name {
+    height: 4.4rem;
+  }
+  .logo-icon {
+    height: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .logo-name {
+    height: 5rem;
+  }
+  .logo-icon {
+    height: 5rem;
   }
 }
 
@@ -170,7 +177,7 @@ a.active::after {
     font-size: 1.8rem;
   }
   .logo-name {
-    height: 4rem;
+    height: 6rem;
   }
   .logo-icon {
     height: 5rem;

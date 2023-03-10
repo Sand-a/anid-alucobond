@@ -41,7 +41,7 @@ const ZPattern = () => {
           </figure>
         </section>
 
-        {/*   step  */}
+        {/*   step 3 */}
 
         <section className="grid grid--2-cols">
           <figure className="img-box-zp ">
@@ -57,6 +57,21 @@ const ZPattern = () => {
               {aboutUsData[2].link}
             </Link>
           </div>
+        </section>
+        {/*   step 3 */}
+        <section className="grid grid--2-cols">
+          <div className="text-box box-zp-flip-1">
+            <h1 className="secondary-headline">{aboutUsData[3].headline}</h1>
+            <p className="bodytext display-linebreak">
+              {aboutUsData[3].bodytext}
+            </p>
+            <Link className="btn btn-more" to={aboutUsData[3].path}>
+              {aboutUsData[3].link}
+            </Link>
+          </div>
+          <figure className="img-box-zp box-zp-flip-2">
+            <img src={aboutUsData[3].image} alt="ALUCOBOND® façade" />
+          </figure>
         </section>
       </section>
     </>

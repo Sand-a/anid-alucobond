@@ -11,7 +11,14 @@ const Surfaces = ({ item }) => {
         <div className="img-box">
           <img src={item.image} alt="Façade" />
         </div>
-        <p className="text-box bodytext">{item.text}</p>
+        <p className="text-box bodytext display-linebreak">{item.text}</p>
+        {item.bullet_pts === true && (
+          <ul className="text-box bodytext">
+            {item.pts.map((pt, i) => {
+              return <li className="bullet-pt">{pt}</li>;
+            })}
+          </ul>
+        )}
       </div>
       <div className="chart-section">
         <h1 className="primary-headline">{item.title} Surfaces</h1>

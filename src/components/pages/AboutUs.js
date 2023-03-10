@@ -9,7 +9,7 @@ function AboutUs() {
     <>
       <section className="section-aboutus">
         <Sections
-          image="/images/sections/section-1.jpg"
+          image="/images/sections/aboutus-section.jpg"
           title="About ANID | ALUCOBOND® "
         />
         <ZPattern />

@@ -170,6 +170,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/solid_metallic.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_Solid_and_Metallic_EN_DE.pdf",
+    text: "Soft white or bright red? Solid colours are always a good choice when a uniform appearance without special effects is required.",
+    image: "/images/colours-surfaces/visuals/solid.jpg",
+    colours: [],
   },
   {
     _id: 3,
@@ -178,6 +181,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/solid_metallic.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+    text: "Different lighting and viewing angles highlight the typical metallic gloss of these colours.",
+    image: "/images/colours-surfaces/visuals/metallic.jpg",
+    colours: [],
   },
   {
     _id: 4,
@@ -186,6 +192,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE.pdf",
+    text: "Brilliant, iridescent colours found in nature were the inspiration for Spectra colours. Through special colour pigments, various colour gradients of gloss and depth are created. Depending on the type of pigment and viewing angle, enchanting colour effects with highlights and interesting colour gradients add new visual dimensions.",
+    image: "/images/colours-surfaces/visuals/spectra.jpg",
+    colours: [],
   },
   {
     _id: 5,
@@ -194,6 +203,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparklin_EN_DE.pdf",
+    text: "With their bright sparkling and shining metall effects, ALUCOBOND® sparkling colours provide a subtle and elegant impression.",
+    image: "/images/colours-surfaces/visuals/sparkling.jpg",
+    colours: [],
   },
   {
     _id: 6,
@@ -202,6 +214,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/natural.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_natural_EN_DE.pdf",
+    text: "The natural beauty of metals used in architecture is accentuated particularly by the naturAL surface series. Its imposing, vivid appearance combined with the metallic gloss, light reflection and absorption of these surfaces makes a truly memorable impression.",
+    image: "/images/colours-surfaces/visuals/natural.jpg",
+    colours: [],
   },
   {
     _id: 7,
@@ -210,6 +225,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/anodized_look.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_anodized_look_EN_DE.pdf",
+    text: "In today's architecture, the surfaces of the ALUCOBOND® anodized look series display the natural beauty of satin-smooth metal at its best. The ALUCOBOND® anodized look is used where architects focus on product high quality and appearance – for rainscreen facades, wall cladding, roof perimeter detailing, curved features, column casings, along with many other interior and exterior architectural applications.\n \n Designed to comply with EURAS industrial standards, the surfaces perfectly well match with anodised window frames, profiles and doors – and unlike anodised materials, the ALUCOBOND®anodized look can be smoothly shaped, offering unlimited possibilities for creative ideas.\n \n The use of a top-grade fluorpolymer coating applied in a continuous coil coating process guarantees an uncompromising realisation of the original design.",
+    image: "/images/colours-surfaces/visuals/anodized_look.jpg",
+    colours: [],
   },
   {
     _id: 8,
@@ -218,6 +236,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/terra.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_terra_EN_DE.pdf",
+    text: "TALUCOBOND® terra unites the typical crystalline surface and velvety feel found in natural stone with many of the advantages of ALUCOBOND® composite panels. Unlike most natural stone, ALUCOBOND® composite panels are both very thin and light, but offer at the same time a high level of flexural and tensile strength. Large format panels can be easily and accurately fabricated, processed, transported, installed, and, in addition, three-dimensionally shaped by using folding and roll bending techniques. Unlike many stone surfaces, ALUCOBOND® terra is also weatherresistant and colour fast.",
+    image: "/images/colours-surfaces/visuals/terra.jpg",
+    colours: [],
   },
   {
     _id: 9,
@@ -226,6 +247,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/urban.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_urban_EN_DE.pdf",
+    text: "Urban lifestyle appeals to us. Urban life is characterised by interplays of light and shadows, transparency and colour. The choice of colour is getting more and more important within the urban context – the wish to shape its own living space lies in the nature of mankind. Especially the interaction of glossy and mat surfaces is part of urbanity. Within this context the new colour series ALUCOBOND® urban was developed: muted, extremely mat surfaces provide open space for design – be it detached or in combination with glossy surfaces and glass – the mat colours of ALUCOBOND® urban support the urban character of the building.",
+    image: "/images/colours-surfaces/visuals/urban.jpg",
+    colours: [],
   },
   {
     _id: 10,
@@ -234,6 +258,9 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/rocca.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_rocca_EN_DE.pdf",
+    text: "Façades take on a rugged stone look with the ALUCOBOND® rocca surface series. Divested of colour, the secret of their special character is only revealed by light refraction on their surface. The rocca range is available in four shades: the soft jet black of graphite, the rugged terrain of Dolomite anthracite, the weathered iron-grey of a meteorite and the crisp silver-white of quartzite.\n ALUCOBOND® rocca features a unique, perceptibly textured structure where light is broken up naturally into the widest range of shades. Depending on your viewing angle and how the light falls, the interface between gloss and matt on this subtle surface structure can be more defined and vibrant or softer and more subtle. This, too, is modelled on natural stone: the nature of the rock dictates a different sheen at the fracture lines.",
+    image: "/images/colours-surfaces/visuals/rocca.jpg",
+    colours: [],
   },
   {
     _id: 11,
@@ -242,6 +269,15 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/vintage.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_vintage_EN_DE.pdf",
+    text: "ALUCOBOND® vintage – expressive and timeless. Natural patina on a material gives it a truly distinctive charm, and individual weathering features create a nostalgic touch. The imperfection and irregularity of the “random” appearance are the very aspects which open up a wide range of new aesthetics when combined with modern architecture.\n\n‘Fine grained and rough concrete’ free of moss growth, ‘industrial and rusty metal’ which does not bleed, ‘copper with a patina’ and ‘antique brass’ without creeping corrosion – with ALUCOBOND® vintage matt surfaces you can hold back time. The weathering and aging processes typical for these materials are halted at their most aesthetic, and the reduced sheen gives the finishes an exclusive and authentic antique look.",
+    bullet_pts: true,
+    pts: [
+      "ALUCOBOND® design offers excellent print quality (direct-to-substrate digital printing) with a particularly wide range of colours and large depth of colour.",
+      "Embedded in our high-quality ALUCOBOND® coil coating, ALUCOBOND® vintage offers very durable and UV-stable design surfaces for outdoor use on façades.",
+      "The maximum sheet size without decor repetition is 1,500 mm x 5,000 mm;a size of 6,800 mm is possible with vector graphics.",
+    ],
+    image: "/images/colours-surfaces/visuals/vintage.jpg",
+    colours: [],
   },
   {
     _id: 12,
@@ -250,5 +286,14 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/legno.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_legno_EN_DE.pdf",
+    text: "ALUCOBOND® legno composite panels are real natural beauties: five different wood look finishes showcase wood at its most exclusive and a special coating adds a grainy structured feel to the surface. It makes the lively wood decors even more authentic and the wood grain pattern is not repeated, even in five-metre long panels.\n\nALUCOBOND® legno composite panels also display their powerful character: The flatness and flexural strength of these lightweight panels, mean ALUCOBOND® legno is ideal for numerous different facades – both in large formats or as narrow slats.\n\nIn addition, the panel's diverse processing options ensure the greatest possible architectural scope. Panels can be folded into complex and multi-dimensional shapes and given a sharp and precise geometry using routing and folding. The extreme durability and weather resistance provided by ALUCOBOND® legno composite panels mean they outperform natural wood. The panels are resistant to fungus and rotting, and protected against moss growth and weathering. ALUCOBOND® legno is fully recyclable and demonstrates a high level of sustainability in the life cycle of the material.",
+    bullet_pts: true,
+    pts: [
+      "ALUCOBOND® legno offers excellent print quality (direct-to-substrate digital printing) with a particularly wide range of colours and large depth of colour.",
+      "Embedded in our high-quality ALUCOBOND® coil coating, ALUCOBOND® legno offers very durable and UV-stable design surfaces for outdoor use on façades.",
+      "The maximum sheet size without decor repetition is 1,500 mm x 5,000 mm.",
+    ],
+    image: "/images/colours-surfaces/visuals/legno.jpg",
+    colours: [],
   },
 ];

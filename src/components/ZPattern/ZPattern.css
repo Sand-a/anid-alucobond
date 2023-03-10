@@ -28,7 +28,7 @@
 .bodytext {
   font-size: 1.8rem;
   line-height: 1.42;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 1.8rem;
   color: var(--text--bg);
 }
@@ -56,5 +56,8 @@
   }
   .box-zp-flip-2 {
     grid-row: 1/2;
+  }
+  .secondary-headline {
+    font-size: 2.8rem;
   }
 }
