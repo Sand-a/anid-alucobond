@@ -100,6 +100,12 @@ body {
   color: #222;
   margin-top: 1rem;
 }
+.btn-more:hover {
+  color: var(--line-color);
+}
+.project-section {
+  margin-bottom: 5rem;
+}
 .circle {
   width: 2rem;
   height: 2rem;
@@ -142,7 +148,6 @@ body {
   }
   .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 27rem;
   }
   .grid-box-1 {
     grid-column: 1 /4;

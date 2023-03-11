@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import "./HeroSection.css";
+import ProjectCard from "../Projects/ProjectCard";
+import { projectsData } from "../Data/projectsData";
 
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
@@ -75,56 +77,106 @@ const HeroSection = () => {
       </section>
       <section className="margin-top our-services-section">
         <h1 className="primary-headline">Our Services</h1>
-        <div className="container grid grid--3-cols">
+
+        <p className="intermediere-p"></p>
+        <div className="services-container  grid grid--3-cols">
           <div className="service-card">
-            <h1 className="number">1</h1>
-            <h1 className="service-name">supply</h1>
-            <ul className="service-list-items">
-              <li className="service-list-item">
-                <ion-icon name="tablet-landscape-outline"></ion-icon>
-                ALUCOBOND® Panel
-              </li>
-              <li className="service-list-item">
-                {" "}
-                <ion-icon name="unlink-outline"></ion-icon>Aluminum U-Channel
-              </li>
-              <li className="service-list-item">
-                <ion-icon name="sync-outline"></ion-icon>Brackets & Accessories
-              </li>
-            </ul>
+            <img
+              src="/images/services/img-1.jpg"
+              alt=""
+              className="service-card-image"
+            />
+            <div className="service-card-text">
+              <h1 className="number">1</h1>
+              <h1 className="service-name">supply</h1>
+              <ul className="service-list-items">
+                <li className="service-list-item">
+                  <ion-icon name="tablet-landscape-outline"></ion-icon>
+                  ALUCOBOND® Panel
+                </li>
+                <li className="service-list-item">
+                  {" "}
+                  <ion-icon name="unlink-outline"></ion-icon>Aluminum U-Channel
+                </li>
+                <li className="service-list-item">
+                  <ion-icon name="sync-outline"></ion-icon>Brackets &
+                  Accessories
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="service-card">
-            <h1 className="number">2</h1>
-            <h1 className="service-name">fabrication</h1>
-            <ul className="service-list-items">
-              <li className="service-list-item">
-                <ion-icon name="triangle-outline"></ion-icon>
-                AUTOCAD Shop-Drawings
-              </li>
-              <li className="service-list-item">
-                {" "}
-                <ion-icon name="keypad-outline"></ion-icon>Design & Details
-              </li>
-              <li className="service-list-item">
-                <ion-icon name="trail-sign-outline"></ion-icon>Signs
-              </li>
-            </ul>
+            <img
+              src="/images/services/img-2.jpg"
+              alt=""
+              className="service-card-image"
+            />
+            <div className="service-card-text">
+              <h1 className="number">2</h1>
+              <h1 className="service-name">fabrication</h1>
+              <ul className="service-list-items">
+                <li className="service-list-item">
+                  <ion-icon name="glasses-outline"></ion-icon>
+                  Design & Details Support
+                </li>
+                <li className="service-list-item">
+                  <ion-icon name="triangle-outline"></ion-icon>
+                  AUTOCAD Shop-Drawings
+                </li>
+                <li className="service-list-item">
+                  {" "}
+                  <ion-icon name="grid-outline"></ion-icon> Mock-ups
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="service-card">
-            <h1 className="number">3</h1>
-            <h1 className="service-name">installation</h1>
-            <ul className="service-list-items">
-              <li className=" service-list-item service-list-item-1">
-                <ion-icon name="key-outline"></ion-icon>
-                ALUCOBOND® Cladding <br></br>Turn-Key Solutions
-              </li>
-            </ul>
+            <img
+              src="/images/services/img-3.jpg"
+              alt=""
+              className="service-card-image"
+            />
+            <div className="service-card-text">
+              <h1 className="number">3</h1>
+              <h1 className="service-name">installation</h1>
+              <ul className="service-list-items">
+                <li className=" service-list-item">
+                  <ion-icon name="keypad-outline"></ion-icon>
+                  ALUCOBOND® Cladding <br></br>Turn-Key Solutions
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section className="margin-top project-section">
-        <h1 className="primary-headline">our projects</h1>
-        <div className="container"></div>
+        <h1 className="primary-headline">Latest projects</h1>
+        <p className=" intermediere-p">
+          More that 300 projects made in lebanon. All type of project from
+          compagny headquarters building to private housing.<br></br>Building
+          Corporate Identity Design from multiple brand. <br></br>Cultural and
+          Educatif building satch univertitys. Hospital and hotels. Residential
+          buildings, shopping mall, public transport...<br></br>More that 40
+          years of experience and give a etinity of modern look and never get
+          old. <br></br>
+          <br></br>ALUCOBOND® THE NAME SAY IT ALL.
+        </p>
+        <div className="intermediere ">
+          <Link className="btn btn-more" to="/projects">
+            All Our Projects
+          </Link>
+        </div>
+        <div className="intermediere">
+          <div className="card-size">
+            <ProjectCard
+              key={projectsData[0]._id}
+              name={projectsData[0].name}
+              image={projectsData[0].image[0]}
+              path={projectsData[0].path}
+              id={projectsData[0]._id}
+            />
+          </div>
+        </div>
       </section>
     </>
   );

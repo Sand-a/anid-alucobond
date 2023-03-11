@@ -117,37 +117,60 @@
 .btn-white:hover {
   color: var(--line-color);
 }
-
-.service-card {
-  height: 25rem;
-  width: 30rem;
+.services-container {
+  max-width: 100rem;
   margin: 0 auto;
-  background-color: #222;
+  padding: 1rem;
+}
+.service-card {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.service-card-text {
+  height: 22rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+
   position: relative;
+}
+.service-card-image {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .number {
   position: absolute;
   font-size: 12.5rem;
-  top: -4rem;
+  top: -5.3rem;
   left: 1rem;
+  color: #222;
+}
+.number::after {
+  content: ".";
+  margin-left: -0.5rem;
+  font-size: 7.5rem;
   color: var(--line-color);
 }
 .service-name {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   text-align: start;
-  padding: 3.8rem 0 2.8rem 0;
-  margin-left: 8.5rem;
+  padding: 2.8rem 0 2.8rem 0;
+  margin-left: 9.6rem;
   text-transform: uppercase;
-  font-weight: 200;
-  color: #fff;
+  font-weight: 300;
+  color: #222;
 }
 
 .service-list-items {
   list-style: none;
 }
 .service-list-item {
-  padding-left: 4rem;
-  color: #fff;
+  padding-left: 2.5rem;
+  color: #222;
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
   font-weight: 300;
@@ -156,12 +179,15 @@
   line-height: 1.2;
 }
 .service-list-item ion-icon {
-  color: #fff;
-
-  margin-right: 1.3rem;
+  color: var(--line-color);
+  margin-right: 1rem;
 }
-.service-list-item-1 {
-  margin-top: 2.5rem;
+
+.card-size {
+  max-width: 50rem;
+}
+.project-section {
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
