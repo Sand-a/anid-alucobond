@@ -17,6 +17,7 @@ const ColoursAndSurfacesCovers = () => {
               id={item._id}
             >
               <img src={item.imgLink} alt="chart coverpage" />
+
               <h1 className="cover-name">{item.title}</h1>
             </Link>
           );

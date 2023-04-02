@@ -63,6 +63,17 @@
 .cover-name {
   display: none;
 }
+.image-section-display {
+  position: absolute;
+}
+
+.sec-headline {
+  margin-top: 35rem;
+}
+.colours-surface-links:hover div.image-section-display {
+  background-image: attr(data-image-src);
+}
+
 @media screen and (max-width: 960px) {
   .cover-name {
     display: block;
