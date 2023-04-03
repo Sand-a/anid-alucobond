@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import "./HeroSection.css";
+
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
 
@@ -45,6 +46,7 @@ const HeroSection = () => {
       <section>
         <div className="intermediere-container">
           <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
+
           <p className="intermediere-p">
             Anid Construction, the exclusive distributor of ALUCOBOND® in
             Lebanon, since 1980. We are specialized in Design, Supply,
