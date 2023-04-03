@@ -44,7 +44,7 @@ const HeroSection = () => {
       </div>
 
       <section>
-        <div className="intermediere-container">
+        <div className="section-h intermediere-container">
           <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
 
           <p className="intermediere-p">
