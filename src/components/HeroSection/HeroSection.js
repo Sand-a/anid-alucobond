@@ -11,47 +11,42 @@ const HeroSection = () => {
   return (
     <>
       <div className="container hero-section">
-        <Slide>
-          <section className="grid grid-intro grid--4-cols">
-            <section className="grid-box-1 slider-container ">
-              <IntroSlider projectImages={introProjectsData} />
-            </section>
-            <section className="grid-box-2">
-              <figure className="box-item">
-                <Link className="section-headline" to="/about-us">
-                  <h1>fire-resistant &</h1>
-                  <h1>rear-ventilated</h1>
-                  <h1 className="letter-spacing">construction</h1>
-                </Link>
-                <img
-                  className="item-image"
-                  src="./images/hero_image/holcom_1.jpg"
-                  alt=""
-                />
-              </figure>
-            </section>
-            <section className="grid-box-3">
-              <figure className="box-item">
-                <Link className="section-headline" to="/colours-surfaces">
-                  <h1>Colours & Surfaces</h1>
-                </Link>
-                <img
-                  className="item-image"
-                  src="./images/hero_image/colours.jpg"
-                  alt=""
-                />
-              </figure>
-            </section>
-          </section>{" "}
-        </Slide>
+        <section className="grid grid-intro grid--4-cols">
+          <section className="grid-box-1 slider-container ">
+            <IntroSlider projectImages={introProjectsData} />
+          </section>
+          <section className="grid-box-2">
+            <figure className="box-item">
+              <Link className="section-headline" to="/about-us">
+                <h1>fire-resistant &</h1>
+                <h1>rear-ventilated</h1>
+                <h1 className="letter-spacing">construction</h1>
+              </Link>
+              <img
+                className="item-image"
+                src="./images/hero_image/holcom_1.jpg"
+                alt=""
+              />
+            </figure>
+          </section>
+          <section className="grid-box-3">
+            <figure className="box-item">
+              <Link className="section-headline" to="/colours-surfaces">
+                <h1>Colours & Surfaces</h1>
+              </Link>
+              <img
+                className="item-image"
+                src="./images/hero_image/colours.jpg"
+                alt=""
+              />
+            </figure>
+          </section>
+        </section>
       </div>
 
       <section>
         <div className="section-h intermediere-container">
           <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
-          <Fade delay={1e3} cascade damping={1e-1}>
-            Easy-to-use animation library for React apps
-          </Fade>
 
           <p className="intermediere-p">
             Anid Construction, the exclusive distributor of ALUCOBOND® in
