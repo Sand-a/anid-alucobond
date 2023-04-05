@@ -1,13 +1,22 @@
-import React from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import "./HeroSection.css";
-import { Fade, Slide } from "react-awesome-reveal";
 
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
 
 const HeroSection = () => {
+  const myRef = useRef();
+  const [elVisible, setElVisible] = useState();
+  console.log("my Element is Visible", elVisible);
+  useEffect(() => {
+    const observeSection = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setElVisible(entry.isIntersecting);
+    });
+    observeSection.observe(myRef.current);
+  }, []);
   return (
     <>
       <div className="container hero-section">
@@ -77,7 +86,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="section-h margin-top our-services-section">
+      <section ref={myRef} className="margin-top our-services-section">
         <h1 className="primary-headline">Our Services</h1>
 
         <p className="intermediere-p"></p>
@@ -154,7 +163,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="section-h margin-top project-section">
+      <section className=" margin-top project-section">
         <h1 className="primary-headline">our projects</h1>
         <p className=" intermediere-p">
           More that 300 projects made in lebanon. All type of projects from
