@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import "./HeroSection.css";
@@ -7,16 +8,8 @@ import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
 
 const HeroSection = () => {
-  const myRef = useRef();
-  const [elVisible, setElVisible] = useState();
-  console.log("my Element is Visible", elVisible);
-  useEffect(() => {
-    const observeSection = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setElVisible(entry.isIntersecting);
-    });
-    observeSection.observe(myRef.current);
-  }, []);
+  const { ref, inView } = useInView({ root: null, threshold: 0.1 });
+
   return (
     <>
       <div className="container hero-section">
@@ -54,7 +47,14 @@ const HeroSection = () => {
       </div>
 
       <section>
-        <div className="section-h intermediere-container">
+        <div
+          ref={ref}
+          className={
+            inView
+              ? "section--reveal intermediere-container"
+              : "section--hidden intermediere-container"
+          }
+        >
           <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
 
           <p className="intermediere-p">
@@ -86,7 +86,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section ref={myRef} className="margin-top our-services-section">
+      <section className="margin-top our-services-section">
         <h1 className="primary-headline">Our Services</h1>
 
         <p className="intermediere-p"></p>
