@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "../../App.css";
@@ -8,13 +8,23 @@ import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
 
 const HeroSection = () => {
-  const { ref, inView } = useInView({ root: null, threshold: 0.1 });
+  const {
+    ref: refGris,
+    inView: grisInView,
+    entry,
+  } = useInView({ threshold: 0.1 });
+  const { ref: refService, inView: serviceInView } = useInView({
+    threshold: 0.1,
+  });
+  const { ref: refProject, inView: projectInView } = useInView({
+    threshold: 0.1,
+  });
 
   return (
     <>
       <div className="container hero-section">
         <section className="grid grid-intro grid--4-cols">
-          <section className="grid-box-1 slider-container ">
+          <section className="grid-box-1 slider-container">
             <IntroSlider projectImages={introProjectsData} />
           </section>
           <section className="grid-box-2">
@@ -48,11 +58,11 @@ const HeroSection = () => {
 
       <section>
         <div
-          ref={ref}
+          ref={refGris}
           className={
-            inView
-              ? "section--reveal intermediere-container"
-              : "section--hidden intermediere-container"
+            grisInView
+              ? "section--reveal  intermediere-container"
+              : "section--reveal section--hidden intermediere-container"
           }
         >
           <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
@@ -86,11 +96,18 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="margin-top our-services-section">
+      <section
+        ref={refService}
+        className={
+          serviceInView
+            ? "section--reveal margin-top our-services-section"
+            : "section--reveal section--hidden-left margin-top our-services-section"
+        }
+      >
         <h1 className="primary-headline">Our Services</h1>
 
         <p className="intermediere-p"></p>
-        <div className="services-container  grid grid--3-cols">
+        <div className="services-container grid grid--3-cols">
           <div className="service-card">
             <img
               src="/images/services/img-1.jpg"
@@ -163,7 +180,14 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className=" margin-top project-section">
+      <section
+        ref={refProject}
+        className={
+          projectInView
+            ? "section--reveal margin-top project-section"
+            : "section--reveal section--hidden-right margin-top project-section"
+        }
+      >
         <h1 className="primary-headline">our projects</h1>
         <p className=" intermediere-p">
           More that 300 projects made in lebanon. All type of projects from

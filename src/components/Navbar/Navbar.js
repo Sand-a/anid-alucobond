@@ -14,14 +14,13 @@ function Navbar() {
   const showDropdown = () => setDropdown(true);
   const closeDropdown = () => setDropdown(false);
 
-  const openMobieMenu = () => setOpen(!open);
-  const closeMobileMenu = () => setOpen(false);
+  const toggleMobileMenu = () => setOpen(!open);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="menu-icon" onClick={openMobieMenu}>
+          <div className="menu-icon" onClick={toggleMobileMenu}>
             <ion-icon name={open ? "close-outline" : "menu-outline"}></ion-icon>
           </div>
 
@@ -40,7 +39,7 @@ function Navbar() {
                       activeclassname="active"
                       className={item.cName}
                       to={item.path}
-                      onClick={closeMobileMenu}
+                      onClick={toggleMobileMenu}
                     >
                       {item.title}
                     </NavLink>
@@ -55,7 +54,7 @@ function Navbar() {
                     activeclassname="active"
                     className={item.cName}
                     to={item.path}
-                    onClick={closeMobileMenu}
+                    onClick={toggleMobileMenu}
                   >
                     {item.title}
                   </NavLink>

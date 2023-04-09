@@ -4,13 +4,22 @@
   gap: 2.5rem;
   padding: 0 0 2rem 0;
 }
-.section--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-}
 .section--reveal {
   opacity: 1;
+
   transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(20rem);
+}
+.section--hidden-left {
+  opacity: 0;
+  transform: translateX(-20rem);
+}
+.section--hidden-right {
+  opacity: 0;
+  transform: translateX(20rem);
 }
 
 .slider-container {
