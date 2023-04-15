@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "../../App.css";
@@ -6,20 +5,9 @@ import "./HeroSection.css";
 
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
+import SectionReveal from "../SectionReveal/SectionReveal";
 
 const HeroSection = () => {
-  const {
-    ref: refGris,
-    inView: grisInView,
-    entry,
-  } = useInView({ threshold: 0.1 });
-  const { ref: refService, inView: serviceInView } = useInView({
-    threshold: 0.1,
-  });
-  const { ref: refProject, inView: projectInView } = useInView({
-    threshold: 0.1,
-  });
-
   return (
     <>
       <div className="container hero-section">
@@ -56,157 +44,160 @@ const HeroSection = () => {
         </section>
       </div>
 
-      <section>
-        <div
-          ref={refGris}
-          className={
-            grisInView
-              ? "section--reveal  intermediere-container"
-              : "section--reveal section--hidden intermediere-container"
-          }
-        >
-          <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
+      <SectionReveal
+        section={
+          <section>
+            <div className="intermediere-container">
+              <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
 
-          <p className="intermediere-p">
-            Anid Construction, the exclusive distributor of ALUCOBOND® in
-            Lebanon, since 1980. We are specialized in Design, Supply,
-            Fabrication and Installation of ALUCOBOND® cladding. The 1st and
-            original ACP, Aluminium Composite Panel, made in Germany.
-            <br></br>
-            <br></br>
-            From Inspiration to Assembly, and with over 40 years of experience,
-            our goal is always to provide the Best Architectural Solutions in
-            the most efficient and effective way.
-          </p>
-          <br></br>
-          <p className="intermediere-p ">
-            ALUCOBOND®, the “skin of architecture”, is a core topic of modern
-            construction, with a fire-retardant and rear-ventilated façades.
-            They can be simple and functional, exciting and representative. We
-            offert a large variety of surfaces and colours that lead to the
-            creation of unique structures.
-          </p>
-          <div className="intermediere">
-            <span className="btn-white"> Read more about </span>
-            <Link className="btn-white" to="/about-us">
-              ANID | ALUCOBOND®
-            </Link>
-            <span className="btn-white"> .</span>
-          </div>
-        </div>
-      </section>
-
-      <section
-        ref={refService}
-        className={
-          serviceInView
-            ? "section--reveal margin-top our-services-section"
-            : "section--reveal section--hidden-left margin-top our-services-section"
+              <p className="intermediere-p">
+                Anid Construction, the exclusive distributor of ALUCOBOND® in
+                Lebanon, since 1980. We are specialized in Design, Supply,
+                Fabrication and Installation of ALUCOBOND® cladding. The 1st and
+                original ACP, Aluminium Composite Panel, made in Germany.
+                <br></br>
+                <br></br>
+                From Inspiration to Assembly, and with over 40 years of
+                experience, our goal is always to provide the Best Architectural
+                Solutions in the most efficient and effective way.
+              </p>
+              <br></br>
+              <p className="intermediere-p ">
+                ALUCOBOND®, the “skin of architecture”, is a core topic of
+                modern construction, with a fire-retardant and rear-ventilated
+                façades. They can be simple and functional, exciting and
+                representative. We offert a large variety of surfaces and
+                colours that lead to the creation of unique structures.
+              </p>
+              <div className="intermediere">
+                <span className="btn-white"> Read more about </span>
+                <Link className="btn-white" to="/about-us">
+                  ANID | ALUCOBOND®
+                </Link>
+                <span className="btn-white"> .</span>
+              </div>
+            </div>
+          </section>
         }
-      >
-        <h1 className="primary-headline">Our Services</h1>
+      />
+
+      <section className="margin-top our-services-section">
+        <SectionReveal
+          section={<h1 className="primary-headline">Our Services</h1>}
+        />
 
         <p className="intermediere-p"></p>
         <div className="services-container grid grid--3-cols">
-          <div className="service-card">
-            <img
-              src="/images/services/img-1.jpg"
-              alt=""
-              className="service-card-image"
-            />
-            <div className="service-card-text">
-              <h1 className="number">1</h1>
-              <h1 className="service-name">supply</h1>
-              <ul className="service-list-items">
-                <li className="service-list-item">
-                  <ion-icon name="tablet-landscape-outline"></ion-icon>
-                  ALUCOBOND® Panel
-                </li>
-                <li className="service-list-item">
-                  {" "}
-                  <ion-icon name="unlink-outline"></ion-icon>Aluminum U-Channel
-                </li>
-                <li className="service-list-item">
-                  <ion-icon name="sync-outline"></ion-icon>Brackets &
-                  Accessories
-                </li>
-              </ul>
-            </div>
-          </div>
+          <SectionReveal
+            section={
+              <div className="service-card">
+                <img
+                  src="/images/services/img-1.jpg"
+                  alt=""
+                  className="service-card-image"
+                />
+                <div className="service-card-text">
+                  <h1 className="number">1</h1>
+                  <h1 className="service-name">supply</h1>
+                  <ul className="service-list-items">
+                    <li className="service-list-item">
+                      <ion-icon name="tablet-landscape-outline"></ion-icon>
+                      ALUCOBOND® Panel
+                    </li>
+                    <li className="service-list-item">
+                      {" "}
+                      <ion-icon name="unlink-outline"></ion-icon>Aluminum
+                      U-Channel
+                    </li>
+                    <li className="service-list-item">
+                      <ion-icon name="sync-outline"></ion-icon>Brackets &
+                      Accessories
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            }
+            direction={"left"}
+          />
 
-          <div className="service-card">
-            <img
-              src="/images/services/img-2.jpg"
-              alt=""
-              className="service-card-image"
-            />
-            <div className="service-card-text">
-              <h1 className="number">2</h1>
-              <h1 className="service-name">fabrication</h1>
-              <ul className="service-list-items">
-                <li className="service-list-item">
-                  <ion-icon name="glasses-outline"></ion-icon>
-                  Design & Details Support
-                </li>
-                <li className="service-list-item">
-                  <ion-icon name="triangle-outline"></ion-icon>
-                  AUTOCAD Shop-Drawings
-                </li>
-                <li className="service-list-item">
-                  {" "}
-                  <ion-icon name="grid-outline"></ion-icon> Mock-ups
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="service-card">
-            <img
-              src="/images/services/img-3.jpg"
-              alt=""
-              className="service-card-image"
-            />
-            <div className="service-card-text">
-              <h1 className="number">3</h1>
-              <h1 className="service-name">installation</h1>
-              <ul className="service-list-items">
-                <li className=" service-list-item">
-                  <ion-icon name="keypad-outline"></ion-icon>
-                  ALUCOBOND® Cladding <br></br>Turn-Key Solutions
-                </li>
-              </ul>
-            </div>
-          </div>
+          <SectionReveal
+            section={
+              <div className="service-card">
+                <img
+                  src="/images/services/img-2.jpg"
+                  alt=""
+                  className="service-card-image"
+                />
+                <div className="service-card-text">
+                  <h1 className="number">2</h1>
+                  <h1 className="service-name">fabrication</h1>
+                  <ul className="service-list-items">
+                    <li className="service-list-item">
+                      <ion-icon name="glasses-outline"></ion-icon>
+                      Design & Details Support
+                    </li>
+                    <li className="service-list-item">
+                      <ion-icon name="triangle-outline"></ion-icon>
+                      AUTOCAD Shop-Drawings
+                    </li>
+                    <li className="service-list-item">
+                      {" "}
+                      <ion-icon name="grid-outline"></ion-icon> Mock-ups
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            }
+          />
+          <SectionReveal
+            direction={"right"}
+            section={
+              <div className="service-card">
+                <img
+                  src="/images/services/img-3.jpg"
+                  alt=""
+                  className="service-card-image"
+                />
+                <div className="service-card-text">
+                  <h1 className="number">3</h1>
+                  <h1 className="service-name">installation</h1>
+                  <ul className="service-list-items">
+                    <li className=" service-list-item">
+                      <ion-icon name="keypad-outline"></ion-icon>
+                      ALUCOBOND® Cladding <br></br>Turn-Key Solutions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            }
+          />
         </div>
       </section>
 
-      <section
-        ref={refProject}
-        className={
-          projectInView
-            ? "section--reveal margin-top project-section"
-            : "section--reveal section--hidden-right margin-top project-section"
+      <SectionReveal
+        section={
+          <section className="margin-top project-section">
+            <h1 className="primary-headline">our projects</h1>
+            <p className=" intermediere-p">
+              More that 300 projects made in lebanon. All type of projects from
+              compagny headquarters building to private housing. Building
+              Corporate Identity Design from multiple brand. Cultural and
+              Educatif building such universities. Hospital and hotels.
+              Residential buildings, shopping mall, public transport...<br></br>
+              More that 40 years of experience and still give an eternity of
+              modern look that will never get old. <br></br>
+              <br></br>ALUCOBOND® THE NAME SAY IT ALL.
+            </p>
+            <div className="intermediere">
+              <div className="intermediere ">
+                <Link className="btn btn-more" to="/projects">
+                  All Our Projects
+                </Link>
+              </div>
+            </div>
+          </section>
         }
-      >
-        <h1 className="primary-headline">our projects</h1>
-        <p className=" intermediere-p">
-          More that 300 projects made in lebanon. All type of projects from
-          compagny headquarters building to private housing. Building Corporate
-          Identity Design from multiple brand. Cultural and Educatif building
-          such universities. Hospital and hotels. Residential buildings,
-          shopping mall, public transport...<br></br>More that 40 years of
-          experience and still give an eternity of modern look that will never
-          get old. <br></br>
-          <br></br>ALUCOBOND® THE NAME SAY IT ALL.
-        </p>
-        <div className="intermediere">
-          <div className="intermediere ">
-            <Link className="btn btn-more" to="/projects">
-              All Our Projects
-            </Link>
-          </div>
-        </div>
-      </section>
+      />
     </>
   );
 };
