@@ -4,23 +4,21 @@
   gap: 2.5rem;
   padding: 0 0 2rem 0;
 }
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
 
 .section--reveal {
   opacity: 1;
   overflow: hidden;
   transition: transform 1s, opacity 1s;
 }
-.section--hidden {
-  opacity: 0;
-  transform: translateY(20rem);
-}
-.section--hidden-left {
-  opacity: 0;
-  transform: translateX(-20rem);
-}
+.section--hidden,
+.section--hidden-left,
 .section--hidden-right {
   opacity: 0;
-  transform: translateX(20rem);
+  transform: translateY(20rem);
 }
 
 .slider-container {
@@ -210,6 +208,21 @@
 }
 
 @media (min-width: 768px) {
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  .section--hidden-left {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  .section--hidden-right {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  .section--hidden-none {
+    opacity: 0;
+  }
   .btn-white {
     color: #fff;
     font-size: 1.8rem;

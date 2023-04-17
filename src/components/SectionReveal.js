@@ -1,6 +1,5 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import "./SectionReveal.css";
 
 function SectionReveal({ section, direction }) {
   const { ref, inView } = useInView({
@@ -11,11 +10,11 @@ function SectionReveal({ section, direction }) {
   return (
     <div
       ref={ref}
-      className={`wave-section ${
+      className={
         inView
           ? "section--reveal"
           : `${direction ? `section--hidden-${direction}` : "section--hidden"}`
-      }`}
+      }
     >
       {section}
     </div>

@@ -50,6 +50,9 @@ body {
 .margin-top {
   margin-top: 10rem;
 }
+.margin-bottom-more {
+  margin-bottom: 13rem !important;
+}
 .margin-c-s {
   margin-top: 10rem;
 }

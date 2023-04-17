@@ -1,19 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "../../App.css";
-import Sections from "../Sections/Sections";
+import { aboutUsData } from "../Data/aboutUsData";
+// import ZPattern from "../ZPattern/ZPattern";
 import ZPattern from "../ZPattern/ZPattern";
 
 function AboutUs() {
   return (
     <>
-      <section className="section-aboutus">
-        <Sections
-          image="/images/sections/aboutus-section.jpg"
-          title="About ANID | ALUCOBOND® "
-        />
-        <ZPattern />
-        <p className="section-bottom-spacing"></p>
+      <section className="margin-top  section-aboutus">
+        <h1 className="primary-headline margin-bottom-more">
+          About ANID | ALUCOBOND®
+        </h1>
+
+        {aboutUsData.map((data) => (
+          <ZPattern
+            imageSrc={data.image}
+            imageAlt={data.alt}
+            title={data.title}
+            bodytext={data.bodytext}
+            link={data.link}
+            path={data.path}
+            flipped={data.flipped}
+          />
+        ))}
+
+        {/* <ZPattern />
+        <p className="section-bottom-spacing"></p> */}
       </section>
     </>
   );

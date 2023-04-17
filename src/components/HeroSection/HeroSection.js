@@ -1,11 +1,10 @@
-import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import "./HeroSection.css";
 
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
-import SectionReveal from "../SectionReveal/SectionReveal";
+import SectionReveal from "../SectionReveal";
 
 const HeroSection = () => {
   return (
@@ -121,6 +120,7 @@ const HeroSection = () => {
           />
 
           <SectionReveal
+            direction={"none"}
             section={
               <div className="service-card">
                 <img

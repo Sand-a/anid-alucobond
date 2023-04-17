@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import SectionReveal from "../SectionReveal";
 
 import "./ContactForm.css";
 
@@ -58,35 +59,38 @@ const ContactForm = () => {
             <p className="contact-item">alucobondlebanon</p>
           </li>
         </ul>
-
-        <form ref={form} onSubmit={sendEmail} className="form-container">
-          <h1> Send us your requirement:</h1>
-          <input
-            className="searchfield"
-            type="text"
-            placeholder="Full Name"
-            name="user_name"
-            required
-          />
-          <input
-            className="searchfield"
-            type="email"
-            placeholder="Email"
-            name="user_email"
-            required
-          />
-          <input
-            className="searchfield"
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            required
-          />
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
-          <button type="submit" className="btn btn-form">
-            Send Message
-          </button>
-        </form>
+        <SectionReveal
+          section={
+            <form ref={form} onSubmit={sendEmail} className="form-container">
+              <h1> Send us your requirement:</h1>
+              <input
+                className="searchfield"
+                type="text"
+                placeholder="Full Name"
+                name="user_name"
+                required
+              />
+              <input
+                className="searchfield"
+                type="email"
+                placeholder="Email"
+                name="user_email"
+                required
+              />
+              <input
+                className="searchfield"
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                required
+              />
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" className="btn btn-form">
+                Send Message
+              </button>
+            </form>
+          }
+        />
       </div>
     </>
   );
