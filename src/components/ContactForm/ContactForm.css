@@ -12,7 +12,6 @@
 
 .contact-list {
   list-style: none;
-  margin-bottom: 8rem;
 }
 .contact-list.grid--2-cols {
   display: grid;

@@ -116,7 +116,8 @@
   color: #fff;
   padding: 15rem 2rem;
 }
-.intermediere-p {
+.intermediere-p,
+.bodytext {
   font-size: 1.6rem;
   line-height: 1.3;
   font-weight: 200;
@@ -227,13 +228,17 @@
     color: #fff;
     font-size: 1.8rem;
   }
-  .intermediere-p {
+  .intermediere-p,
+  .bodytext {
     max-width: 100rem;
     margin: 0 auto;
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 200;
     letter-spacing: 0.3px;
+  }
+  .our-services-section {
+    overflow: hidden;
   }
 
   .box-2-items {

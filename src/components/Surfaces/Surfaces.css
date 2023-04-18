@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .surface-section ul {
   margin-left: 3rem;
   padding-top: 0;
@@ -15,18 +16,20 @@
 .img-box {
   max-width: 100rem;
   height: auto;
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 .img-box img {
   width: 100%;
 }
 .text-box {
   max-width: 100rem;
-  padding: 2rem 3rem;
+  padding: 2rem;
 }
+
 .chart-section {
   background-color: #4b4b4b;
   width: 100%;
+  margin-top: 6rem;
 
   padding: 8rem 0 10rem;
 }

@@ -5,8 +5,8 @@ import Sections from "../Sections/Sections";
 function Services() {
   return (
     <>
-      <section className="section-services">
-        <Sections image="/images/sections/section-1.jpg" title="Services" />
+      <section className="margin-top section-services">
+        <h1 className="primary-headline margin-bottom-more"> Services</h1>
       </section>
     </>
   );

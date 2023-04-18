@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { coloursSurfacesData } from "../Data/coloursSurfacesData";
 import "./ColoursAndSurfacesCovers.css";
 
-const ColoursAndSurfacesCovers = () => {
+const ColoursAndSurfacesCovers = ({ handleImageCoverDisplay }) => {
   return (
     <>
       <div className="gallery container">
@@ -14,7 +14,11 @@ const ColoursAndSurfacesCovers = () => {
               to={item.path}
               key={item._id}
               data-tooltip={item.title}
+              data-image-src={item.image}
               id={item._id}
+              onMouseEnter={() => {
+                handleImageCoverDisplay(`${item.image}`);
+              }}
             >
               <img src={item.imgLink} alt="chart coverpage" />
 

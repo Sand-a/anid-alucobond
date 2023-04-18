@@ -4,23 +4,22 @@
   align-items: center;
 }
 .searchfield {
-  border: 1px solid #4b4b4b;
   font-size: 1.8rem;
   font-weight: 300;
   text-transform: uppercase;
-
+  border: 1px solid #4b4b4b;
   font-family: inherit;
   padding: 1.5rem 1.8rem;
   height: 7rem;
-  width: 30vw;
+  width: 40%;
 }
 
 .searchfield-container ion-icon {
   display: block;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-left: 1rem;
   border: 1px solid #4b4b4b;
-  padding: 1.3rem 1.6rem;
+  padding: 1.9rem 1.6rem;
 }
 .search-text {
   display: flex;
@@ -36,5 +35,13 @@
 @media screen and (max-width: 600px) {
   .searchfield {
     font-size: 1.6rem;
+  }
+  .searchfield {
+    height: 5rem;
+    width: 60%;
+  }
+  .searchfield-container ion-icon {
+    font-size: 2.5rem;
+    padding: 1.1rem 1.3rem;
   }
 }

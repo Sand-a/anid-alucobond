@@ -14,11 +14,12 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ColoursAndSurfacesRoutes from "./components/Routes/ColoursAndSurfacesRoutes";
 import ScrollToTop from "./components/ScrollToTop";
+import { menuData } from "./components/Data/menuData";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Navbar navLinks={menuData} />
       <ScrollToTop />
       <Routes>
         <Route path="/" exact element={<Home />} />

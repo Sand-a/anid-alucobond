@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   grid-gap: 2rem;
   padding: 1rem 0.5rem;
+  margin-bottom: 10vh;
 }
 
 .colours-surface-links {
@@ -68,16 +69,22 @@
 }
 
 .sec-headline {
-  margin-top: 35rem;
-}
-.colours-surface-links:hover div.image-section-display {
-  background-image: attr(data-image-src);
+  margin-top: 50vh;
 }
 
 @media screen and (max-width: 960px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+  .image-display {
+    display: none;
+  }
+  .sec-headline {
+    margin-top: 5rem;
+  }
   .cover-name {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 300;
     padding: 0.2rem 0 0 0.2rem;

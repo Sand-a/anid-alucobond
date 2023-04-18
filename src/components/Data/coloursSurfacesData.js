@@ -9,6 +9,7 @@ export const coloursSurfacesData = [
     text: "The top-quality real anodised series comes in matt or brushed finishes with a colour spectrum ranging from natural anodised to gold, and from copper to darker tones. Time enhances the anodised surfaces: as they gain depth and become more expressive, the authentic beauty of aluminium is accentuated to the full.",
     data: "premium_anodised",
     image: "/images/colours-surfaces/visuals/premium_anodised.jpg",
+
     colours: [
       {
         _id: "E5001",
