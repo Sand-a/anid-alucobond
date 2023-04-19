@@ -24,13 +24,13 @@
 .text-box {
   max-width: 100rem;
   padding: 2rem;
+  margin-bottom: 5rem;
 }
 
 .chart-section {
   background-color: #4b4b4b;
   width: 100%;
-  margin-top: 6rem;
-
+  margin-bottom: 10rem;
   padding: 8rem 0 10rem;
 }
 .chart-section h1 {

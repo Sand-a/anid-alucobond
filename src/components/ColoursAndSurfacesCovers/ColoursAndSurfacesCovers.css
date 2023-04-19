@@ -75,6 +75,7 @@
 @media screen and (max-width: 960px) {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    padding: 1rem 1.5rem;
   }
   .image-display {
     display: none;
@@ -82,11 +83,18 @@
   .sec-headline {
     margin-top: 5rem;
   }
+  .colours-surface-links {
+    margin-bottom: 2rem;
+  }
+  .colours-surface-links img {
+    margin-bottom: 0.5rem;
+  }
   .cover-name {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+
     padding: 0.2rem 0 0 0.2rem;
     color: #222;
   }

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { coloursSurfacesData } from "../Data/coloursSurfacesData";
 import "./Surfaces.css";
-import SectionReveal from "../SectionReveal";
 
 const Surfaces = ({ item }) => {
   return (
@@ -21,29 +20,26 @@ const Surfaces = ({ item }) => {
           </ul>
         )}
       </div>
-      <SectionReveal
-        section={
-          <div className="chart-section">
-            <h1 className="primary-headline">{item.title} Surfaces</h1>
 
-            <div className="container img-surface-gallery">
-              {coloursSurfacesData[0].colours.map((colour, i) => {
-                return (
-                  <Link
-                    key={colour._id}
-                    className="colours-links"
-                    to={colour.path}
-                    data-tooltip={colour.name}
-                    id={colour._id}
-                  >
-                    <img src={colour.image} alt={"surface colour"} />
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        }
-      />
+      <div className="chart-section">
+        <h1 className="primary-headline">{item.title} Surfaces</h1>
+
+        <div className="container img-surface-gallery">
+          {coloursSurfacesData[0].colours.map((colour, i) => {
+            return (
+              <Link
+                key={colour._id}
+                className="colours-links"
+                to={colour.path}
+                data-tooltip={colour.name}
+                id={colour._id}
+              >
+                <img src={colour.image} alt={"surface colour"} />
+              </Link>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };

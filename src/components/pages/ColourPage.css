@@ -3,6 +3,9 @@
 }
 .colour-headline {
   margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: none;
 }
 
 .colour-container {

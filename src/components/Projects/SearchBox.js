@@ -14,7 +14,7 @@ const SearchBox = ({ searchChange }) => {
           onChange={searchChange}
         />
 
-        <ion-icon className="search-icon" name="search-outline"></ion-icon>
+        {/* <ion-icon className="search-icon" name="search-outline"></ion-icon> */}
       </form>
     </>
   );
