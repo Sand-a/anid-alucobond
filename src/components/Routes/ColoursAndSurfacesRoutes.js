@@ -24,18 +24,45 @@ function ColoursAndSurfacesRoutes() {
             element={<ColourPage item={coloursSurfacesData[0].colours} />}
           />
         </Route>
-        <Route
-          path="/solid"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[1]} />}
-        />
-        <Route
-          path="/metallic"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[2]} />}
-        />
-        <Route
-          path="/spectra"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[3]} />}
-        />
+
+        <Route path="/solid">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[1]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[1].colours} />}
+          />
+        </Route>
+
+        <Route path="/metallic">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[2]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[2].colours} />}
+          />
+        </Route>
+        <Route path="/spectra">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[3]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[3].colours} />}
+          />
+        </Route>
+
         <Route
           path="/sparkling"
           element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[4]} />}

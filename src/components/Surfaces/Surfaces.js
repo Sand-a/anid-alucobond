@@ -11,7 +11,10 @@ const Surfaces = ({ item }) => {
         <div className="img-box">
           <img src={item.image} alt="Façade" />
         </div>
-        <p className="text-box bodytext display-linebreak">{item.text}</p>
+        <p className="text-box bodytext display-linebreak">
+          <h1 className=" sub-headline">{item.textTitle}</h1>
+          {item.text}
+        </p>
         {item.bullet_pts === true && (
           <ul className="text-box bodytext">
             {item.pts.map((pt, i) => {
@@ -22,10 +25,10 @@ const Surfaces = ({ item }) => {
       </div>
 
       <div className="chart-section">
-        <h1 className="primary-headline">{item.title} Surfaces</h1>
+        <h1 className="primary-headline">{item.subTitle} </h1>
 
         <div className="container img-surface-gallery">
-          {coloursSurfacesData[0].colours.map((colour, i) => {
+          {item.colours.map((colour, i) => {
             return (
               <Link
                 key={colour._id}

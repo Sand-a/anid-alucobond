@@ -7,7 +7,7 @@
   width: 100vw;
 
   background-color: black;
-  opacity: 0.88;
+  opacity: 0.9;
 
   display: flex;
   justify-content: space-between;
@@ -72,6 +72,7 @@
   color: #fff;
   font-size: 3rem;
 }
+/* mobile menu navbar */
 
 @media screen and (max-width: 960px) {
   .menu-icon {
@@ -94,10 +95,9 @@
     right: 0;
 
     width: 100%;
-    height: 70vh;
+    height: 100vh;
 
     background-color: black;
-    opacity: 0.97;
 
     transition: all 0.5s ease-in-out;
   }

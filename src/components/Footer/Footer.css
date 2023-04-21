@@ -51,7 +51,8 @@ ion-icon:hover {
 
 .copyright {
   font-size: 1.5rem;
-  background-color: #222;
+  background-color: black;
+  opacity: 0.9;
   padding: 10rem 0 5rem 0;
   color: rgb(168, 166, 163);
   text-align: center;

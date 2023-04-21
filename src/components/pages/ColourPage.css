@@ -8,6 +8,9 @@
   font-weight: 600;
   text-transform: none;
 }
+.img-colour {
+  border: 0.1px solid rgba(0, 0, 0, 0.247);
+}
 
 .colour-container {
   max-width: 80rem;
