@@ -2,7 +2,8 @@
   min-height: 65vh;
 }
 .colour-headline {
-  margin-bottom: 4rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
   font-size: 4rem;
   font-weight: 600;
   text-transform: none;
@@ -14,11 +15,12 @@
 }
 .colour-container img {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 .colour-name {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 600;
+  margin-bottom: 3rem;
 }
 
 .product-specification-title {
@@ -29,10 +31,12 @@
 .product-specification-list {
   font-size: 1.8rem;
   margin-left: 1.5rem;
+  margin-bottom: 6rem;
   line-height: 1.4;
 }
 .pdf-link {
   font-size: 2rem;
+  margin-left: 3rem;
   text-decoration: none;
   font-weight: 400;
   color: #222;
@@ -47,4 +51,12 @@
   font-weight: 300;
   margin-top: 0.5rem;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 960px) {
+  .colour-container {
+    padding: 1rem;
+  }
+  .pdf-link {
+    margin: 3rem;
+  }
 }

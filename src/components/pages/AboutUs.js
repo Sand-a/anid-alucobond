@@ -2,7 +2,7 @@ import React from "react";
 
 import "../../App.css";
 import { aboutUsData } from "../Data/aboutUsData";
-// import ZPattern from "../ZPattern/ZPattern";
+
 import ZPattern from "../ZPattern/ZPattern";
 
 function AboutUs() {
@@ -24,9 +24,6 @@ function AboutUs() {
             flipped={data.flipped}
           />
         ))}
-
-        {/* <ZPattern />
-        <p className="section-bottom-spacing"></p> */}
       </section>
     </>
   );

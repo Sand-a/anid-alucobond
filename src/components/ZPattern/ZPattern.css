@@ -53,9 +53,10 @@
   color: #222;
   margin-top: 1rem;
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 900px) {
   .z-pattern {
     flex-direction: column;
+    margin-bottom: 10rem;
   }
   .z-pattern__img-box {
     width: 100%;

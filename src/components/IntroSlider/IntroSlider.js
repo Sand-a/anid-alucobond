@@ -15,7 +15,7 @@ export default function IntroSlider({ projectImages }) {
       } else {
         setCurrentSlide(currentSlide + 1);
       }
-    }, 6000);
+    }, 4000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
@@ -55,13 +55,11 @@ export default function IntroSlider({ projectImages }) {
               currentSlide === i + 1 ? `intro-slide active ` : `intro-slide`
             }
           >
-            <Link to={img.path}>
-              <h1 className="project-description">{img.description}</h1>
-              <img src={process.env.PUBLIC_URL + img.image} alt="" />
-              <p className="project-details">
-                {img.name} | {img.region}
-              </p>
-            </Link>
+            <h1 className="project-description">{img.description}</h1>
+            <img src={process.env.PUBLIC_URL + img.image} alt="" />
+            <p className="project-details">
+              {img.name} | {img.region}
+            </p>
           </div>
         );
       })}

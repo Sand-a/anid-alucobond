@@ -21,15 +21,7 @@ export function ColourPage({ item }) {
             <h1 className="colour-name">{`${item[id - 1]._id} ${
               item[id - 1].name
             }`}</h1>
-            <a
-              className="pdf-link"
-              target="_blank"
-              href={`${item[id - 1].pdf}`}
-            >
-              <ion-icon name="download-outline"></ion-icon>
-              Download PDF
-              <p>{`${item[id - 1].chart} Colour Chart`}</p>
-            </a>
+
             <div className="product-specification">
               <h1 className="product-specification-title">
                 Product Specifications:
@@ -56,6 +48,15 @@ export function ColourPage({ item }) {
                   ${item[id - 1].product_specifications.colour_specialities}`}
                 </li>
               </ul>
+              <a
+                className="pdf-link"
+                target="_blank"
+                href={`${item[id - 1].pdf}`}
+              >
+                <ion-icon name="download-outline"></ion-icon>
+                Download PDF
+                <p>{`${item[id - 1].chart} Colour Chart`}</p>
+              </a>
             </div>
           </div>
         </div>
