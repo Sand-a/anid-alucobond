@@ -34,7 +34,7 @@ const Surfaces = ({ item }) => {
                 key={colour._id}
                 className="colours-links"
                 to={colour.path}
-                data-tooltip={colour.name}
+                data-tooltip={`${colour._id} ${colour.name}`}
                 id={colour._id}
               >
                 <img src={colour.image} alt={"surface colour"} />

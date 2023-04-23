@@ -14,6 +14,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "E5001",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Bronze C32",
         image:
           "/images/colours-surfaces/colours/premium_anodised/bronze_C32.jpg",
@@ -30,6 +31,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5002",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Old Copper",
         image:
           "/images/colours-surfaces/colours/premium_anodised/old_copper.jpg",
@@ -46,6 +48,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5003",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Zinc",
         image: "/images/colours-surfaces/colours/premium_anodised/zinc.jpg",
         path: "/colours-surfaces/premium-anodised/3",
@@ -61,6 +64,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5004",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Blue Steel",
         image:
           "/images/colours-surfaces/colours/premium_anodised/blue_steel.jpg",
@@ -77,6 +81,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5141",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Titanium",
         image:
           "/images/colours-surfaces/colours/premium_anodised/anodised_titanium.jpg",
@@ -93,6 +98,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5142",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Gold",
         image: "/images/colours-surfaces/colours/premium_anodised/gold.jpg",
         path: "/colours-surfaces/premium-anodised/6",
@@ -108,6 +114,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5143",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Bronze C33",
         image:
           "/images/colours-surfaces/colours/premium_anodised/bronze_C33.jpg",
@@ -124,6 +131,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5144",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "Black",
         image: "/images/colours-surfaces/colours/premium_anodised/black.jpg",
         path: "/colours-surfaces/premium-anodised/8",
@@ -139,6 +147,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5281",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "PANELOX® champagne",
         image:
           "/images/colours-surfaces/colours/premium_anodised/panelox_champagne.jpg",
@@ -155,6 +164,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "E5282",
+        coloursAndSurface: "Premium Anodised Surfaces",
         name: "PANELOX® basalt",
         image:
           "/images/colours-surfaces/colours/premium_anodised/panelox_basalt.jpg",
@@ -184,6 +194,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "100",
+        coloursAndSurface: "Solid Colours",
         name: "Pure White 10",
         image: "/images/colours-surfaces/colours/solid/solid-100.jpg",
         path: "/colours-surfaces/solid/1",
@@ -199,6 +210,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "101",
+        coloursAndSurface: "Solid Colours",
         name: "White 16",
         image: "/images/colours-surfaces/colours/solid/solid-101.jpg",
         path: "/colours-surfaces/solid/2",
@@ -214,6 +226,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "102",
+        coloursAndSurface: "Solid Colours",
         name: "Cream",
         image: "/images/colours-surfaces/colours/solid/solid-102.jpg",
         path: "/colours-surfaces/solid/3",
@@ -229,6 +242,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "103",
+        coloursAndSurface: "Solid Colours",
         name: "Beige",
         image: "/images/colours-surfaces/colours/solid/solid-103.jpg",
         path: "/colours-surfaces/solid/4",
@@ -244,6 +258,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "104",
+        coloursAndSurface: "Solid Colours",
         name: "Light Grey",
         image: "/images/colours-surfaces/colours/solid/solid-104.jpg",
         path: "/colours-surfaces/solid/5",
@@ -259,6 +274,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "105",
+        coloursAndSurface: "Solid Colours",
         name: "Anthracite Grey",
         image: "/images/colours-surfaces/colours/solid/solid-104.jpg",
         path: "/colours-surfaces/solid/6",
@@ -274,6 +290,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "112",
+        coloursAndSurface: "Solid Colours",
         name: "Basalt Grey",
         image: "/images/colours-surfaces/colours/solid/solid-112.jpg",
         path: "/colours-surfaces/solid/7",
@@ -289,6 +306,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "136",
+        coloursAndSurface: "Solid Colours",
         name: "Platinum Grey",
         image: "/images/colours-surfaces/colours/solid/solid-136.jpg",
         path: "/colours-surfaces/solid/8",
@@ -304,6 +322,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "200",
+        coloursAndSurface: "Solid Colours",
         name: "Lemon",
         image: "/images/colours-surfaces/colours/solid/solid-200.jpg",
         path: "/colours-surfaces/solid/9",
@@ -319,6 +338,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "201",
+        coloursAndSurface: "Solid Colours",
         name: "Red",
         image: "/images/colours-surfaces/colours/solid/solid-201.jpg",
         path: "/colours-surfaces/solid/10",
@@ -334,6 +354,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "202",
+        coloursAndSurface: "Solid Colours",
         name: "Ruby",
         image: "/images/colours-surfaces/colours/solid/solid-202.jpg",
         path: "/colours-surfaces/solid/11",
@@ -349,6 +370,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "210",
+        coloursAndSurface: "Solid Colours",
         name: "Orange",
         image: "/images/colours-surfaces/colours/solid/solid-210.jpg",
         path: "/colours-surfaces/solid/12",
@@ -364,6 +386,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "313",
+        coloursAndSurface: "Solid Colours",
         name: "Yellow Green",
         image: "/images/colours-surfaces/colours/solid/solid-313.jpg",
         path: "/colours-surfaces/solid/13",
@@ -379,6 +402,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "326",
+        coloursAndSurface: "Solid Colours",
         name: "Black",
         image: "/images/colours-surfaces/colours/solid/solid-326.jpg",
         path: "/colours-surfaces/solid/14",
@@ -394,6 +418,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "350",
+        coloursAndSurface: "Solid Colours",
         name: "Steel Blue",
         image: "/images/colours-surfaces/colours/solid/solid-350.jpg",
         path: "/colours-surfaces/solid/15",
@@ -422,6 +447,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "500",
+        coloursAndSurface: "Metallic Colours",
         name: "Silver Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-500.jpg",
         path: "/colours-surfaces/metallic/1",
@@ -437,6 +463,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "501",
+        coloursAndSurface: "Metallic Colours",
         name: "Smoke Silver Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-501.jpg",
         path: "/colours-surfaces/metallic/2",
@@ -452,6 +479,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "502",
+        coloursAndSurface: "Metallic Colours",
         name: "Smoke Silver Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-502.jpg",
         path: "/colours-surfaces/metallic/3",
@@ -467,6 +495,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "503",
+        coloursAndSurface: "Metallic Colours",
         name: "Champagne Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-503.jpg",
         path: "/colours-surfaces/metallic/4",
@@ -482,6 +511,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "504",
+        coloursAndSurface: "Metallic Colours",
         name: "Bronze Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-504.jpg",
         path: "/colours-surfaces/metallic/5",
@@ -497,6 +527,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "505",
+        coloursAndSurface: "Metallic Colours",
         name: "Dark Grey Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-505.jpg",
         path: "/colours-surfaces/metallic/6",
@@ -512,6 +543,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "506",
+        coloursAndSurface: "Metallic Colours",
         name: "Steel Grey Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-506.jpg",
         path: "/colours-surfaces/metallic/7",
@@ -527,6 +559,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "600",
+        coloursAndSurface: "Metallic Colours",
         name: "Sunrise Silver Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-600.jpg",
         path: "/colours-surfaces/metallic/8",
@@ -542,6 +575,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "605",
+        coloursAndSurface: "Metallic Colours",
         name: "Colorado Gold Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-605.jpg",
         path: "/colours-surfaces/metallic/9",
@@ -557,6 +591,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "606",
+        coloursAndSurface: "Metallic Colours",
         name: "Atacama Bronze Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-606.jpg",
         path: "/colours-surfaces/metallic/10",
@@ -572,6 +607,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "709",
+        coloursAndSurface: "Metallic Colours",
         name: "Siena Copper Metallic",
         image: "/images/colours-surfaces/colours/metallic/metallic-709.jpg",
         path: "/colours-surfaces/metallic/11",
@@ -590,24 +626,191 @@ export const coloursSurfacesData = [
   {
     _id: 4,
     title: "Spectra",
+    subTitle: "Spectra colours",
     path: "/colours-surfaces/spectra",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE.pdf",
     text: "Brilliant, iridescent colours found in nature were the inspiration for Spectra colours. Through special colour pigments, various colour gradients of gloss and depth are created. Depending on the type of pigment and viewing angle, enchanting colour effects with highlights and interesting colour gradients add new visual dimensions.",
     image: "/images/colours-surfaces/visuals/spectra.jpg",
-    colours: [],
+    colours: [
+      {
+        _id: "913",
+        coloursAndSurface: "Spectra colours",
+        name: "Cupral",
+        image: "/images/colours-surfaces/colours/spectra/cupral.jpg",
+        path: "/colours-surfaces/spectra/1",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "spectra",
+          colour_scheme: "polychrome",
+          colour_gloss: "high gloss",
+          colour_specialities: "colour shift, bright, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "917",
+        coloursAndSurface: "Spectra colours",
+        name: "sakura",
+        image: "/images/colours-surfaces/colours/spectra/sakura.jpg",
+        path: "/colours-surfaces/spectra/2",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "spectra",
+          colour_scheme: "polychrome",
+          colour_gloss: "high gloss",
+          colour_specialities: "colour shift, bright, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "918",
+        coloursAndSurface: "Spectra colours",
+        name: "Galaxy Blue",
+        image: "/images/colours-surfaces/colours/spectra/galaxyblue.jpg",
+        path: "/colours-surfaces/spectra/3",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "spectra",
+          colour_scheme: "polychrome",
+          colour_gloss: "high gloss",
+          colour_specialities: "colour shift, bright, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "919",
+        coloursAndSurface: "Spectra colours",
+        name: "White Gold",
+        image: "/images/colours-surfaces/colours/spectra/whitegold.jpg",
+        path: "/colours-surfaces/spectra/4",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "spectra",
+          colour_scheme: "polychrome",
+          colour_gloss: "high gloss",
+          colour_specialities: "colour shift, bright, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "921",
+        coloursAndSurface: "Spectra colours",
+        name: "Desert Gold",
+        image: "/images/colours-surfaces/colours/spectra/desertgold.jpg",
+        path: "/colours-surfaces/spectra/5",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "spectra",
+          colour_scheme: "polychrome",
+          colour_gloss: "high gloss",
+          colour_specialities: "colour shift, bright, iridescent, metallic",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+    ],
   },
   {
     _id: 5,
     title: "Sparkling",
+    subTitle: "sparkling colours",
     path: "/colours-surfaces/sparkling",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparklin_EN_DE.pdf",
     text: "With their bright sparkling and shining metall effects, ALUCOBOND® sparkling colours provide a subtle and elegant impression.",
     image: "/images/colours-surfaces/visuals/sparkling.jpg",
-    colours: [],
+    colours: [
+      {
+        _id: "680",
+        coloursAndSurface: "sparkling colours",
+        name: "White Silver MG",
+        image: "/images/colours-surfaces/colours/sparkling/whitesilvermg.jpg",
+        path: "/colours-surfaces/sparkling/1",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "sparkling",
+          colour_scheme: "polychrome",
+          colour_gloss: "special gloss",
+          colour_specialities: "bright, sparkling, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "681",
+        coloursAndSurface: "sparkling colours",
+        name: "Anthracite Silver MG",
+        image:
+          "/images/colours-surfaces/colours/sparkling/AnthraciteSilverMG.jpg",
+        path: "/colours-surfaces/sparkling/2",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "sparkling",
+          colour_scheme: "polychrome",
+          colour_gloss: "special gloss",
+          colour_specialities: "dark, sparkling, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "682",
+        coloursAndSurface: "sparkling colours",
+        name: "Cosmic Grey Metallic MG",
+        image:
+          "/images/colours-surfaces/colours/sparkling/CosmicGreyMetallicMG.jpg",
+        path: "/colours-surfaces/sparkling/3",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "sparkling",
+          colour_scheme: "polychrome",
+          colour_gloss: "special gloss",
+          colour_specialities: "dark, sparkling, metallic",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "683",
+        coloursAndSurface: "sparkling colours",
+        name: "Black Metallic MG",
+        image: "/images/colours-surfaces/colours/sparkling/BlackMetallicMG.jpg",
+        path: "/colours-surfaces/sparkling/4",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "sparkling",
+          colour_scheme: "polychrome",
+          colour_gloss: "special gloss",
+          colour_specialities: "dark, sparkling, iridescent",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+      {
+        _id: "684",
+        coloursAndSurface: "sparkling colours",
+        name: "Deepblue Metallic MG",
+        image:
+          "/images/colours-surfaces/colours/sparkling/DeepblueMetallicMG.jpg",
+        path: "/colours-surfaces/sparkling/5",
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "sparkling",
+          colour_scheme: "polychrome",
+          colour_gloss: "special gloss",
+          colour_specialities: "dark, sparkling, metallic",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE",
+        chart: "Spectra & sparkling",
+      },
+    ],
   },
   {
     _id: 6,
@@ -638,7 +841,7 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/terra.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_terra_EN_DE.pdf",
-    text: "TALUCOBOND® terra unites the typical crystalline surface and velvety feel found in natural stone with many of the advantages of ALUCOBOND® composite panels. Unlike most natural stone, ALUCOBOND® composite panels are both very thin and light, but offer at the same time a high level of flexural and tensile strength. Large format panels can be easily and accurately fabricated, processed, transported, installed, and, in addition, three-dimensionally shaped by using folding and roll bending techniques. Unlike many stone surfaces, ALUCOBOND® terra is also weatherresistant and colour fast.",
+    text: "ALUCOBOND® terra unites the typical crystalline surface and velvety feel found in natural stone with many of the advantages of ALUCOBOND® composite panels. Unlike most natural stone, ALUCOBOND® composite panels are both very thin and light, but offer at the same time a high level of flexural and tensile strength. Large format panels can be easily and accurately fabricated, processed, transported, installed, and, in addition, three-dimensionally shaped by using folding and roll bending techniques. Unlike many stone surfaces, ALUCOBOND® terra is also weatherresistant and colour fast.",
     image: "/images/colours-surfaces/visuals/terra.jpg",
     colours: [],
   },

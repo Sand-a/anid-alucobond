@@ -62,39 +62,102 @@ function ColoursAndSurfacesRoutes() {
             element={<ColourPage item={coloursSurfacesData[3].colours} />}
           />
         </Route>
-
-        <Route
-          path="/sparkling"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[4]} />}
-        />
-        <Route
-          path="/natural"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[5]} />}
-        />
-        <Route
-          path="/anodized-look"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[6]} />}
-        />
-        <Route
-          path="/terra"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[7]} />}
-        />
-        <Route
-          path="/urban"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[8]} />}
-        />
-        <Route
-          path="/rocca"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[9]} />}
-        />
-        <Route
-          path="/vintage"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[10]} />}
-        />
-        <Route
-          path="/alucobond-legno"
-          element={<ColoursAndSurfacesSubPage item={coloursSurfacesData[11]} />}
-        />
+        <Route path="/sparkling">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[4]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[4].colours} />}
+          />
+        </Route>
+        <Route path="/natural">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[5]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[5].colours} />}
+          />
+        </Route>
+        <Route path="/anodized-look">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[6]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[6].colours} />}
+          />
+        </Route>
+        <Route path="/terra">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[7]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[7].colours} />}
+          />
+        </Route>
+        <Route path="/urban">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[8]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[8].colours} />}
+          />
+        </Route>
+        <Route path="/rocca">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[9]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[9].colours} />}
+          />
+        </Route>
+        <Route path="/vintage">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[10]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[10].colours} />}
+          />
+        </Route>
+        <Route path="/alucobond-legno">
+          <Route
+            index
+            element={
+              <ColoursAndSurfacesSubPage item={coloursSurfacesData[11]} />
+            }
+          />
+          <Route
+            path=":id"
+            element={<ColourPage item={coloursSurfacesData[11].colours} />}
+          />
+        </Route>
       </Routes>
     </>
   );

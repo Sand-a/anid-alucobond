@@ -4,10 +4,11 @@
 }
 .btn {
   color: var(--text--bg);
-  font-size: 1.8rem;
+
   cursor: pointer;
 }
 .go-back-btn {
+  font-size: 1.6rem;
   position: absolute;
   top: 0;
   left: 1rem;
@@ -25,4 +26,9 @@
 .btn-more {
   color: #222;
   margin-top: 1rem;
+}
+.name {
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
 }
