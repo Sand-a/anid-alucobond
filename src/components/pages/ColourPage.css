@@ -53,6 +53,7 @@
   color: var(--text-color);
   font-weight: 300;
   margin-top: 0.5rem;
+  margin-left: 3rem;
   font-size: 1.6rem;
 }
 @media screen and (max-width: 960px) {

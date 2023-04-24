@@ -10,10 +10,10 @@ export function ColourPage({ item }) {
   return (
     <>
       <section className="section section container margin-top colour-section">
-        <BackButton
+        {/* <BackButton
           pageLink={item[id - 1].path.slice(0, -1)}
           name={item[id - 1].coloursAndSurface}
-        />
+        /> */}
 
         <h1 className="primary-headline colour-headline">
           {item[id - 1].name}

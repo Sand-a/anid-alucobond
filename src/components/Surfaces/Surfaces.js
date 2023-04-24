@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { coloursSurfacesData } from "../Data/coloursSurfacesData";
+
 import "./Surfaces.css";
 
 const Surfaces = ({ item }) => {
@@ -11,17 +11,18 @@ const Surfaces = ({ item }) => {
         <div className="img-box">
           <img src={item.image} alt="Façade" />
         </div>
-        <p className="text-box bodytext display-linebreak">
+        <div className="text-box">
           <h1 className=" sub-headline">{item.textTitle}</h1>
-          {item.text}
-        </p>
-        {item.bullet_pts === true && (
-          <ul className="text-box bodytext">
-            {item.pts.map((pt, i) => {
-              return <li className="bullet-pt">{pt}</li>;
-            })}
-          </ul>
-        )}
+          <p className="bodytext display-linebreak">{item.text}</p>
+
+          {item.bullet_pts === true && (
+            <ul className="bodytext">
+              {item.pts.map((pt, i) => {
+                return <li className="bullet-pt">{pt}</li>;
+              })}
+            </ul>
+          )}
+        </div>
       </div>
 
       <div className="chart-section">

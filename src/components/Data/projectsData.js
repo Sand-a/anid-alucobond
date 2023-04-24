@@ -1,9 +1,14 @@
 export const projectsData = [
   {
     _id: 111,
-    name: "carre rouge",
+    name: "carre rouge center",
     path: "/projects/1",
-    materiel: "Anodice Look",
+    building_type: "Shopping Center",
+    colour_surface: "NaturAL Brushed",
+    material: "ALUCOBOND® PLUS",
+    description: "Perforated | 2nde Skin Façade system | Stainless Steel Look.",
+    place: "Zahlé, Lebanon",
+    year: "2020",
     image: [
       "/images/projects/img-0.jpg",
       "/images/projects/img-1.jpg",
@@ -12,9 +17,14 @@ export const projectsData = [
   },
   {
     _id: 222,
-    name: "ABC Ashrafieh",
+    name: "ABC Achrafieh",
     path: "/projects/2",
-    materiel: "Anodice Look",
+    building_type: "Shopping Mall",
+    colour_surface: "Solid Colour",
+    material: "ALUCOBOND® PLUS",
+    description: "Custom-made blue|gray colour that follow ABC guidelines.",
+    place: "Achrafieh, Beirut",
+    year: "2010",
     image: [
       "/images/projects/ABC_ashrafieh/ABC_ashrafieh-1.jpg",
       "/images/projects/ABC_ashrafieh/ABC_ashrafieh-2.jpg",

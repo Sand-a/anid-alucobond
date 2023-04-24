@@ -4,12 +4,10 @@ import ColoursAndSurfacesSubPage from "../pages/ColoursAndSurfacesSubPage";
 import ColoursAndSurfacesPage from "../pages/ColoursAndSurfacesPage";
 import ColourPage from "../pages/ColourPage";
 import { coloursSurfacesData } from "../Data/coloursSurfacesData";
-import DropdownMenu from "../Navbar/DropdownMenu/DropdownMenu";
 
 function ColoursAndSurfacesRoutes() {
   return (
     <>
-      <DropdownMenu data={coloursSurfacesData} />
       <Routes>
         <Route index element={<ColoursAndSurfacesPage />} />
         <Route path="/premium-anodised">
