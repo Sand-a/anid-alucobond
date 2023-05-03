@@ -36,8 +36,8 @@ const Navbar = ({ navLinks }) => {
                 <li
                   key={item._id}
                   className="nav-items"
-                  onMouseEnter={!menuClicked && showDropdown}
-                  onMouseLeave={!menuClicked && closeDropdown}
+                  onMouseEnter={!menuClicked ? showDropdown : undefined}
+                  onMouseLeave={!menuClicked ? closeDropdown : undefined}
                 >
                   <NavLink
                     exact="true"

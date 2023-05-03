@@ -1,0 +1,13 @@
+.project__category--card {
+  height: 16rem;
+  background-color: red;
+  border: 1px solid black;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto 1rem;
+}
+.project__category--card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

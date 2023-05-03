@@ -15,6 +15,7 @@ function AboutUs() {
 
         {aboutUsData.map((data) => (
           <ZPattern
+            key={data.title}
             imageSrc={data.image}
             imageAlt={data.alt}
             title={data.title}

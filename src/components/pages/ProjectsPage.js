@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SearchBox from "../Projects/SearchBox";
 import ProjectList from "../Projects/ProjectList";
 import { projectsData } from "../Data/projectsData";
@@ -10,6 +10,7 @@ const ProjectsPage = () => {
   const onSearchChange = (event) => {
     setSearchfield(event.target.value);
   };
+
   const filteredProjects = projectsData.filter((project) => {
     return project.name.toLowerCase().includes(searchfield.toLowerCase());
   });

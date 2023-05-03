@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./Footer.css";
 
 const Footer = ({ dateUpdate }) => {
@@ -49,11 +49,15 @@ const Footer = ({ dateUpdate }) => {
             </a>
           </li> */}
         </ul>
+
         <p className="copyright">
-          &copy; Copyright{" "}
-          <span className="year">{new Date().getFullYear()}</span> by{" "}
-          <span className="my-name grow">s@nid </span>
-          &#124; All rights reserved.
+          Copyright &copy;
+          <span className="year"> {new Date().getFullYear()} </span> ANID &#124;
+          ALUCOBOND® &#124; All rights reserved.
+        </p>
+
+        <p className="copyright">
+          developed & Designed by <span className="my-name grow">s@nid </span>.
         </p>
       </div>
     </footer>
