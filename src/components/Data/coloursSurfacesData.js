@@ -7,7 +7,7 @@ export const coloursSurfacesData = [
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/premium_anodised.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_premium_anodised_EN_DE.pdf",
-    textTitle: "Each panel is unique",
+    textTitle: "Each panel is unique.",
     text: "Anodising is an electrochemical process which converts the surface of a metal into a decorative, durable oxide layer which is both corrosion and wear-resistant. Unlike other coatings, this aluminium oxide is fully integrated with the underlying aluminium substrate, not just applied to the surface.\n\nNot only resilient, the major appeal of anodised aluminium is its beauty. The process of anodising creates a unique oxide layer which can vary from panel to panel due to the batch process. On the one hand, this might mean that you receive a colour which varies slightly from the original colour sample. On the other hand, each façade panel has a truly individual appearance. As the surface of the panels is subject to natural variations, the result is a lively façade with a distinctive character.\n\n The top-quality real anodised series comes in matt or brushed finishes with a colour spectrum ranging from natural anodised to gold, and from copper to darker tones. Time enhances the anodised surfaces: as they gain depth and become more expressive, the authentic beauty of aluminium is accentuated to the full.he top-quality real anodised series comes in matt or brushed finishes with a colour spectrum ranging from natural anodised to gold, and from copper to darker tones. Time enhances the anodised surfaces: as they gain depth and become more expressive, the authentic beauty of aluminium is accentuated to the full.",
     image: "/images/colours-surfaces/visuals/premium_anodised.jpg",
     colours: [
@@ -150,7 +150,7 @@ export const coloursSurfacesData = [
       {
         _id: "E5281",
         coloursAndSurface: "Premium Anodised Surfaces",
-        name: "PANELOX® champagne",
+        name: "PANELOX® Champagne",
         image:
           "/images/colours-surfaces/colours/premium_anodised/premium_anodised_panelox_champagne.jpg",
         path: "/colours-surfaces/premium-anodised/9",
@@ -167,7 +167,7 @@ export const coloursSurfacesData = [
       {
         _id: "E5282",
         coloursAndSurface: "Premium Anodised Surfaces",
-        name: "PANELOX® basalt",
+        name: "PANELOX® Basalt",
         image:
           "/images/colours-surfaces/colours/premium_anodised/premium_anodised_panelox_basalt.jpg",
         path: "/colours-surfaces/premium-anodised/10",
@@ -186,7 +186,7 @@ export const coloursSurfacesData = [
   {
     _id: 2,
     title: "Solid",
-    subTitle: "solid colours",
+    subTitle: "Solid Colours",
     path: "/colours-surfaces/solid",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/solid_metallic.jpg",
@@ -449,7 +449,7 @@ export const coloursSurfacesData = [
     subTitle: "Metallic Colours",
     path: "/colours-surfaces/metallic",
     cName: "dropdown-link",
-    imgLink: "/images/colours-surfaces/cover_page_charts/solid_metallic.jpg",
+    imgLink: "/images/colours-surfaces/cover_page_charts/metallic.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
     text: "Different lighting and viewing angles highlight the typical metallic gloss of these colours.",
     image: "/images/colours-surfaces/visuals/metallic.jpg",
@@ -646,17 +646,17 @@ export const coloursSurfacesData = [
   {
     _id: 4,
     title: "Spectra",
-    subTitle: "Spectra colours",
+    subTitle: "Spectra Colours",
     path: "/colours-surfaces/spectra",
     cName: "dropdown-link",
-    imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
+    imgLink: "/images/colours-surfaces/cover_page_charts/spectra.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE.pdf",
     text: "Brilliant, iridescent colours found in nature were the inspiration for Spectra colours. Through special colour pigments, various colour gradients of gloss and depth are created. Depending on the type of pigment and viewing angle, enchanting colour effects with highlights and interesting colour gradients add new visual dimensions.",
     image: "/images/colours-surfaces/visuals/spectra.jpg",
     colours: [
       {
         _id: "913",
-        coloursAndSurface: "Spectra colours",
+        coloursAndSurface: "Spectra Colours",
         name: "Cupral",
         image:
           "/images/colours-surfaces/colours/spectra/sepctra_913_cupral.jpg",
@@ -673,8 +673,8 @@ export const coloursSurfacesData = [
       },
       {
         _id: "917",
-        coloursAndSurface: "Spectra colours",
-        name: "sakura",
+        coloursAndSurface: "Spectra Colours",
+        name: "Sakura",
         image:
           "/images/colours-surfaces/colours/spectra/sepctra_917_sakura.jpg",
         path: "/colours-surfaces/spectra/2",
@@ -690,7 +690,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "918",
-        coloursAndSurface: "Spectra colours",
+        coloursAndSurface: "Spectra Colours",
         name: "Galaxy Blue",
         image:
           "/images/colours-surfaces/colours/spectra/sepctra_918_galaxy-blue.jpg",
@@ -707,7 +707,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "919",
-        coloursAndSurface: "Spectra colours",
+        coloursAndSurface: "Spectra Colours",
         name: "White Gold",
         image:
           "/images/colours-surfaces/colours/spectra/sepctra_919_white-gold.jpg",
@@ -724,7 +724,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "921",
-        coloursAndSurface: "Spectra colours",
+        coloursAndSurface: "Spectra Colours",
         name: "Desert Gold",
         image:
           "/images/colours-surfaces/colours/spectra/sepctra_921_desert-gold.jpg",
@@ -744,17 +744,17 @@ export const coloursSurfacesData = [
   {
     _id: 5,
     title: "Sparkling",
-    subTitle: "sparkling colours",
+    subTitle: "Sparkling Colours",
     path: "/colours-surfaces/sparkling",
     cName: "dropdown-link",
-    imgLink: "/images/colours-surfaces/cover_page_charts/spectra_sparkling.jpg",
+    imgLink: "/images/colours-surfaces/cover_page_charts/sparkling.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparklin_EN_DE.pdf",
     text: "With their bright sparkling and shining metall effects, ALUCOBOND® sparkling colours provide a subtle and elegant impression.",
     image: "/images/colours-surfaces/visuals/sparkling.jpg",
     colours: [
       {
         _id: "680",
-        coloursAndSurface: "sparkling colours",
+        coloursAndSurface: "Sparkling Colours",
         name: "White Silver MG",
         image:
           "/images/colours-surfaces/colours/sparkling/sparkling_680_white-silver-mg.jpg",
@@ -771,7 +771,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "681",
-        coloursAndSurface: "sparkling colours",
+        coloursAndSurface: "Sparkling Colours",
         name: "Anthracite Silver MG",
         image:
           "/images/colours-surfaces/colours/sparkling/sparkling_681_anthracite-silver-mg.jpg",
@@ -788,7 +788,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "682",
-        coloursAndSurface: "sparkling colours",
+        coloursAndSurface: "Sparkling Colours",
         name: "Cosmic Grey Metallic MG",
         image:
           "/images/colours-surfaces/colours/sparkling/sparkling_682_cosmic-grey-metallic-mg.jpg",
@@ -805,7 +805,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "683",
-        coloursAndSurface: "sparkling colours",
+        coloursAndSurface: "Sparkling Colours",
         name: "Black Metallic MG",
         image:
           "/images/colours-surfaces/colours/sparkling/sparkling_683_black-metallic-mg.jpg",
@@ -822,7 +822,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "684",
-        coloursAndSurface: "sparkling colours",
+        coloursAndSurface: "Sparkling Colours",
         name: "Deepblue Metallic MG",
         image:
           "/images/colours-surfaces/colours/sparkling/sparkling_684_deepblue-metallic-mg.jpg",
@@ -852,7 +852,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "400",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Brushed",
         image:
           "/images/colours-surfaces/colours/natural/natural_400_brushed.jpg",
@@ -869,7 +869,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "401",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Line",
         image: "/images/colours-surfaces/colours/natural/natural_401_line.jpg",
         path: "/colours-surfaces/natural/2",
@@ -885,7 +885,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "405",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Reflect",
         image:
           "/images/colours-surfaces/colours/natural/natural_405_reflect.jpg",
@@ -902,7 +902,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "402",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Pure",
         image: "/images/colours-surfaces/colours/natural/natural_402_pure.jpg",
         path: "/colours-surfaces/natural/4",
@@ -918,7 +918,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "461",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Havanna",
         image:
           "/images/colours-surfaces/colours/natural/natural_461_havanna.jpg",
@@ -936,7 +936,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "471",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Copper",
         image:
           "/images/colours-surfaces/colours/natural/natural_471_copper.jpg",
@@ -954,7 +954,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "462",
-        coloursAndSurface: "natural colours",
+        coloursAndSurface: "Natural Colours",
         name: "Manhattan",
         image:
           "/images/colours-surfaces/colours/natural/natural_462_manhattan.jpg",
@@ -975,7 +975,7 @@ export const coloursSurfacesData = [
   {
     _id: 7,
     title: "Anodized Look",
-    subTitle: "Anodized Look surfaces",
+    subTitle: "Anodized Look Surfaces",
     path: "/colours-surfaces/anodized-look",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/anodized_look.jpg",
@@ -1090,7 +1090,7 @@ export const coloursSurfacesData = [
   {
     _id: 8,
     title: "Terra",
-    subTitle: "Terra surfaces",
+    subTitle: "Terra Surfaces",
     path: "/colours-surfaces/terra",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/terra.jpg",
@@ -1100,7 +1100,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "380",
-        coloursAndSurface: "Terra surfaces",
+        coloursAndSurface: "Terra Surfaces",
         name: "Arctic Frost",
         image: "/images/colours-surfaces/colours/terra/terra_arctic-frost.jpg",
         path: "/colours-surfaces/terra/1",
@@ -1116,7 +1116,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "381",
-        coloursAndSurface: "Terra surfaces",
+        coloursAndSurface: "Terra Surfaces",
         name: "Slate",
         image: "/images/colours-surfaces/colours/terra/terra_381_slate.jpg",
         path: "/colours-surfaces/terra/2",
@@ -1148,7 +1148,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "383",
-        coloursAndSurface: "Terra surfaces",
+        coloursAndSurface: "Terra Surfaces",
         name: "Bronze",
         image: "/images/colours-surfaces/colours/terra/terra_383_bronze.jpg",
         path: "/colours-surfaces/terra/4",
@@ -1165,7 +1165,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "384",
-        coloursAndSurface: "Terra surfaces",
+        coloursAndSurface: "Terra Surfaces",
         name: "Terracotta",
         image:
           "/images/colours-surfaces/colours/terra/terra_384_terracotta.jpg",
@@ -1182,7 +1182,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "385",
-        coloursAndSurface: "Terra surfaces",
+        coloursAndSurface: "Terra Surfaces",
         name: "Pyrite",
         image: "/images/colours-surfaces/colours/terra/terra_385_pyrite.jpg",
         path: "/colours-surfaces/terra/6",
@@ -1202,7 +1202,7 @@ export const coloursSurfacesData = [
   {
     _id: 9,
     title: "Urban",
-    subTitle: "Urban colours",
+    subTitle: "Urban Colours",
     path: "/colours-surfaces/urban",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/urban.jpg",
@@ -1212,7 +1212,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "360",
-        coloursAndSurface: "Urban colours",
+        coloursAndSurface: "Urban Colours",
         name: "Traffic White",
         image:
           "/images/colours-surfaces/colours/urban/urban_360_traffic-white.jpg",
@@ -1246,7 +1246,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "362",
-        coloursAndSurface: "Urban colours",
+        coloursAndSurface: "Urban Colours",
         name: "Anthracite",
         image:
           "/images/colours-surfaces/colours/urban/urban_362_anthracite.jpg",
@@ -1263,7 +1263,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "363",
-        coloursAndSurface: "Urban colours",
+        coloursAndSurface: "Urban Colours",
         name: "Jet Black",
         image: "/images/colours-surfaces/colours/urban/urban_363_jet-black.jpg",
         path: "/colours-surfaces/urban/4",
@@ -1279,7 +1279,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "364",
-        coloursAndSurface: "Urban colours",
+        coloursAndSurface: "Urban Colours",
         name: "Iron Oxide Red",
         image:
           "/images/colours-surfaces/colours/urban/urban_364_iron-oxide-red.jpg",
@@ -1299,7 +1299,7 @@ export const coloursSurfacesData = [
   {
     _id: 10,
     title: "Rocca",
-    subTitle: "Rocca surfaces",
+    subTitle: "Rocca Surfaces",
     path: "/colours-surfaces/rocca",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/rocca.jpg",
@@ -1309,7 +1309,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "809",
-        coloursAndSurface: "Rocca surfaces",
+        coloursAndSurface: "Rocca Surfaces",
         name: "Graphite",
         image: "/images/colours-surfaces/colours/rocca/rocca_809_graphite.jpg",
         path: "/colours-surfaces/rocca/1",
@@ -1325,7 +1325,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "815",
-        coloursAndSurface: "Rocca surfaces",
+        coloursAndSurface: "Rocca Surfaces",
         name: "Dolomite",
         image: "/images/colours-surfaces/colours/rocca/rocca_815_dolomite.jpg",
         path: "/colours-surfaces/rocca/2",
@@ -1341,7 +1341,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "805",
-        coloursAndSurface: "Rocca surfaces",
+        coloursAndSurface: "Rocca Surfaces",
         name: "Meteorite",
         image: "/images/colours-surfaces/colours/rocca/rocca_805_meteorite.jpg",
         path: "/colours-surfaces/rocca/3",
@@ -1357,7 +1357,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "806",
-        coloursAndSurface: "Rocca surfaces",
+        coloursAndSurface: "Rocca Surfaces",
         name: "Quartzite",
         image: "/images/colours-surfaces/colours/rocca/rocca_806_quartzite.jpg",
         path: "/colours-surfaces/rocca/4",
@@ -1392,7 +1392,7 @@ export const coloursSurfacesData = [
     colours: [
       {
         _id: "870",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Patina Copper",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_870_patina-copper.jpg",
@@ -1409,7 +1409,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "871",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Industrial Iron",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_871_industrial-iron.jpg",
@@ -1426,7 +1426,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "880",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Coracero",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_880_coracero.jpg",
@@ -1443,7 +1443,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "873",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Antique Brasso",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_873_antique-brass.jpg",
@@ -1460,7 +1460,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "874",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Rough Concrete",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_874_rough-concrete.jpg",
@@ -1477,7 +1477,7 @@ export const coloursSurfacesData = [
       },
       {
         _id: "875",
-        coloursAndSurface: "Vintage surfaces",
+        coloursAndSurface: "Vintage Surfaces",
         name: "Fresh Concrete",
         image:
           "/images/colours-surfaces/colours/vintage/vintage_875_fresh-concrete.jpg",

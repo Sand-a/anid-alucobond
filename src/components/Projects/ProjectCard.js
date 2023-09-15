@@ -18,8 +18,12 @@ const ProjectCard = ({
       <Link className="cards__item__link" to={path}>
         <figure className="cards__item__pic-wrap">
           <img src={image} alt="Facade" className="cards__item__img" />
+          <div className="project-name">
+            <h1 className="headline headline-s ">{name}</h1>
+            <p className="bodytext ">{place}</p>
+          </div>
         </figure>
-        <ul className="project--info">
+        {/* <ul className="project--info">
           <li className="project--title">
             {name} <i className="project--type"> - {type}.</i>
           </li>
@@ -29,7 +33,7 @@ const ProjectCard = ({
           <li className="project--year">
             {place} - {year}
           </li>
-        </ul>
+        </ul> */}
       </Link>
     </li>
   );

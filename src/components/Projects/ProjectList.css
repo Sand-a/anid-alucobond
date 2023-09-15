@@ -1,11 +1,10 @@
 .cards__container {
-  max-width: 120rem;
-  margin: 0 auto;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 2rem;
-  padding: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 0.2rem;
+  padding: 0.3rem;
+  padding-bottom: 5rem;
 }
 .cards__item {
   box-shadow: 0 0.5rem 0.5rem rgba(34, 34, 34, 0.1);
@@ -29,8 +28,29 @@
   object-fit: cover;
   transition: all 0.2s linear;
 }
-.cards__item__img:hover {
+/* .cards__item__img:hover {
   transform: scale(1.1);
+} */
+.project-name {
+  background-color: var(--text--bg);
+  box-sizing: border-box;
+  /* max-width: calc((100%) - 60px); */
+  padding: 1em 3em;
+  position: absolute;
+  top: 35%;
+  left: 0;
+
+  transform: translateX(-100%);
+  z-index: 10;
+  transition: all 0.5s;
+}
+.project-name h1,
+.project-name p {
+  color: #fff;
+}
+
+.cards__item__pic-wrap:hover .project-name {
+  transform: translateX(0);
 }
 
 .cards__item__pic-wrap::after {
@@ -38,14 +58,15 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-right: 1rem;
-  padding: 6px 8px;
+
+  padding: 1rem 1rem 1rem 1.4rem;
+  border-radius: 1rem 0 0 0;
   max-width: calc((100%) - 60px);
   font-size: 2rem;
-  opacity: 80%;
+
   font-weight: 700;
   color: #fff;
-  background-color: #222;
+  background-color: #4b4b4b;
   box-sizing: border-box;
 }
 .project--info {

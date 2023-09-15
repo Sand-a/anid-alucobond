@@ -1,12 +1,15 @@
 import React from "react";
 
-const Sections = ({ image, title }) => {
+const Sections = ({ title }) => {
   return (
     <>
-      <div className="image-section">
-        <img src={image}></img>
+      <div className="query-container headline-container">
+        <h1 className="headline headline-s">
+          {title}
+          <strong>.</strong>
+        </h1>
+        <p className="border-line border-line-black"></p>
       </div>
-      <h1 className="primary-headline">{title}</h1>
     </>
   );
 };

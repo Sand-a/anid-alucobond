@@ -1,4 +1,4 @@
-.navbar {
+.header {
   position: sticky;
   margin: 0;
 
@@ -6,31 +6,35 @@
   height: 10rem;
   width: 100vw;
 
-  background-color: black;
   opacity: 0.9;
 
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+}
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem 0 3rem;
-
-  z-index: 5;
+  height: 10rem;
+  padding: 0 3rem;
 }
 .navbar-logos {
   display: flex;
+
   align-items: center;
 }
-.logo-name {
-  height: 3.4rem;
-}
 .logo-icon {
-  height: 4.4rem;
+  height: 5rem;
+  margin-right: 1.5rem;
+}
+.logo-name {
+  height: 5rem;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .nav-items {
   white-space: nowrap;
@@ -38,27 +42,31 @@
 
 .nav-link {
   font-size: 1.6rem;
+  letter-spacing: 0.063em;
+
   font-weight: 300;
   text-decoration: none;
-  text-transform: uppercase;
+
   color: var(--light-grey);
   text-align: center;
-  padding: 0 0 0.8rem 0;
+  padding: 0 0 1rem 0;
 
   border-style: solid;
-  border-width: 0px 0px 2px 0px;
+  border-width: 0px 0px 0.05px 0px;
   border-color: transparent;
+  font-family: var(--font-text);
 
   transition: 250ms;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #f7f7f7;
   transition: 250ms;
 }
 .nav-link.active {
-  color: #fff;
-  border-color: var(--line-color);
+  border-width: 0px 0px 1px 0px;
+  border-color: #fff;
+  color: #f7f7f7;
   transition: 250ms;
 }
 
@@ -72,11 +80,34 @@
   color: #fff;
   font-size: 3rem;
 }
+.menu-icon:hover ion-icon {
+  transform: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1030px) {
+  .logo-icon {
+    height: 4.4rem;
+    margin-right: 1.5rem;
+  }
+
+  .logo-name {
+    height: 4.2rem;
+  }
+  .nav-list {
+    gap: 2rem;
+  }
+}
 /* mobile menu navbar */
 
 @media screen and (max-width: 960px) {
   .menu-icon {
     display: block;
+  }
+  ion-icon[name="close-outline"] {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
   .navbar {
     padding: 0 1rem;
@@ -86,71 +117,45 @@
   .nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-
-    position: absolute;
-    top: -100vh;
-    right: 0;
-
+    justify-content: start;
+    align-items: start;
     width: 100%;
     height: 100vh;
+    gap: 3rem;
+    padding-top: 10rem;
+    position: absolute;
+    top: 0;
+    left: -100vw;
 
     background-color: black;
 
     transition: all 0.5s ease-in-out;
   }
 
+  .nav-link {
+    height: 100%;
+    width: 95vw;
+    border-color: #ffffff55;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 0 2rem 2rem;
+    margin: 0 1rem;
+  }
   .active {
     top: 0;
+    left: 0;
   }
-
-  .nav-link {
-    font-size: 2rem;
-
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .nav-link.active {
+    border-width: 0px 0px 0.05px 0px;
+    border-color: #ffffff55;
+  }
+  .logo-icon {
+    height: 4rem;
   }
 
   .logo-name {
     height: 3.8rem;
-  }
-  .logo-icon {
-    height: 4rem;
-  }
-}
-@media (min-width: 370px) {
-  .logo-name {
-    height: 4.4rem;
-  }
-  .logo-icon {
-    height: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  .logo-name {
-    height: 5rem;
-  }
-  .logo-icon {
-    height: 5rem;
-  }
-}
-
-@media (min-width: 1080px) {
-  .nav-menu {
-    gap: 3rem;
-  }
-  .nav-link {
-    font-size: 1.8rem;
-  }
-  .logo-name {
-    height: 6rem;
-  }
-  .logo-icon {
-    height: 5rem;
   }
 }

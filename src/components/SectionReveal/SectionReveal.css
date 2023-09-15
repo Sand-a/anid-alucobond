@@ -1,0 +1,42 @@
+/* Reveal sections */
+.section--reveal {
+  opacity: 1;
+  overflow: hidden;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden,
+.section--hidden-left,
+.section--hidden-right {
+  opacity: 0;
+  transform: translateY(20rem);
+}
+/* mobile */
+@media (min-width: 768px) {
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  .section--hidden-left {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  .section--hidden-right {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  .section--hidden-none {
+    opacity: 0;
+  }
+
+  /* .our-services-section {
+    overflow: hidden;
+  }
+
+  .box-2-items {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+    gap: 2.5rem;
+  } */
+}

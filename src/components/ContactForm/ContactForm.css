@@ -1,120 +1,152 @@
-.wrap-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+.section-contact {
+  background-color: var(--light-bg);
 }
-.wrap-address h1 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-
 .contact-list {
   list-style: none;
 }
-.contact-list.grid--2-cols {
-  display: grid;
-  gap: 1rem;
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
 }
-.grid--2-cols--1 {
-  grid-column: 1/-1;
+
+.form-container h1 {
+  margin-bottom: 0;
+}
+.form-container p {
+  margin-bottom: 0;
+}
+.form-container,
+.address-container {
+  width: 100%;
+}
+.address-container h1 span:last-child {
+  font-size: 2.3rem;
+}
+.address-container {
+  align-self: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1.5rem 0 2rem 0;
+  margin-bottom: 8rem;
+}
+.address-container h1 {
+  margin-bottom: 4rem;
+  padding-left: 1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
 }
 
 .contact-items {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   position: relative;
 }
+.contact-items:first-child {
+  margin-bottom: 19rem;
+}
 
+.contact-link {
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+.contact-link:hover {
+  transform: translateX(3%);
+}
+
+.contact-link:first-child {
+  align-items: start;
+}
+
+.contact-items:first-child p,
+.contact-items:last-child p {
+  font-weight: 600;
+  line-height: 1.4;
+  color: black;
+}
 .contact-link ion-icon {
-  font-size: 2.5rem;
-  padding: 1.5rem;
+  font-size: 2rem;
 }
 
-.contact-link ion-icon::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  width: 4rem;
-  height: 4rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 1.5px solid #222;
-}
 .contact-item {
   font-size: 1.8rem;
   margin-left: 1rem;
   font-weight: 300;
   color: var(--text-color);
 }
+
 .pobox {
   margin-top: 0.5rem;
 }
-
+.grey-background {
+  background-color: var(--light-bg);
+}
 .form-container {
-  min-width: 60rem;
-
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
-  border: 1px solid #222;
-  padding: 4rem;
+
   margin-bottom: 5rem;
 }
-.form-container h1 {
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  align-self: flex-start;
+.form-container textarea {
+  border: 1px solid var(--light-grey);
+  padding: 1.5rem;
+  height: 20rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: inherit;
 }
+
 .form-container input,
 .form-container textarea {
   width: 100%;
 }
-
-.btn-form {
-  align-self: flex-start;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 1.8rem;
-  border: 1.4px solid #222;
-  background: none;
-  font-weight: 400;
+.section-contact .container {
+  padding-left: 0;
+  padding-right: 0;
 }
-.btn-form:hover {
-  color: var(--white);
-  background-color: #222;
+
+@media screen and (max-width: 1158px) {
+  .address-container {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  .contact-items:first-child {
+    margin-bottom: 6rem;
+  }
+  .address-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .address-container h1 {
+    margin-left: 3rem;
+  }
+  .contact-items:first-child {
+    margin-left: -0.8rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .grid--2-cols {
-    grid-template-columns: 1fr;
+    width: 100%;
   }
-  .contact-list {
-    padding: 0 1rem;
+  .address-container {
+    align-items: start;
+    text-align: start;
   }
-  .contact-item {
-    font-size: 2rem;
-    font-weight: 300;
-  }
-  .form-container {
-    min-width: 90%;
-  }
-  .form-container h1 {
-    font-size: 2.3rem;
-    font-weight: 400;
-  }
-  .btn-form {
-    font-size: 1.6rem;
+  .address-container h1 {
+    margin-left: 0;
   }
 }

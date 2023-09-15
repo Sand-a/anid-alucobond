@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ColoursAndSurfacesSubPage from "../pages/ColoursAndSurfacesSubPage";
 import ColoursAndSurfacesPage from "../pages/ColoursAndSurfacesPage";
-import ColourPage from "../pages/ColourPage";
+import ColourPage from "../ColourPage/ColourPage";
 import { coloursSurfacesData } from "../Data/coloursSurfacesData";
 
 function ColoursAndSurfacesRoutes() {

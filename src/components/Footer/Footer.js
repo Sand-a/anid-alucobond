@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const Footer = ({ dateUpdate }) => {
   return (
-    <footer className="footer text">
+    <footer className="footer-section text">
       <div className="footer-container">
         <ul className="social-links">
           <li>
@@ -49,16 +49,18 @@ const Footer = ({ dateUpdate }) => {
             </a>
           </li> */}
         </ul>
+        <div className="footer-signature">
+          <p className="copyright">
+            Copyright&copy;
+            <span className="year"> {new Date().getFullYear()} </span> ANID
+            &#124; ALUCOBOND® &#124;{" "}
+            <span className="uppercase">All rights reserved.</span>
+          </p>
 
-        <p className="copyright">
-          Copyright &copy;
-          <span className="year"> {new Date().getFullYear()} </span> ANID &#124;
-          ALUCOBOND® &#124; All rights reserved.
-        </p>
-
-        <p className="copyright">
-          developed & Designed by <span className="my-name grow">s@nid </span>.
-        </p>
+          <p className="copyright uppercase">
+            Developed & Designed by s<span className="symbol">@</span>nid .
+          </p>
+        </div>
       </div>
     </footer>
   );

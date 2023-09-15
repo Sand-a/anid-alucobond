@@ -24,9 +24,10 @@ const ZPattern = ({
           <div className="z-pattern__img-box ">
             <img className="z-pattern__img" src={imageSrc} alt={imageAlt} />
           </div>
-          <div className="z-pattern__content">
-            <h1 className="z-pattern__title">{title}</h1>
-            <p className="z-pattern__bodytext display-linebreak">{bodytext}</p>
+          <div className="z-pattern__content z-pattern__content-right">
+            <h1 className="headline headline-s ">{title}</h1>
+            <p className="border-line border-line-black"></p>
+            <p className="bodytext display-linebreak">{bodytext}</p>
             <Link className="btn btn-more" to={path}>
               {link}
             </Link>
@@ -36,9 +37,10 @@ const ZPattern = ({
     } else {
       return (
         <>
-          <div className="z-pattern__content">
-            <h1 className="z-pattern__title">{title}</h1>
-            <p className="z-pattern__bodytext display-linebreak">{bodytext}</p>
+          <div className="z-pattern__content z-pattern__content-left">
+            <h1 className="headline headline-s">{title}</h1>
+            <p className="border-line border-line-black"></p>
+            <p className="bodytext display-linebreak">{bodytext}</p>
             <Link className="btn btn-more" to={path}>
               {link}
             </Link>

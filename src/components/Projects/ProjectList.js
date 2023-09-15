@@ -12,7 +12,7 @@ const ProjectList = ({ data }) => {
           name={project.name}
           image={project.image[0]}
           type={project.building_type}
-          path={project.path}
+          // path={project.path}
           id={project._id}
           colourSurface={project.colour_surface}
           material={project.material}

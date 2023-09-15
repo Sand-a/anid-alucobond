@@ -4,197 +4,150 @@ import "./HeroSection.css";
 
 import IntroSlider from "../IntroSlider/IntroSlider";
 import { introProjectsData } from "../Data/introProjectsData";
-import SectionReveal from "../SectionReveal";
+import SectionReveal from "../SectionReveal/SectionReveal";
 
 const HeroSection = () => {
   return (
     <>
-      <div className="container hero-section">
-        <section className="grid grid-intro grid--4-cols">
-          <section className="grid-box-1 slider-container">
-            <IntroSlider projectImages={introProjectsData} />
-          </section>
-          <section className="grid-box-2">
-            <figure className="box-item">
-              <Link className="section-headline" to="/about-us">
-                <h1>fire-resistant &</h1>
-                <h1>rear-ventilated</h1>
-                <h1 className="letter-spacing">construction</h1>
-              </Link>
-              <img
-                className="item-image"
-                src="./images/hero_image/holcom_1.jpg"
-                alt=""
-              />
-            </figure>
-          </section>
-          <section className="grid-box-3">
-            <figure className="box-item">
-              <Link className="section-headline" to="/colours-surfaces">
-                <h1>Colours & Surfaces</h1>
-              </Link>
-              <img
-                className="item-image"
-                src="./images/hero_image/colours.jpg"
-                alt=""
-              />
-            </figure>
-          </section>
-        </section>
+      <div className="hero-section">
+        <IntroSlider projectImages={introProjectsData} />
       </div>
 
       <SectionReveal
         section={
-          <section>
-            <div className="intermediere-container">
-              <h1 className="primary-headline">ANID | ALUCOBOND®</h1>
-
-              <p className="intermediere-p">
-                Anid Construction, the exclusive distributor of ALUCOBOND® in
-                Lebanon, since 1980. We are specialized in Design, Supply,
-                Fabrication and Installation of ALUCOBOND® cladding. The 1st and
-                original ACP, Aluminium Composite Panel, made in Germany.
-                <br></br>
-                <br></br>
-                From Inspiration to Assembly, and with over 40 years of
-                experience, our goal is always to provide the Best Architectural
-                Solutions in the most efficient and effective way.
-              </p>
-              <br></br>
-              <p className="intermediere-p ">
-                ALUCOBOND®, the “skin of architecture”, is a core topic of
-                modern construction, with a fire-retardant and rear-ventilated
-                façades. They can be simple and functional, exciting and
-                representative. We offert a large variety of surfaces and
-                colours that lead to the creation of unique structures.
-              </p>
-              <div className="intermediere">
-                <span className="btn-white"> Read more about </span>
-                <Link className="btn-white" to="/about-us">
-                  ANID | ALUCOBOND®
+          <section className="section--0 section--2">
+            <div className="box-container">
+              <div className="headline-box">
+                <h1 className="headline">
+                  Timeless Design<strong>.</strong>
+                </h1>
+                <p className="border-line border-line-black"></p>
+                <div className="testemonial">
+                  <p className="bodytext">
+                    ANID Construction, exclusive distributor of ALUCOBOND® in
+                    Lebanon, since 1981. The 1st and original ACP, Aluminium
+                    Composite Panel, made in Germany.
+                    <br></br>Over 40 years of experience, our goal is always to
+                    provide the Best Architectural Solutions in the most
+                    Efficient and Effective way.
+                    <br></br>ALUCOBOND® THE NAME SAY IT ALL.
+                  </p>
+                </div>
+                <Link to="/about-us">
+                  <button className="btn btn-click btn-black">About us</button>
                 </Link>
-                <span className="btn-white"> .</span>
               </div>
             </div>
           </section>
         }
       />
-
-      <section className="margin-top our-services-section">
-        <SectionReveal
-          section={<h1 className="primary-headline">Our Services</h1>}
-        />
-
-        <p className="intermediere-p"></p>
-        <div className="services-container grid grid--3-cols">
-          <SectionReveal
-            section={
-              <div className="service-card">
-                <img
-                  src="/images/services/img-1.jpg"
-                  alt=""
-                  className="service-card-image"
-                />
-                <div className="service-card-text">
-                  <h1 className="number">1</h1>
-                  <h1 className="service-name">supply</h1>
-                  <ul className="service-list-items">
-                    <li className="service-list-item">
-                      <ion-icon name="tablet-landscape-outline"></ion-icon>
-                      ALUCOBOND® Panel
-                    </li>
-                    <li className="service-list-item">
-                      {" "}
-                      <ion-icon name="unlink-outline"></ion-icon>Aluminum
-                      U-Channel
-                    </li>
-                    <li className="service-list-item">
-                      <ion-icon name="sync-outline"></ion-icon>Brackets &
-                      Accessories
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            }
-            direction={"left"}
-          />
-
-          <SectionReveal
-            direction={"none"}
-            section={
-              <div className="service-card">
-                <img
-                  src="/images/services/img-2.jpg"
-                  alt=""
-                  className="service-card-image"
-                />
-                <div className="service-card-text">
-                  <h1 className="number">2</h1>
-                  <h1 className="service-name">fabrication</h1>
-                  <ul className="service-list-items">
-                    <li className="service-list-item">
-                      <ion-icon name="glasses-outline"></ion-icon>
-                      Design & Details Support
-                    </li>
-                    <li className="service-list-item">
-                      <ion-icon name="triangle-outline"></ion-icon>
-                      AUTOCAD Shop-Drawings
-                    </li>
-                    <li className="service-list-item">
-                      {" "}
-                      <ion-icon name="grid-outline"></ion-icon> Mock-ups
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            }
-          />
-          <SectionReveal
-            direction={"right"}
-            section={
-              <div className="service-card">
-                <img
-                  src="/images/services/img-3.jpg"
-                  alt=""
-                  className="service-card-image"
-                />
-                <div className="service-card-text">
-                  <h1 className="number">3</h1>
-                  <h1 className="service-name">installation</h1>
-                  <ul className="service-list-items">
-                    <li className=" service-list-item">
-                      <ion-icon name="keypad-outline"></ion-icon>
-                      ALUCOBOND® Cladding <br></br>Turn-Key Solutions
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            }
-          />
-        </div>
-      </section>
-
       <SectionReveal
         section={
-          <section className="margin-top project-section">
-            <h1 className="primary-headline">our projects</h1>
-            <p className=" intermediere-p">
-              More that 300 projects made in lebanon. All type of projects from
-              compagny headquarters building to private housing. Building
-              Corporate Identity Design from multiple brand. Cultural and
-              Educatif building such universities. Hospital and hotels.
-              Residential buildings, shopping mall, public transport...<br></br>
-              <br></br>
-              More that 40 years of experience and still give an eternity of
-              modern look that will never get old. <br></br>
-              <br></br>ALUCOBOND® THE NAME SAY IT ALL.
+          <section className="section--0 section--3 container ">
+            <img src="./images/hero_image/holcom_1.jpg" alt="" />
+
+            <h1 className="headline headline-s">
+              The Skin of Architecture<strong>.</strong>
+            </h1>
+            <p className="border-line border-line-black "></p>
+            <p className="bodytext ">
+              ALUCOBOND® is a Core Topic of modern construction, with
+              FIRE-RETARDANT & REAR-VEBTILATED façades. <br></br>
+              They can be Simple & Functional, Exciting & Representative.
+              <br></br> We build 5 performances to insure the protection of
+              people living in the building: <br></br>Supporting structure,
+              insulation, cavity barriers, substructure and cladding.<br></br>
+              The fire protection regulations for the building envelope can vary
+              greatly from country to country.
             </p>
-            <div className="intermediere">
-              <div className="intermediere ">
-                <Link className="btn btn-more" to="/projects">
-                  All Our Projects
-                </Link>
+            <div className="youtube-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=zZY0TKtUkNs"
+                className="btn btn-more"
+              >
+                YouTube
+              </a>
+            </div>
+          </section>
+        }
+      />
+      <SectionReveal
+        section={
+          <section className="section--0 section--4">
+            <div className="center-element">
+              <ul className="section--service-list container">
+                <li className=" section--service-item">
+                  Design<strong>.</strong>{" "}
+                </li>
+                <li className=" section--service-item">
+                  Supply<strong>.</strong>
+                </li>
+                <li className=" section--service-item">
+                  Fabrication<strong>.</strong>
+                </li>
+                <li className=" section--service-item">
+                  Installation<strong>.</strong>
+                </li>{" "}
+              </ul>
+            </div>
+
+            <div className="container sevice-description ">
+              <div className="service-headlines">
+                <h1 className="headline headline-s">
+                  From Inspiration to Assembly<strong>.</strong>
+                </h1>
+                <p className="border-line border-line-black"></p>
+
+                <p className="bodytext">
+                  We are Specialised in ALUCOBOND® cladding systhems. Our unique
+                  expertise and knowledge in the field, has made us the leading
+                  manufacturer, fabricator and installer in our local market.
+                  <br></br>
+                  Get support during the planning of your ALUCOBOND® projects.
+                  <br></br>Possibility of project specific mock-ups including
+                  technical feasibility tests.
+                </p>
               </div>
+
+              <Link to="/services">
+                <button className="btn btn-click btn-black">
+                  Our Services
+                </button>
+              </Link>
+            </div>
+          </section>
+        }
+      />
+      <SectionReveal
+        section={
+          <section className="section--0 section--5 container ">
+            <img src="./images/hero_image/colours.jpg" alt="" />
+
+            <div className="c-s-headlines">
+              <h1 className="headline headline-s">
+                Creative & Unique Structures<strong>.</strong>
+              </h1>
+              <p className="border-line border-line-black"></p>
+              <p className="bodytext">
+                The well-known aluminium composite materials ALUCOBOND® open up
+                a wide colour range and a large variety of surfaces, that leave
+                nothing to be desired in the manifold application areas.{" "}
+                <br></br>
+                <i>
+                  <strong>*</strong> Custom colours are available upon special
+                  request subject to minimum order quantities.
+                </i>
+              </p>{" "}
+              <Link
+                to="/colours-surfaces
+              "
+              >
+                <button className="btn btn-click btn-black">
+                  Colours & Surfaces
+                </button>
+              </Link>
             </div>
           </section>
         }

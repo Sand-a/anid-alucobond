@@ -4,35 +4,41 @@ import "./IntroSlider.css";
 import { Link } from "react-router-dom";
 
 export default function IntroSlider({ projectImages }) {
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const slideLength = projectImages.length;
+  // slideLength = 1 2 3 4
+  // currentSlide= 0 1 2 3
+
+  // const autoScroll = true;
+  // let slideInterval;
+  // let intervalTime = 8000;
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (currentSlide === slideLength) {
-        setCurrentSlide(1);
-      } else {
-        setCurrentSlide(currentSlide + 1);
-      }
-    }, 4000);
+    const timer = setTimeout(nextSlide, 8000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
   const nextSlide = () => {
-    if (currentSlide !== slideLength) {
-      setCurrentSlide(currentSlide + 1);
-    } else if (currentSlide === slideLength) {
-      setCurrentSlide(1);
-    }
+    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
   };
   const prevSlide = () => {
-    if (currentSlide !== 1) {
-      setCurrentSlide(currentSlide - 1);
-    } else if (currentSlide === 1) {
-      setCurrentSlide(slideLength);
-    }
+    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   };
+
+  // function auto() {
+  //   slideInterval = setInterval(nextSlide, intervalTime);
+  // }
+  // useEffect(() => {
+  //   setCurrentSlide(0);
+  // }, []);
+  // useEffect(() => {
+  //   if (autoScroll) {
+  //     auto();
+  //   }
+  //   return () => clearInterval(slideInterval);
+  // }, [currentSlide]);
+
   const onKeyPressed = (e) => {
     e.key === "ArrowLeft" && prevSlide();
     e.key === "ArrowRight" && nextSlide();
@@ -46,20 +52,39 @@ export default function IntroSlider({ projectImages }) {
   };
 
   return (
-    <>
-      {projectImages.map((img, i) => {
+    <section className="slider-container">
+      {projectImages.map((slide, i) => {
         return (
           <div
             key={i}
             className={
-              currentSlide === i + 1 ? `intro-slide active ` : `intro-slide`
+              i === currentSlide ? `intro-slide active ` : `intro-slide`
             }
           >
-            <h1 className="project-description">{img.description}</h1>
-            <img src={process.env.PUBLIC_URL + img.image} alt="" />
-            <p className="project-details">
-              {img.name} | {img.region}
-            </p>
+            {i === currentSlide && (
+              <div className="project-description">
+                <h1 className="headline">
+                  {" "}
+                  {slide.description}
+                  <strong>.</strong>
+                </h1>
+                <p className="project-details">
+                  {slide.name}
+                  <strong>.</strong>
+                  <span className="project-details project-details-2">
+                    {slide.region}
+                  </span>
+                </p>
+                <p className="border-line"></p>
+                <Link to="/projects">
+                  <button className="btn btn-click btn-white">
+                    Our Projects
+                  </button>
+                </Link>
+              </div>
+            )}
+
+            <img src={process.env.PUBLIC_URL + slide.image} alt="" />
           </div>
         );
       })}
@@ -68,11 +93,11 @@ export default function IntroSlider({ projectImages }) {
         {Array.from({ length: projectImages.length }).map((item, i) => (
           <div
             key={i}
-            onClick={() => moveDot(i + 1)}
-            className={currentSlide === i + 1 ? "dot active" : "dot"}
+            onClick={() => moveDot(i)}
+            className={i === currentSlide ? "dot active" : "dot"}
           ></div>
         ))}
       </div>
-    </>
+    </section>
   );
 }

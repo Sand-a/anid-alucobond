@@ -1,0 +1,13 @@
+.to-top-btn ion-icon {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+
+  border-radius: 50%;
+  font-size: 3.5rem;
+  padding: 1rem;
+  background-color: var(--text--bg);
+  color: white;
+  border: none;
+  z-index: 12;
+}

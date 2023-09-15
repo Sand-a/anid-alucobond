@@ -2,17 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Surfaces.css";
+import Sections from "../Sections/Sections";
 
 const Surfaces = ({ item }) => {
   return (
     <>
-      <div className="margin-top surface-section">
-        <h1 className="primary-headline">{item.title}</h1>
+      <div className="margin-top surface-section container">
+        <div className="  surface-title margin-bottom-5">
+          <Sections title={item.title} />
+        </div>
         <div className="img-box">
           <img src={item.image} alt="Façade" />
         </div>
         <div className="text-box">
-          <h1 className=" sub-headline">{item.textTitle}</h1>
+          <h2 className=" headline headline-s margin-bottom-3">
+            {item.textTitle}
+          </h2>
           <p className="bodytext display-linebreak">{item.text}</p>
 
           {item.bullet_pts === true && (
@@ -26,7 +31,7 @@ const Surfaces = ({ item }) => {
       </div>
 
       <div className="chart-section">
-        <h1 className="primary-headline">{item.subTitle} </h1>
+        <h1 className="headline headline-s">{item.subTitle}</h1>
 
         <div className="container img-surface-gallery">
           {item.colours.map((colour, i) => {

@@ -6,7 +6,7 @@ export default function BackButton({ pageLink, name }) {
   return (
     <>
       <button className="no-style-button">
-        <Link to={pageLink} className="btn go-back-btn">
+        <Link to={pageLink} className="btn  btn-click go-back-btn">
           &larr; Back to <span className="name">{name}</span>
         </Link>
       </button>

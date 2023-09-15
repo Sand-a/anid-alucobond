@@ -7,7 +7,7 @@ export const menuData = [
   },
   {
     _id: 2,
-    title: "About Us",
+    title: "About us",
     path: "/about-us",
     cName: "nav-link",
   },
@@ -19,20 +19,20 @@ export const menuData = [
   },
   {
     _id: 4,
-    title: "colours & surfaces",
+    title: "Colours & Surfaces",
     path: "/colours-surfaces",
     cName: "nav-link nav-link-cs",
     dropdownMenu: true,
   },
   {
     _id: 5,
-    title: "services",
+    title: "Services",
     path: "/services",
     cName: "nav-link",
   },
   {
     _id: 6,
-    title: "contact",
+    title: "Contact",
     path: "/contact",
     cName: "nav-link",
   },

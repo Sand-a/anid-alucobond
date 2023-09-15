@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     _id: 111,
-    name: "carre rouge center",
+    name: "Carre Rouge Center.",
     path: "/projects/1",
     building_type: "Shopping Center",
     colour_surface: "NaturAL Brushed",
@@ -10,14 +10,14 @@ export const projectsData = [
     place: "Zahlé, Lebanon",
     year: "2020",
     image: [
-      "/images/projects/carre-rouge/img-0.jpg",
-      "/images/projects/carre-rouge/img-1.jpg",
-      "/images/projects/carre-rouge/img-0.jpg",
+      "/images/projects/carre_rouge/carre_rouge-2.jpg",
+      "/images/projects/carre_rouge/carre_rouge-1.jpg",
+      "/images/projects/carre_rouge/carre_rouge-3.jpg",
     ],
   },
   {
     _id: 222,
-    name: "ABC Achrafieh",
+    name: "ABC Achrafieh.",
     path: "/projects/2",
     building_type: "Shopping Mall",
     colour_surface: "Solid Colour",
@@ -37,78 +37,83 @@ export const projectsData = [
       "/images/projects/ABC_ashrafieh/ABC_ashrafieh-9.jpg",
     ],
   },
-];
-export const projectsCategoryData = [
   {
-    _id: 1111,
-    building_type: "Shopping world",
-    image: "/images/category/shopping.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("Shopping")) {
-          return p;
-        }
-      }),
+    _id: 333,
+    name: "Holcom.",
+    path: "/projects/3",
+    building_type: "Headquarters",
+    colour_surface: "NaturAL Reflect 405",
+    material: "ALUCOBOND® PLUS",
+    description:
+      "Double skin façade. State of the ART. Eco-friendly, Mirror effect, Brise soleil day light reflection, save energy concept.",
+    place: "Sin El Fil, Beirut",
+    year: "20--",
+    image: [
+      "/images/projects/holcom/holcom-1.jpg",
+      "/images/projects/holcom/holcom-2.jpg",
+      "/images/projects/holcom/holcom-3.jpg",
+      "/images/projects/holcom/holcom-4.jpg",
+      "/images/projects/holcom/holcom-5.jpg",
+      "/images/projects/holcom/holcom-6.jpg",
+      "/images/projects/holcom/holcom-7.jpg",
     ],
   },
   {
-    _id: 1112,
-    building_type: "Company Headquarters",
-    image: "/images/category/company_headquarters.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("headquarter")) {
-          return p;
-        }
-      }),
+    _id: 444,
+    name: "Qubic Square Business Center.",
+    path: "/projects/4",
+    building_type: "Business Offices",
+    colour_surface: "NaturAL Brushed 400",
+    material: "ALUCOBOND® PLUS",
+    description:
+      "Stainless steel Look architecture façade. Canopy and Pillars.",
+    place: "Quantina, Beirut",
+    year: "20--",
+    image: [
+      "/images/projects/qubic/qubic-1.jpg",
+      "/images/projects/qubic/qubic-2.jpg",
+      "/images/projects/qubic/qubic-3.jpg",
+      "/images/projects/qubic/qubic-4.jpg",
+      "/images/projects/qubic/qubic-5.jpg",
     ],
   },
   {
-    _id: 1113,
-    building_type: "Cultural",
-    image: "/images/category/cultural.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("cultural")) {
-          return p;
-        }
-      }),
+    _id: 555,
+    name: "Yarze Country Club.",
+    path: "/projects/5",
+    building_type: "Club",
+    colour_surface: "Grey MetalLic 502",
+    material: "ALUCOBOND® PLUS",
+    description: "Circular perforations elevator cab architecture design.",
+    place: "Yarze, Beirut",
+    year: "20--",
+    image: [
+      "/images/projects/yarze_country_club/yarze_country_club-5.jpg",
+      "/images/projects/yarze_country_club/yarze_country_club-1.jpg",
+      "/images/projects/yarze_country_club/yarze_country_club-2.jpg",
+      "/images/projects/yarze_country_club/yarze_country_club-3.jpg",
+      "/images/projects/yarze_country_club/yarze_country_club-4.jpg",
     ],
   },
   {
-    _id: 1114,
-    building_type: "Hotels",
-    image: "/images/category/hotel.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("hotel")) {
-          return p;
-        }
-      }),
-    ],
-  },
-  {
-    _id: 1115,
-    building_type: "Residential",
-    image: "/images/category/residential.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("resident")) {
-          return p;
-        }
-      }),
-    ],
-  },
-  {
-    _id: 1116,
-    building_type: "Public Transport",
-    image: "/images/category/public_transport.jpg",
-    projects: [
-      ...projectsData.filter((p) => {
-        if (p.building_type.includes("transport")) {
-          return p;
-        }
-      }),
+    _id: 666,
+    name: "Jaguar.",
+    path: "/projects/6",
+    building_type: "Showroom",
+    colour_surface: "Grey MetalLic 502",
+    material: "ALUCOBOND® PLUS",
+    description: "...",
+    place: "Yarze, Beirut",
+    year: "20--",
+    image: [
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-1.jpg",
+      "/images/projectsjaguar_lamborghini_bentley/jaguar_lamborghini_bentley-2.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-3.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-4.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-5.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-6.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-7.jpg",
+      "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-8.jpg",
     ],
   },
 ];

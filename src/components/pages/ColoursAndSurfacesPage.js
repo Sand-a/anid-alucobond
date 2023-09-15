@@ -9,17 +9,19 @@ const ColoursAndSurfacesPage = () => {
 
   const handleImageCoverDisplay = (data) => {
     setImageCoverDisplay(data);
-    console.log(data);
+    // console.log(data);
   };
   return (
     <>
       <div className="image-section image-section-display">
         <img className="image-display" src={`${imageCoverDisplay}`}></img>
       </div>
-
-      <h1 className=" margin-top primary-headline sec-headline">
-        colours & surfaces
-      </h1>
+      <div className="headline-container query-container">
+        <h1 className="margin-top headline sec-headline headline-s">
+          Colours & Surfaces<strong>.</strong>
+        </h1>
+        <p className="border-line border-line-black margin-bottom-10"></p>
+      </div>
       <ColoursAndSurfacesCovers
         handleImageCoverDisplay={handleImageCoverDisplay}
       />
