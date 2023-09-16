@@ -19,6 +19,7 @@ const Navbar = ({ navLinks }) => {
     setDropdown(true);
   };
   const toggleMobileMenu = () => setMenuClicked(!menuClicked);
+
   const menuOpen = () => {
     setMenuClicked(true);
     document.body.style.overflow = "hidden";
@@ -57,7 +58,7 @@ const Navbar = ({ navLinks }) => {
                       activeclassname="active"
                       className={item.cName}
                       to={item.path}
-                      onClick={toggleMobileMenuAndShowDropdown}
+                      onClick={menuClose}
                     >
                       {item.title}
                     </NavLink>
@@ -72,7 +73,7 @@ const Navbar = ({ navLinks }) => {
                     activeclassname="active"
                     className={item.cName}
                     to={item.path}
-                    onClick={toggleMobileMenu}
+                    onClick={menuClose}
                   >
                     {item.title}
                   </NavLink>
