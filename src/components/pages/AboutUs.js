@@ -9,8 +9,8 @@ import Sections from "../Sections/Sections";
 function AboutUs() {
   return (
     <>
-      <section className="margin-top  section-aboutus ">
-        <div className="query-container margin-bottom-10">
+      <section className="margin-top section-aboutus">
+        <div className=" margin-bottom-10">
           <Sections
             title={[
               "About",
