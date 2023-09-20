@@ -15,10 +15,13 @@ export function ColourPage({ item }) {
           name={item[id - 1].coloursAndSurface}
         />
         <h1 className="headline colour-headline">{item[id - 1].name}</h1>
-        <p className="border-line border-line-black"></p>
+        <p className="border-line border-line-black colour-border-line"></p>
 
         <div className=" colour-container">
-          <img src={item[id - 1].image} alt="" className="img-colour" />
+          <div className="colour-img-box">
+            <img src={item[id - 1].image} alt="" className="img-colour" />
+          </div>
+
           <div className="colour-details">
             <h1 className="colour-name">
               {`${item[id - 1]._id} ${item[id - 1].name}`} :

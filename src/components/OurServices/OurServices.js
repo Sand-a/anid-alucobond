@@ -9,31 +9,32 @@ const OurServices = () => {
       <div className="image-design image-section">
         <img src="/images/services/alucobond-design.jpg" alt="" />
       </div>
-
-      <div className="margin-top container query-container">
+      <div className="margin-top">
         <Sections title={"Our Services"} />
-        <p className="margin-bottom-10 bodytext">
-          Being the exclusive representative of ALUCOBOND® in Lebanon, our
-          portfolio consists of many thousands of squared meters fabricated and
-          installed each year since 1981.
-          <br></br>
-          Furthermore, we have developed a reputation for outstanding quality
-          work and professionalism.
-          <br></br>
-          Our factory is equipped with high quality and modern european
-          machineries (CNCs) which allow us to deliver the best quality output,
-          in huge quantities and fast delivery times.
-          <br></br>
-          Our highly skilled engineers and specialized workforce are dedicated
-          to offer you the best architectural solutions in the most efficient
-          and effective way.
-          <br></br>
-          We offer a full service:
-        </p>
+        <div className="container query-container ">
+          <p className="margin-bottom-10 bodytext">
+            Being the exclusive representative of ALUCOBOND® in Lebanon, our
+            portfolio consists of many thousands of squared meters fabricated
+            and installed each year since 1981.
+            <br></br>
+            Furthermore, we have developed a reputation for outstanding quality
+            work and professionalism.
+            <br></br>
+            Our factory is equipped with high quality and modern european
+            machineries (CNCs) which allow us to deliver the best quality
+            output, in huge quantities and fast delivery times.
+            <br></br>
+            Our highly skilled engineers and specialized workforce are dedicated
+            to offer you the best architectural solutions in the most efficient
+            and effective way.
+            <br></br>
+            We offer a full service:
+          </p>
+        </div>
       </div>
 
       <div className="section-services ">
-        <div className="container query-container">
+        <div className="container query-container design-container">
           <h1 className="service-card-title">
             Design<strong>.</strong>
           </h1>

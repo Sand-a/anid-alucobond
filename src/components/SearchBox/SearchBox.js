@@ -8,7 +8,7 @@ const SearchBox = ({ searchChange }) => {
         {/* <label className="search-text">Project Name :</label> */}
         <input
           type="search"
-          placeholder="Search Project by Name..."
+          placeholder="Search by Project Name..."
           name="query"
           className="searchfield"
           onChange={searchChange}

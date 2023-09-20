@@ -32,14 +32,18 @@
   font-size: 1.8rem;
   font-weight: 200;
 }
-
+@media screen and (max-width: 960px) {
+  .searchfield {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 600px) {
   .searchfield {
     font-size: 1.6rem;
   }
   .searchfield {
     height: 5rem;
-    width: 60%;
+    width: 85%;
   }
   .searchfield-container ion-icon {
     font-size: 2.5rem;

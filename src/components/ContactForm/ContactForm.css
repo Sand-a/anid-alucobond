@@ -94,7 +94,7 @@
   margin-bottom: 5rem;
 }
 .form-container textarea {
-  border: 1px solid var(--light-grey);
+  border: 1.5px solid black;
   padding: 1.5rem;
   height: 20rem;
   font-size: 1.8rem;

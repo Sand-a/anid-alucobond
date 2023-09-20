@@ -10,18 +10,25 @@
   font-size: 4rem;
   letter-spacing: 0px;
 }
+
 .colour-section p {
   margin-bottom: 2rem;
 }
 
+.colour-img-box {
+  height: 25rem;
+  margin-bottom: 7rem;
+  width: 100%;
+}
 .img-colour {
   border: 0.1px solid rgba(0, 0, 0, 0.247);
 }
-
-.colour-container img {
+.colour-img-box img {
+  height: 100%;
   width: 100%;
-  margin-bottom: 7rem;
+  object-fit: cover;
 }
+
 .colour-details {
   color: black;
   margin-left: 2rem;
@@ -65,10 +72,19 @@
 }
 
 @media screen and (max-width: 960px) {
-  .colour-container {
-    padding: 1rem;
-  }
   .pdf-link {
     margin: 3rem;
+  }
+  .colour-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .colour-section {
+    margin-top: 15rem;
+  }
+  .colour-img-box {
+    margin-bottom: 5rem;
   }
 }

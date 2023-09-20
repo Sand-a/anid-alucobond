@@ -58,7 +58,7 @@ const Footer = ({ dateUpdate }) => {
           </p>
 
           <p className="copyright uppercase">
-            Developed & Designed by s<span className="symbol">@</span>nid .
+            Developed & Designed by Sandrine Anid
           </p>
         </div>
       </div>

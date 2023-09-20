@@ -14,9 +14,9 @@ function AboutUs() {
           <Sections
             title={[
               "About",
-              <span className="margin-left"> ANID</span>,
+              <span className="name-smaller margin-left"> ANID</span>,
               <span className="headline-light-big"> | </span>,
-              "ALUCOBOND",
+              <span className="name-smaller"> ALUCOBOND</span>,
               <span className="headline-light-big">®</span>,
             ]}
           />

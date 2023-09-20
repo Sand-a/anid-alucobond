@@ -14,11 +14,16 @@
   z-index: 999;
 }
 
-.btn-more {
-  color: #222;
-  margin-top: 1rem;
-}
 .name {
   font-size: 1.8rem;
   font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .name {
+    font-size: 1.6rem;
+  }
+  .go-back-btn {
+    margin-left: 1rem;
+    padding: 2rem 2.6rem;
+  }
 }
