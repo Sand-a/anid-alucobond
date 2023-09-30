@@ -1,22 +1,26 @@
 .cards__container {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-gap: 0.2rem;
   padding: 0.3rem;
   padding-bottom: 5rem;
 }
+.cards__item button {
+  display: inline-block;
+  width: 100%;
+}
 .cards__item {
-  box-shadow: 0 0.5rem 0.5rem rgba(34, 34, 34, 0.1);
-
   overflow: hidden;
 }
 .cards__item__link {
   text-decoration: none;
+  z-index: -1;
 }
 
 .cards__item__pic-wrap {
   position: relative;
+
   padding-top: 70%;
   overflow: hidden;
 }
@@ -41,7 +45,7 @@
   left: 0;
 
   transform: translateX(-100%);
-  z-index: 10;
+
   transition: all 0.5s;
 }
 .project-name h1,

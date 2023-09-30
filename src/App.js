@@ -4,7 +4,6 @@ import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import NotFound from "./components/pages/NotFound";
 import ProjectsPage from "./components/pages/ProjectsPage";
-import ProjectPage from "./components/pages/ProjectPage";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -30,7 +29,6 @@ const App = () => {
         />
         <Route path="/projects">
           <Route index element={<ProjectsPage />} />
-          <Route path=":id" element={<ProjectPage />} />
         </Route>
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />

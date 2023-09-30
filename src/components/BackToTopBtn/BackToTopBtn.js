@@ -25,14 +25,14 @@ const BackToTopBtn = () => {
   //  et si on pe que va vient direct le top on pe faire behavior:auto
 
   return (
-    <div>
+    <>
       {/* tenery operator who is reponsible to displaying our  btn  */}
       {backToTopBtn && (
         <button className="to-top-btn" onClick={scrollUp}>
           <ion-icon name="chevron-up-outline"></ion-icon>
         </button>
       )}
-    </div>
+    </>
   );
 };
 

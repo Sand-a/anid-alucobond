@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   name,
   image,
+  images,
+  open,
+  openSlide,
   id,
   path,
   colourSurface,
@@ -15,8 +17,14 @@ const ProjectCard = ({
 }) => {
   return (
     <li className="cards__item">
-      <Link className="cards__item__link" to={path}>
-        <figure className="cards__item__pic-wrap">
+      <div className="cards__item__link">
+        <figure
+          onClick={() => {
+            open();
+            openSlide(images);
+          }}
+          className="cards__item__pic-wrap"
+        >
           <img src={image} alt="Facade" className="cards__item__img" />
           <div className="project-name">
             <h1 className="headline headline-s ">{name}</h1>
@@ -34,7 +42,7 @@ const ProjectCard = ({
             {place} - {year}
           </li>
         </ul> */}
-      </Link>
+      </div>
     </li>
   );
 };

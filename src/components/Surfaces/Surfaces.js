@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Surfaces.css";
 import Sections from "../Sections/Sections";
+import ModalColour from "../Modal/ModalColour";
 
 const Surfaces = ({ item }) => {
+  const [openColourModal, setOpenColourModal] = useState(false);
+  const [openColour, setOpenColour] = useState("");
+
   return (
     <>
       <div className="margin-top surface-section container">
@@ -36,19 +40,32 @@ const Surfaces = ({ item }) => {
         <div className="container img-surface-gallery">
           {item.colours.map((colour, i) => {
             return (
-              <Link
+              <button
+                onClick={() => {
+                  setOpenColourModal(true);
+                  setOpenColour(colour);
+                  document.body.style.overflow = "hidden";
+                  console.log(colour);
+                }}
                 key={colour._id}
                 className="colours-links"
-                to={colour.path}
                 data-tooltip={`${colour._id} ${colour.name}`}
                 id={colour._id}
               >
                 <img src={colour.image} alt={"surface colour"} />
-              </Link>
+              </button>
             );
           })}
         </div>
       </div>
+      <ModalColour
+        open={openColourModal}
+        onClose={() => {
+          setOpenColourModal(false);
+          document.body.style.overflow = "auto";
+        }}
+        colour={openColour}
+      />
     </>
   );
 };

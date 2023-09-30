@@ -66,11 +66,12 @@
 
 .colours-links {
   display: inline-block;
-
   position: relative;
   max-width: 13rem;
   height: 13rem;
   margin: 1rem 1rem;
+  background-color: transparent;
+  border: none;
 }
 .colours-links img {
   width: 100%;

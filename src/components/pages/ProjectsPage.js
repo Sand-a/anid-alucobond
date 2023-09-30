@@ -21,7 +21,7 @@ const ProjectsPage = () => {
     <>
       <section
         className="
-      margin-top "
+      margin-top"
       >
         <Sections title={"Our Projects"} />
         <p className="container query-container margin-bottom-5 bodytext">

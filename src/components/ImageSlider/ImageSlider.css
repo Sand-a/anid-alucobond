@@ -1,46 +1,25 @@
-.section-project {
-  max-width: 1200rem;
-  position: absolute;
-  top: 0;
-  background-color: #fff;
-  width: 100%;
-  height: 100vh;
-  z-index: 9999;
-}
-
 .container-slider {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
-}
-
-.btn-close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-  z-index: 999;
-}
-.btn-close ion-icon {
-  font-size: 4rem;
-  color: red;
-}
-.btn-close ion-icon:hover {
-  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
   width: 100%;
   height: 100%;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   inset: 0;
   transition: all 1s ease-in-out;
 }
 .slide img {
-  display: block;
   width: 100%;
   height: 100%;
+  padding: 4rem;
   object-fit: contain;
 }
 
@@ -52,15 +31,15 @@
   justify-content: center;
   align-items: center;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
 .btn-slide ion-icon {
-  font-size: 3.5rem;
-  padding: 0.5rem;
-  color: rgba(255, 255, 255, 0.613);
-  background-color: rgba(0, 0, 0, 0.066);
+  font-size: 5rem;
+
+  color: var(--light-grey);
+
   border-radius: 50%;
   pointer-events: none;
 }
@@ -68,9 +47,7 @@
   color: #fff;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.btn-slide:focus ion-icon {
-  outline: 0.4px solid #fff;
-}
+
 .prev {
   left: 2rem;
 }
@@ -80,14 +57,15 @@
 
 .container-dots {
   position: absolute;
-  bottom: 5rem;
+  bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  justify-content: center;
 }
 .dot {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.052);

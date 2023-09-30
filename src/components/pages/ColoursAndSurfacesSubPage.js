@@ -10,6 +10,7 @@ const ColoursAndSurfacesSubPage = ({ item }) => {
     <>
       <DropdownMenu data={coloursSurfacesData} />
       <Surfaces item={item} />
+      
     </>
   );
 };

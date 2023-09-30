@@ -1,3 +1,7 @@
+.to-top-btn {
+  background-color: transparent;
+  border: none;
+}
 .to-top-btn ion-icon {
   position: fixed;
   bottom: 5rem;

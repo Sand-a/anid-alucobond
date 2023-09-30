@@ -1,31 +1,22 @@
 import React from "react";
 import { useParams } from "react-router";
 
-import BackButton from "../BackButton/BackButton";
+import "./Colour.css";
 
-import "./ColourPage.css";
-
-export function ColourPage({ item }) {
-  const { id } = useParams();
+export function Colour({ colour }) {
   return (
     <>
       <section className="section colour-section">
-        <BackButton
-          pageLink={item[id - 1].path.slice(0, -1)}
-          name={item[id - 1].coloursAndSurface}
-        />
-        <h1 className="headline colour-headline">{item[id - 1].name}</h1>
+        <h1 className="headline colour-headline">{colour.name}</h1>
         <p className="border-line border-line-black colour-border-line"></p>
 
         <div className=" colour-container">
           <div className="colour-img-box">
-            <img src={item[id - 1].image} alt="" className="img-colour" />
+            <img src={colour.image} alt="" className="img-colour" />
           </div>
 
           <div className="colour-details">
-            <h1 className="colour-name">
-              {`${item[id - 1]._id} ${item[id - 1].name}`} :
-            </h1>
+            <h1 className="colour-name">{`${colour._id} ${colour.name}`} :</h1>
 
             <div className="product-specification">
               <h1 className="product-specification-title">
@@ -34,33 +25,29 @@ export function ColourPage({ item }) {
               <ul className="product-specification-list">
                 <li className="specification">
                   {`Product classes :
-                  ${item[id - 1].product_specifications.product_classes}`}
+                  ${colour.product_specifications.product_classes}`}
                 </li>
                 <li className="specification">
                   {`Colour Series :
-                  ${item[id - 1].product_specifications.colour_series}`}
+                  ${colour.product_specifications.colour_series}`}
                 </li>
                 <li className="specification">
                   {`Colour Scheme :
-                  ${item[id - 1].product_specifications.colour_scheme}`}
+                  ${colour.product_specifications.colour_scheme}`}
                 </li>
                 <li className="specification">
                   {`Colour Gloss :
-                  ${item[id - 1].product_specifications.colour_gloss}`}
+                  ${colour.product_specifications.colour_gloss}`}
                 </li>
                 <li className="specification">
                   {` Colour Specialities :
-                  ${item[id - 1].product_specifications.colour_specialities}`}
+                  ${colour.product_specifications.colour_specialities}`}
                 </li>
               </ul>
-              <a
-                className="pdf-link"
-                target="_blank"
-                href={`${item[id - 1].pdf}`}
-              >
+              <a className="pdf-link" target="_blank" href={`${colour.pdf}`}>
                 <ion-icon name="download-outline"></ion-icon>
                 Download PDF
-                <p>{`${item[id - 1].chart} Colour Chart`}</p>
+                <p>{`${colour.chart} Colour Chart`}</p>
               </a>
             </div>
           </div>
@@ -70,4 +57,4 @@ export function ColourPage({ item }) {
   );
 }
 
-export default ColourPage;
+export default Colour;

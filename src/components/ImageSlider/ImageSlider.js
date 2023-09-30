@@ -47,9 +47,6 @@ export default function ImageSlider({ projectImages }) {
 
   return (
     <div className="container-slider">
-      <Link className="btn-close" to="/projects">
-        <ion-icon name="close-outline"></ion-icon>
-      </Link>
       {projectImages.map((img, i) => {
         const styles = {
           transform: `translateX(${i * 100}%)`,
