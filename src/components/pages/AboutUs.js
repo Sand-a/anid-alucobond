@@ -2,13 +2,21 @@ import React from "react";
 
 import "../../App.css";
 import { aboutUsData } from "../Data/aboutUsData";
-
+import { Helmet } from "react-helmet-async";
 import ZPattern from "../ZPattern/ZPattern";
 import Sections from "../Sections/Sections";
 
 function AboutUs() {
   return (
     <>
+      <Helmet>
+        <title>ANID &#124; ALUCOBOND&reg; - About</title>
+        <meta
+          name="description"
+          content="ANID, exclusive distributor of ALUCOBOND® in Lebanon. We design, supply, manufacture & install. Provide best architectural solutions in the most efficient & effective way"
+        />
+        <link rel="canonical" href="/about-us" />
+      </Helmet>
       <section className="margin-top section-aboutus">
         <div className=" margin-bottom-10">
           <Sections

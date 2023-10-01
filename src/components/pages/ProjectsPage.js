@@ -5,6 +5,7 @@ import { projectsData } from "../Data/projectsData";
 import "../../App.css";
 import Sections from "../Sections/Sections";
 import BackToTopBtn from "../BackToTopBtn/BackToTopBtn";
+import { Helmet } from "react-helmet-async";
 
 const ProjectsPage = () => {
   const [searchfield, setSearchfield] = useState("");
@@ -19,6 +20,16 @@ const ProjectsPage = () => {
 
   return (
     <>
+      {" "}
+      <Helmet>
+        <title>ANID &#124; ALUCOBOND&reg; - Projects</title>
+        <meta
+          name="description"
+          content="Get Inspired. Discover the large number of projects that have already
+          been completed and let yourself be inspired."
+        />
+        <link rel="canonical" href="/projects" />
+      </Helmet>
       <section
         className="
       margin-top"

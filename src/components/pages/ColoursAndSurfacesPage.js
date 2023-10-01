@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../App.css";
 import ColoursAndSurfacesCovers from "../ColoursAndSurfacesCovers/ColoursAndSurfacesCover";
+import { Helmet } from "react-helmet-async";
 
 const ColoursAndSurfacesPage = () => {
   const [imageCoverDisplay, setImageCoverDisplay] = useState(
@@ -13,6 +14,15 @@ const ColoursAndSurfacesPage = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>ANID &#124; ALUCOBOND&reg; Colours & Surfaces</title>
+        <meta
+          name="description"
+          content="ALUCOBOND® open up a wide colour range and a large variety of surfaces, that leave nothing to be desired in the manifold application areas
+       "
+        />
+        <link rel="canonical" href="/colours-surfaces" />
+      </Helmet>
       <div className="image-section image-section-display">
         <img className="image-display" src={`${imageCoverDisplay}`}></img>
       </div>
