@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal.css";
-import ImageSlider from "../ImageSlider/ImageSlider";
+
 import SwiperCaroussel from "../SwiperCaroussel/SwiperCaroussel";
 
 const Modal = ({ open, onClose, projectImages }) => {
@@ -14,10 +14,10 @@ const Modal = ({ open, onClose, projectImages }) => {
           }}
           className="modal-container"
         >
-          <button onClick={onClose} className="closeBtn">
+          <button onClick={onClose} className="closeBtn closeBtn-white">
             <ion-icon name="close-outline"></ion-icon>
           </button>
-          {/* <ImageSlider projectImages={projectImages} /> */}
+
           <SwiperCaroussel images={projectImages} />
         </div>
       </div>

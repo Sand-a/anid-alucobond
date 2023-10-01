@@ -2,52 +2,49 @@ import React, { useEffect, useRef } from "react";
 import "./SwiperCaroussel.css";
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
+register();
 
 const SwiperCaroussel = ({ images }) => {
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    // Register Swiper web component
-    register();
-
+    const swiperContainer = swiperRef.current;
     // Object with parameters
     const params = {
       slidesPerView: 1,
       grabCursor: true,
-      pagination: {
-        clickable: true,
-      },
+      pagination: true,
       navigation: true,
       loop: true,
-      breakpoints: {
-        600: {
-          navigator: false,
-        },
-      },
       injectStyles: [
         `
           .swiper-button-next,
           .swiper-button-prev {
-           
+          
             color: #fff;
           }
-          .swiper-pagination-bullet-active{
-          
+          .swiper-pagination-bullet{
             background-color: #fff;
+          }
+          .swiper-pagination-bullet-active{
+            background-color: #fff;
+          }
+          @media screen and (max-width: 600px) {
+            .swiper-button-next,
+          .swiper-button-prev {
+          display:none;
+          }
           }
       `,
       ],
     };
 
-    // Assign it to swiper element
-    Object.assign(swiperRef.current, params);
-
-    // initialize swiper
-    swiperRef.current.initialize();
+    Object.assign(swiperContainer, params);
+    swiperContainer.initialize();
   }, []);
   return (
     <>
-      <swiper-container init="false" ref={swiperRef}>
+      <swiper-container ref={swiperRef} init="false">
         {images.map((img) => {
           return (
             <swiper-slide key={img}>

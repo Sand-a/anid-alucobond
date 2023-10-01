@@ -16,8 +16,14 @@ const ProjectList = ({ data }) => {
       <ul className="cards__container">
         {data.map((project) => (
           <ProjectCard
-            open={() => setOpenModal(true)}
-            onClose={() => setOpenModal(false)}
+            open={() => {
+              setOpenModal(true);
+              document.body.style.overflow = "hidden";
+            }}
+            onClose={() => {
+              setOpenModal(false);
+              document.body.style.overflow = "auto";
+            }}
             openSlide={openSlide}
             key={project._id}
             name={project.name}
@@ -36,7 +42,10 @@ const ProjectList = ({ data }) => {
       </ul>
       <Modal
         open={openModal}
-        onClose={() => setOpenModal(false)}
+        onClose={() => {
+          setOpenModal(false);
+          document.body.style.overflow = "auto";
+        }}
         projectImages={openProject}
       />
     </>

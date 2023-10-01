@@ -45,7 +45,6 @@ const Surfaces = ({ item }) => {
                   setOpenColourModal(true);
                   setOpenColour(colour);
                   document.body.style.overflow = "hidden";
-                  console.log(colour);
                 }}
                 key={colour._id}
                 className="colours-links"
