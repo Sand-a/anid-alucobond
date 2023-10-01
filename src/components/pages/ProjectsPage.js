@@ -24,14 +24,14 @@ const ProjectsPage = () => {
       margin-top"
       >
         <Sections title={"Our Projects"} />
-        <p className="container query-container margin-bottom-5 bodytext">
+        <p className="container query-container margin-bottom-3 bodytext">
           Get Inspired. Discover the large number of projects that have already
           been completed and let yourself be inspired.
-          <br></br>All type of project, from compagny headquarters building to
+          {/* <br></br>All type of project, from compagny headquarters building to
           private housing, cultural and educatif building such universities,
           hospital and hotels, residential buildings, shopping mall and public
           transport, as well as building corporate identity design for multiple
-          brand...
+          brand... */}
         </p>
         <SearchBox searchChange={onSearchChange} />
 

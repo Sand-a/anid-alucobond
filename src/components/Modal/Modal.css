@@ -62,7 +62,7 @@
 }
 @media screen and (max-width: 600px) {
   .modal-container {
-    height: 90vh;
+    height: 85vh;
   }
   .modal-colour-container {
     max-height: 100vh;
