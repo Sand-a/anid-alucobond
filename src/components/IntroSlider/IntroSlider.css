@@ -1,6 +1,5 @@
 .slider-container {
   width: 100%;
-
   position: relative;
 }
 .intro-slide {
@@ -116,6 +115,22 @@
 }
 @media screen and (max-width: 600px) {
   .project-description {
+    top: 45%;
+    transform: translateY(-50%);
     width: 80%;
+  }
+  .dots-container {
+    bottom: 4rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .project-description h1 {
+    font-size: 4rem;
+  }
+  .project-details {
+    font-size: 1.8rem;
+  }
+  .project-details-2 {
+    font-size: 1.4rem;
   }
 }

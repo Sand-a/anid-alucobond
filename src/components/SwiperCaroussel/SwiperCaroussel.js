@@ -24,11 +24,25 @@ const SwiperCaroussel = ({ images }) => {
             color: #fff;
           }
           .swiper-pagination-bullet{
-            background-color: #fff;
+         
+            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,0.8rem));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,0.8rem));
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+            background:transparent;
+            border: 1px solid #fff;
+          
+          
           }
           .swiper-pagination-bullet-active{
-            background-color: #fff;
+            background: #fff;
+
           }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: var(--swiper-pagination-bottom,5rem); 
+        }
+        .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+          margin: 0 var(--swiper-pagination-bullet-horizontal-gap,5.5px);
+      }
           @media screen and (max-width: 600px) {
             .swiper-button-next,
           .swiper-button-prev {

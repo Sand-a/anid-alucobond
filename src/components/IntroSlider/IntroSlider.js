@@ -7,15 +7,9 @@ export default function IntroSlider({ projectImages }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slideLength = projectImages.length;
-  // slideLength = 1 2 3 4
-  // currentSlide= 0 1 2 3
-
-  // const autoScroll = true;
-  // let slideInterval;
-  // let intervalTime = 8000;
 
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 8000);
+    const timer = setTimeout(nextSlide, 5000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
@@ -25,19 +19,6 @@ export default function IntroSlider({ projectImages }) {
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   };
-
-  // function auto() {
-  //   slideInterval = setInterval(nextSlide, intervalTime);
-  // }
-  // useEffect(() => {
-  //   setCurrentSlide(0);
-  // }, []);
-  // useEffect(() => {
-  //   if (autoScroll) {
-  //     auto();
-  //   }
-  //   return () => clearInterval(slideInterval);
-  // }, [currentSlide]);
 
   const onKeyPressed = (e) => {
     e.key === "ArrowLeft" && prevSlide();
