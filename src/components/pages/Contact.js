@@ -64,7 +64,7 @@ function Contact() {
                   <li className="contact-items">
                     <a className="contact-link" href="tel:+9613299005">
                       <ion-icon name="phone-portrait-outline"></ion-icon>
-                      <p className="contact-item">+961 (3) 299 005</p>
+                      <p className="contact-item">+961 (3) 299 004</p>
                     </a>
                   </li>
                   <li className="contact-items">
@@ -73,9 +73,7 @@ function Contact() {
                       className="contact-link"
                     >
                       <ion-icon name="mail-outline"></ion-icon>
-                      <p className="contact-item">
-                        contact@anidconstruction.com
-                      </p>
+                      <p className="contact-item">info@anidconstruction.com</p>
                     </a>
                   </li>
                   <li className="contact-items">
