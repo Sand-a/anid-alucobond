@@ -23,6 +23,9 @@
 .testemonial {
   margin-bottom: 5rem;
 }
+.testemonial p:nth-child(2) {
+  font-weight: 500;
+}
 
 .section--3 img {
   height: 40rem;

@@ -47,7 +47,7 @@ export function Colour({ colour }) {
               <a className="pdf-link" target="_blank" href={`${colour.pdf}`}>
                 <ion-icon name="download-outline"></ion-icon>
                 Download PDF
-                <p>{`${colour.chart} Colour Chart`}</p>
+                <p>ALUCOBOND® {`${colour.chart} Colour Chart`}</p>
               </a>
             </div>
           </div>

@@ -13,7 +13,7 @@ const SwiperCaroussel = ({ images }) => {
     const params = {
       slidesPerView: 1,
       grabCursor: true,
-      pagination: true,
+      pagination: { clickable: true },
       navigation: true,
       loop: true,
       injectStyles: [
@@ -38,7 +38,7 @@ const SwiperCaroussel = ({ images }) => {
 
           }
           .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-            bottom: var(--swiper-pagination-bottom,5rem); 
+            bottom: var(--swiper-pagination-bottom,3rem); 
         }
         .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
           margin: 0 var(--swiper-pagination-bullet-horizontal-gap,5.5px);

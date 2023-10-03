@@ -28,7 +28,7 @@ const ColoursAndSurfacesSubPage = ({ item }) => {
         <div className="pdf-link">
           <ion-icon name="download-outline"></ion-icon>
           Download PDF
-          <p>{`${item.title} Colour Chart`}</p>
+          <p>ALUCOBOND® {`${item.title} Colour Chart`}</p>
         </div>
       </a>
     </>

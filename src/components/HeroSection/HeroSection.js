@@ -28,10 +28,10 @@ const HeroSection = () => {
                     Lebanon, since 1981. The 1st and original ACP, Aluminium
                     Composite Panel, made in Germany.
                     <br></br>Over 40 years of experience, our goal is always to
-                    provide the Best Architectural Solutions in the most
-                    Efficient and Effective way.
-                    <br></br>ALUCOBOND® THE NAME SAY IT ALL.
+                    provide the best architectural solutions in the most
+                    efficient and effective way.
                   </p>
+                  <p className="bodytext">ALUCOBOND® THE NAME SAY IT ALL.</p>
                 </div>
                 <Link to="/about-us">
                   <button className="btn btn-click btn-black">About us</button>
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <p className="bodytext ">
               ALUCOBOND® is a Core Topic of modern construction, with
               FIRE-RETARDANT & REAR-VEBTILATED façades. <br></br>
-              They can be Simple & Functional, Exciting & Representative.
+              They can be simple & functional, exciting & representative.
               <br></br> We build 5 performances to insure the protection of
               people living in the building: <br></br>Supporting structure,
               insulation, cavity barriers, substructure and cladding.<br></br>
@@ -101,10 +101,15 @@ const HeroSection = () => {
                 <p className="border-line border-line-black"></p>
 
                 <p className="bodytext">
-                  We are Specialised in ALUCOBOND® cladding systhems. Our unique
-                  expertise and knowledge in the field, has made us the leading
-                  manufacturer, fabricator and installer in our local market.
-                  <br></br>
+                  ANID Construction are specialised in ALUCOBOND® cladding
+                  systhems. Our unique expertise and knowledge in the field, has
+                  made us the leading manufacturer, fabricator and installer in
+                  our local market.<br></br>
+                  {/* All type of project, from compagny headquarters building to
+                  private housing, cultural and educatif building such
+                  universities, hospital and hotels, residential buildings,
+                  shopping mall and public transport, as well as building
+                  corporate identity design for multiple brand. */}
                   Get support during the planning of your ALUCOBOND® projects.
                   <br></br>Possibility of project specific mock-ups including
                   technical feasibility tests.
