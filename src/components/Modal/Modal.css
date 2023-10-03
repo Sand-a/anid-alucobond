@@ -1,6 +1,6 @@
 .closeBtn {
   position: fixed;
-  top: 1%;
+  top: 3%;
   right: 1%;
   background-color: transparent;
   border: none;
@@ -69,5 +69,11 @@
   }
   .overlay {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media screen and (max-width: 460px) {
+  .closeBtn {
+    top: 0;
+    right: 0;
   }
 }
