@@ -22,6 +22,7 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/defaultsite" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route
           path="/colours-surfaces/*"
