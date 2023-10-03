@@ -19,6 +19,18 @@ const ColoursAndSurfacesSubPage = ({ item }) => {
       </Helmet>
       <DropdownMenu data={coloursSurfacesData} />
       <Surfaces item={item} />
+      <a
+        className="container pdf-download"
+        target="_blank"
+        href={`${item.pdf}`}
+      >
+        <img src={item.imgLink} alt="" />
+        <div className="pdf-link">
+          <ion-icon name="download-outline"></ion-icon>
+          Download PDF
+          <p>{`${item.title} Colour Chart`}</p>
+        </div>
+      </a>
     </>
   );
 };

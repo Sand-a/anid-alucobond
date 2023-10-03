@@ -113,7 +113,7 @@ export const projectsData = [
     year: "20--",
     image: [
       "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-1.jpg",
-      "/images/projectsjaguar_lamborghini_bentley/jaguar_lamborghini_bentley-2.jpg",
+      "images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-2.jpg",
       "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-3.jpg",
       "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-4.jpg",
       "/images/projects/jaguar_lamborghini_bentley/jaguar_lamborghini_bentley-5.jpg",

@@ -55,12 +55,12 @@ function Contact() {
                     </a>
                   </li>
 
-                  <li className="contact-items">
+                  {/* <li className="contact-items">
                     <a className="contact-link" href="tel:+9613299005">
                       <ion-icon name="call-outline"></ion-icon>
                       <p className="contact-item">+961 (1) 684 111</p>
                     </a>
-                  </li>
+                  </li> */}
                   <li className="contact-items">
                     <a className="contact-link" href="tel:+9613299005">
                       <ion-icon name="phone-portrait-outline"></ion-icon>

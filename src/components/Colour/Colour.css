@@ -72,3 +72,33 @@
   margin-left: 3rem;
   font-size: 1.6rem;
 }
+.pdf-download {
+  display: flex;
+  align-items: end;
+  margin-bottom: 10rem;
+  max-width: 90rem;
+  padding: 1rem;
+}
+.pdf-download img {
+  height: 20rem;
+}
+.pdf-download .pdf-link {
+  padding: 0 0 2rem 2rem;
+}
+
+.pdf-download .pdf-link p {
+  margin-left: 0;
+  font-size: 1.8rem;
+
+  color: #222;
+}
+@media screen and (max-width: 450px) {
+  .pdf-download {
+    flex-direction: column;
+    align-items: start;
+  }
+  .pdf-download img {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+  }
+}
