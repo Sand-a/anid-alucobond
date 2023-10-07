@@ -11,8 +11,8 @@ const Surfaces = ({ item }) => {
 
   return (
     <>
-      <div className="margin-top surface-section container">
-        <div className="  surface-title margin-bottom-5">
+      <div className="margin-top-5 surface-section container">
+        <div className="  surface-title margin-bottom-3">
           <Sections title={item.title} />
         </div>
         <div className="img-box">

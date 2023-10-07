@@ -47,18 +47,14 @@
   color: #f7f7f7;
   position: relative;
 }
-@media screen and (max-width: 1030px) {
-  .dropdown-link {
-    font-size: 1.4rem;
-  }
-}
+
 @media screen and (max-width: 960px) {
   .dropdown--menu {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
     column-gap: 0;
     row-gap: 1rem;
-    top: 10rem;
+    top: 8rem;
     border-top: none;
     padding-top: 1rem;
   }
