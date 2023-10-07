@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 import ColoursAndSurfacesRoutes from "./components/Routes/ColoursAndSurfacesRoutes";
 import ScrollToTop from "./components/ScrollToTop";
 import { menuData } from "./components/Data/menuData";
+import ProjectPage from "./components/pages/ProjectPage";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         />
         <Route path="/projects">
           <Route index element={<ProjectsPage />} />
+          <Route path=":projectId" element={<ProjectPage />} />
         </Route>
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />

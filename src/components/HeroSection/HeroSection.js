@@ -116,7 +116,7 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              <Link to="/services">
+              <Link to="/services" className="service-link-btn">
                 <button className="btn btn-click btn-black">
                   Our Services
                 </button>
@@ -146,6 +146,7 @@ const HeroSection = () => {
                 </i>
               </p>{" "}
               <Link
+                className="c-s-link"
                 to="/colours-surfaces
               "
               >

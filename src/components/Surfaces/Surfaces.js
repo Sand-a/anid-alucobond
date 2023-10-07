@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import "./Surfaces.css";
 import Sections from "../Sections/Sections";
 import ModalColour from "../Modal/ModalColour";
+import SectionReveal from "../SectionReveal/SectionReveal";
 
 const Surfaces = ({ item }) => {
   const [openColourModal, setOpenColourModal] = useState(false);
@@ -33,37 +33,42 @@ const Surfaces = ({ item }) => {
           )}
         </div>
       </div>
+      <SectionReveal
+        section={
+          <section>
+            <div className="chart-section">
+              <h1 className="headline headline-s">{item.subTitle}</h1>
 
-      <div className="chart-section">
-        <h1 className="headline headline-s">{item.subTitle}</h1>
-
-        <div className="container img-surface-gallery">
-          {item.colours.map((colour, i) => {
-            return (
-              <button
-                onClick={() => {
-                  setOpenColourModal(true);
-                  setOpenColour(colour);
-                  document.body.style.overflow = "hidden";
-                }}
-                key={colour._id}
-                className="colours-links"
-                data-tooltip={`${colour._id} ${colour.name}`}
-                id={colour._id}
-              >
-                <img src={colour.image} alt={"surface colour"} />
-              </button>
-            );
-          })}
-        </div>
-      </div>
-      <ModalColour
-        open={openColourModal}
-        onClose={() => {
-          setOpenColourModal(false);
-          document.body.style.overflow = "auto";
-        }}
-        colour={openColour}
+              <div className="container img-surface-gallery">
+                {item.colours.map((colour, i) => {
+                  return (
+                    <button
+                      onClick={() => {
+                        setOpenColourModal(true);
+                        setOpenColour(colour);
+                        document.body.style.overflow = "hidden";
+                      }}
+                      key={colour._id}
+                      className="colours-links"
+                      data-tooltip={`${colour._id} ${colour.name}`}
+                      id={colour._id}
+                    >
+                      <img src={colour.image} alt={"surface colour"} />
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <ModalColour
+              open={openColourModal}
+              onClose={() => {
+                setOpenColourModal(false);
+                document.body.style.overflow = "auto";
+              }}
+              colour={openColour}
+            />
+          </section>
+        }
       />
     </>
   );

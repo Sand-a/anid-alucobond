@@ -20,7 +20,14 @@
   width: 100%;
 }
 .address-container h1 span:last-child {
-  font-size: 2.3rem;
+  font-size: 2rem;
+}
+.address-container h1 span:nth-child(2),
+.address-container h1 span:nth-child(3) {
+  font-size: 2.5rem;
+}
+.address-container h1 {
+  font-size: 2.8rem;
 }
 .address-container {
   align-self: center;
@@ -148,5 +155,28 @@
   }
   .address-container h1 {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .address-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .address-container h1 span:last-child {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 335px) {
+  .address-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .address-container h1 span:last-child {
+    font-size: 1.4rem;
+  }
+
+  .address-container h1 span:nth-child(2),
+  .address-container h1 span:nth-child(3) {
+    font-size: 2.2rem;
   }
 }

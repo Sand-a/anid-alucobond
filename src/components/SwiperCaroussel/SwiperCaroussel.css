@@ -1,16 +1,76 @@
+.caroussel-container {
+  position: relative;
+  max-width: 120rem;
+  height: 75rem;
+  margin: 5rem auto;
+}
+.closeBtn-link {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+.closeBtn-link ion-icon {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0.7;
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.closeBtn-link:hover ion-icon {
+  color: #fff;
+  opacity: 1;
+  transform: scale(1);
+}
+
 swiper-container {
   width: 100%;
   height: 100%;
+}
+
+swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 swiper-slide img {
-  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 96.5%;
+  object-fit: cover;
+}
+@media screen and (max-width: 960px) {
+  .closeBtn-link {
+    top: -1rem;
+    right: -1rem;
+  }
 }
 
-swiper-container {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 800px) {
+  .caroussel-container {
+    max-width: 800rem;
+    height: 60rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .caroussel-container {
+    height: 60rem;
+    margin-top: 0;
+  }
+  .closeBtn-link ion-icon {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+}
+@media screen and (max-width: 375px) {
+  .caroussel-container {
+    height: 50rem;
+  }
+  swiper-slide img {
+    width: 100%;
+    height: 95%;
+  }
 }

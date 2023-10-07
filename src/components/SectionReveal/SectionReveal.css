@@ -7,12 +7,13 @@
 
 .section--hidden,
 .section--hidden-left,
-.section--hidden-right {
+.section--hidden-right,
+.section--hidden-none {
   opacity: 0;
   transform: translateY(20rem);
 }
 /* mobile */
-@media (min-width: 768px) {
+@media (min-width: 951px) {
   .section--hidden {
     opacity: 0;
     transform: translateY(20rem);
@@ -27,16 +28,6 @@
   }
   .section--hidden-none {
     opacity: 0;
+    transform: translateY(0);
   }
-
-  /* .our-services-section {
-    overflow: hidden;
-  }
-
-  .box-2-items {
-    display: flex;
-    flex-direction: row;
-    height: 25rem;
-    gap: 2.5rem;
-  } */
 }

@@ -74,16 +74,19 @@
   margin-top: 50vh;
 }
 
+@media screen and (max-width: 1200px) {
+  .gallery {
+    padding: 1rem 2rem;
+  }
+}
 @media screen and (max-width: 960px) {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     padding: 1rem 1.5rem;
   }
-  .image-display {
-    display: none;
-  }
+
   .sec-headline {
-    margin-top: 8rem;
+    margin-top: 40vh;
   }
   .colours-surface-links {
     margin-bottom: 2rem;
@@ -104,8 +107,11 @@
     text-decoration: none;
   }
 }
-@media screen and (max-width: 1200px) {
-  .gallery {
-    padding: 1rem 2rem;
+@media screen and (max-width: 600px) {
+  .image-display {
+    display: none;
+  }
+  .sec-headline {
+    margin-top: 8rem;
   }
 }

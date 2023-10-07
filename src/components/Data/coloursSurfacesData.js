@@ -189,7 +189,7 @@ export const coloursSurfacesData = [
     subTitle: "Solid Colours",
     path: "/colours-surfaces/solid",
     cName: "dropdown-link",
-    imgLink: "/images/colours-surfaces/cover_page_charts/solid_metallic.jpg",
+    imgLink: "/images/colours-surfaces/cover_page_charts/solid.jpg",
     pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_Solid_and_Metallic_EN_DE.pdf",
     text: "Soft white or bright red? Solid colours are always a good choice when a uniform appearance without special effects is required.",
     image: "/images/colours-surfaces/visuals/solid.jpg",
@@ -282,7 +282,92 @@ export const coloursSurfacesData = [
         name: "Anthracite Grey",
         image:
           "/images/colours-surfaces/colours/solid/solid_105_anthracite-grey.jpg",
-        path: "/colours-surfaces/solid/6",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
+          colour_series: "solid",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "dark, solid",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+        chart: "Solid & Metallic",
+      },
+      {
+        _id: "106",
+        coloursAndSurface: "Solid Colours",
+        name: "Black Grey",
+        image:
+          "/images/colours-surfaces/colours/solid/solid_106_black-grey.jpg",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
+          colour_series: "solid",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "dark, solid",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+        chart: "Solid & Metallic",
+      },
+      {
+        _id: "107",
+        coloursAndSurface: "Solid Colours",
+        name: "Umbra Grey",
+        image:
+          "/images/colours-surfaces/colours/solid/solid_107_umbra-grey.jpg",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
+          colour_series: "solid",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "dark, solid",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+        chart: "Solid & Metallic",
+      },
+      {
+        _id: "108",
+        coloursAndSurface: "Solid Colours",
+        name: "Graphite Grey",
+        image:
+          "/images/colours-surfaces/colours/solid/solid_108_graphite-grey.jpg",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
+          colour_series: "solid",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "dark, solid",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+        chart: "Solid & Metallic",
+      },
+      {
+        _id: "109",
+        coloursAndSurface: "Solid Colours",
+        name: "Dusty Grey",
+        image:
+          "/images/colours-surfaces/colours/solid/solid_109_dusty-grey.jpg",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
+          colour_series: "solid",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "dark, solid",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_solid_and_metallic_EN_DE.pdf",
+        chart: "Solid & Metallic",
+      },
+      {
+        _id: "110",
+        coloursAndSurface: "Solid Colours",
+        name: "Quartz Grey",
+        image:
+          "/images/colours-surfaces/colours/solid/solid_110_quartz-grey.jpg",
+
         product_specifications: {
           product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2, ALUCORE®",
           colour_series: "solid",
@@ -841,8 +926,8 @@ export const coloursSurfacesData = [
   },
   {
     _id: 6,
-    title: "Natural",
-    subTitle: "Natural Colours",
+    title: "NaturAl",
+    subTitle: "NaturAl Colours",
     path: "/colours-surfaces/natural",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/natural.jpg",
@@ -927,8 +1012,26 @@ export const coloursSurfacesData = [
           product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
           colour_series: "naturAL",
           colour_scheme: "monochrome",
-          colour_gloss: "high gloss",
-          colour_specialities: "bright, structured, metallic",
+          colour_gloss: "standard",
+          colour_specialities: "brushed, structured, metallic",
+          minimum_quantities: "Please inquire about current availability",
+        },
+        pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_naturaL_EN_DE.pdf",
+        chart: "NaturAL",
+      },
+      {
+        _id: "470",
+        coloursAndSurface: "Natural Colours",
+        name: "Titanium",
+        image:
+          "/images/colours-surfaces/colours/natural/natural_470_titanium.jpg",
+
+        product_specifications: {
+          product_classes: "ALUCOBOND® PLUS, ALUCOBOND® A2",
+          colour_series: "naturAL",
+          colour_scheme: "monochrome",
+          colour_gloss: "standard",
+          colour_specialities: "brushed, structured, metallic",
           minimum_quantities: "Please inquire about current availability",
         },
         pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_naturaL_EN_DE.pdf",

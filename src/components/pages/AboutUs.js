@@ -23,8 +23,8 @@ function AboutUs() {
             title={[
               "About",
               <span className="name-smaller margin-left"> ANID</span>,
-              <span className="headline-light-big"> | </span>,
-              <span className="name-smaller"> ALUCOBOND</span>,
+              <span className="headline-light-big">|</span>,
+              <span className="name-smaller">ALUCOBOND</span>,
               <span className="headline-light-big">®</span>,
             ]}
           />

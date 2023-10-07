@@ -5,29 +5,29 @@ import "./ProjectList.css";
 import Modal from "../Modal/Modal";
 
 const ProjectList = ({ data }) => {
-  const [openModal, setOpenModal] = useState(false);
-  const [openProject, setOpenProject] = useState("");
+  // const [openModal, setOpenModal] = useState(false);
+  // const [openProject, setOpenProject] = useState("");
 
-  const openSlide = (project) => {
-    setOpenProject(project);
-  };
+  // const openSlide = (project) => {
+  //   setOpenProject(project);
+  // };
   return (
     <>
       <ul className="cards__container">
         {data.map((project) => (
           <ProjectCard
-            open={() => {
-              setOpenModal(true);
-              document.body.style.overflow = "hidden";
-            }}
-            onClose={() => {
-              setOpenModal(false);
-              document.body.style.overflow = "auto";
-            }}
-            openSlide={openSlide}
-            key={project._id}
+            // open={() => {
+            //   setOpenModal(true);
+            //   document.body.style.overflow = "hidden";
+            // }}
+            // onClose={() => {
+            //   setOpenModal(false);
+            //   document.body.style.overflow = "auto";
+            // }}
+            // openSlide={openSlide}
+            key={project.id}
             name={project.name}
-            image={project.image[0]}
+            image={project.image_gallery}
             images={project.image}
             type={project.building_type}
             path={project.path}
@@ -40,14 +40,14 @@ const ProjectList = ({ data }) => {
           />
         ))}
       </ul>
-      <Modal
+      {/* <Modal
         open={openModal}
         onClose={() => {
           setOpenModal(false);
           document.body.style.overflow = "auto";
         }}
         projectImages={openProject}
-      />
+      /> */}
     </>
   );
 };
