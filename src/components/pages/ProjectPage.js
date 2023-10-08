@@ -47,13 +47,21 @@ const ProjectPage = () => {
               <span>architect / planner</span>
               {selectedProject.architect_planner}
             </li>
-            <li className="surface">
+            <li className="surface display-linebreak ">
               <span>Colour surface</span>
-              {selectedProject.colour_surface}
+              <span className="line-height-short">
+                {selectedProject.colour_surface}
+              </span>
             </li>
-            <li className="colour">
+            <li className="colour display-linebreak">
               <span>Colour</span>
-              {selectedProject.colour}
+              <span className="line-height-short">
+                {selectedProject.colour}
+              </span>
+            </li>
+            <li className="owner">
+              <span>Building Owner</span>
+              {selectedProject.building_owner}
             </li>
             <li className="year">
               <span>Year</span>

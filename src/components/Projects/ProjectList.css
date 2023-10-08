@@ -102,11 +102,13 @@
 }
 .project--info li {
   font-size: 1.6rem;
-
   font-weight: 600;
 }
+.line-height-short {
+  line-height: 0.6;
+}
 
-.project--info li span {
+.project--info li span:first-child {
   text-transform: uppercase;
   margin-bottom: 0.2rem;
   font-size: 1.8rem;

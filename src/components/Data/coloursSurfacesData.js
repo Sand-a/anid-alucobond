@@ -833,7 +833,7 @@ export const coloursSurfacesData = [
     path: "/colours-surfaces/sparkling",
     cName: "dropdown-link",
     imgLink: "/images/colours-surfaces/cover_page_charts/sparkling.jpg",
-    pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparklin_EN_DE.pdf",
+    pdf: "/images/colours-surfaces/colour_chart_pdf/ALUCOBOND_spectra_sparkling_EN_DE.pdf",
     text: "With their bright sparkling and shining metall effects, ALUCOBOND® sparkling colours provide a subtle and elegant impression.",
     image: "/images/colours-surfaces/visuals/sparkling.jpg",
     colours: [
