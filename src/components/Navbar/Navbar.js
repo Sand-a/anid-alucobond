@@ -6,7 +6,8 @@ import "./Navbar.css";
 
 import { coloursSurfacesData } from "../Data/coloursSurfacesData";
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
-
+import svg1 from "./svgLogo/logo-white.svg";
+import svg2 from "./svgLogo/logo-icon-white.svg";
 const Navbar = ({ navLinks }) => {
   const [menuClicked, setMenuClicked] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -82,18 +83,8 @@ const Navbar = ({ navLinks }) => {
             })}
           </ul>
           <Link className="navbar-logos" to="/">
-            <img
-              className="logo-name"
-              id="logo"
-              src="./images/logo/logo-white2.svg"
-              alt="logo"
-            />
-            <img
-              className="logo-icon"
-              id="logo"
-              src="./images/logo/logo-icon-white.svg"
-              alt="logo"
-            />
+            <img className="logo-name" id="logo" src={svg1} alt="logo" />
+            <img className="logo-icon" id="logo" src={svg2} alt="logo" />
           </Link>
         </nav>
       </div>

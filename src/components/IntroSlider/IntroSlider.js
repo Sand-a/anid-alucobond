@@ -9,7 +9,7 @@ export default function IntroSlider({ projectImages }) {
   const slideLength = projectImages.length;
 
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 5000);
+    const timer = setTimeout(nextSlide, 6000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 

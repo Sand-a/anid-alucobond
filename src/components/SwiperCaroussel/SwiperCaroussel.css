@@ -55,7 +55,7 @@ swiper-slide img {
 }
 @media screen and (max-width: 600px) {
   .caroussel-container {
-    height: 60rem;
+    height: 65rem;
     margin-top: 0;
   }
   .closeBtn-link ion-icon {
@@ -67,7 +67,7 @@ swiper-slide img {
 }
 @media screen and (max-width: 375px) {
   .caroussel-container {
-    height: 50rem;
+    height: 58rem;
   }
   swiper-slide img {
     width: 100%;
