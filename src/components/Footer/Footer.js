@@ -14,10 +14,7 @@ const Footer = ({ dateUpdate }) => {
           </li>
 
           <li>
-            <a
-              href="mailto:contact@anidconstruction.com"
-              className="footer-link"
-            >
+            <a href="mailto:info@anidconstruction.com" className="footer-link">
               <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>

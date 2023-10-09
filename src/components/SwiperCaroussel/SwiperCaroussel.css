@@ -8,7 +8,7 @@
   position: absolute;
   top: 1rem;
   right: 1.5rem;
-  z-index: 10;
+  z-index: 9;
 }
 .closeBtn-link ion-icon {
   font-size: 3rem;

@@ -1,5 +1,6 @@
 .section-contact {
   background-color: var(--light-bg);
+  min-height: 76vh; /* or the minimum height of your content */
 }
 .contact-list {
   list-style: none;
@@ -31,8 +32,8 @@
 }
 .address-container {
   align-self: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
   padding: 1.5rem 0 2rem 0;
   margin-bottom: 8rem;
 }
@@ -52,7 +53,8 @@
   position: relative;
 }
 .contact-items:first-child {
-  margin-bottom: 19rem;
+  /* margin-bottom: 19rem; */
+  margin-bottom: 5rem;
 }
 
 .contact-link {

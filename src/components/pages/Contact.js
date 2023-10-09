@@ -27,9 +27,9 @@ function Contact() {
         <SectionReveal
           section={
             <div className="grid grid--2-cols container ">
-              <div className="form-container">
+              {/* <div className="form-container">
                 <ContactForm />
-              </div>
+              </div> */}
               <div className="address-container ">
                 <h1 className="headline headline-s ">
                   <span className="margin-left"> ANID</span>
@@ -69,7 +69,7 @@ function Contact() {
                   </li>
                   <li className="contact-items">
                     <a
-                      href="mailto:contact@anidconstruction.com"
+                      href="mailto:info@anidconstruction.com"
                       className="contact-link"
                     >
                       <ion-icon name="mail-outline"></ion-icon>

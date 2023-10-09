@@ -47,6 +47,7 @@ const ContactForm = () => {
           cols="30"
           rows="10"
         ></textarea>
+        <p className="bodytext">* Indicates required fields</p>
         <button type="submit" className="btn btn-click btn-black">
           Send
         </button>
