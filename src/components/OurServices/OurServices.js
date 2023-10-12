@@ -39,6 +39,20 @@ const OurServices = () => {
               <h1 className="service-card-title">
                 Design<strong>.</strong>
               </h1>
+              <ul className="service-list-items">
+                <li className="service-list-item">
+                  <ion-icon name="glasses-outline"></ion-icon>
+                  Design & Details Support
+                </li>
+                <li className="service-list-item">
+                  <ion-icon name="triangle-outline"></ion-icon>
+                  AUTOCAD Shop-Drawings
+                </li>
+                <li className="service-list-item">
+                  {" "}
+                  <ion-icon name="grid-outline"></ion-icon> Mock-ups
+                </li>
+              </ul>
               <p className="bodytext">
                 Get support on your ALUCOBOND® design projects from our in-house
                 experts. Architectural creativity, individual expressiveness and
@@ -89,29 +103,76 @@ const OurServices = () => {
                 direction={"none"}
                 section={
                   <div className="service-card">
-                    <img
+                    {/* <img
                       src="/images/services/alucobond-fabrication.jpg"
                       alt=""
                       className="service-card-image"
-                    />
-                    <div className="service-card-text">
+                    /> */}
+                    <video
+                      className="service-card-image"
+                      src="images/services/fabrication_video.mp4"
+                      autoPlay
+                      loop
+                      muted
+                    ></video>
+                    <div className="service-card-text service-card-text-fab">
                       <h1 className="service-card-title">
                         Fabrication<strong>.</strong>
                       </h1>
 
-                      <ul className="service-list-items">
-                        <li className="service-list-item">
-                          <ion-icon name="glasses-outline"></ion-icon>
-                          Design & Details Support
-                        </li>
-                        <li className="service-list-item">
-                          <ion-icon name="triangle-outline"></ion-icon>
-                          AUTOCAD Shop-Drawings
-                        </li>
-                        <li className="service-list-item">
-                          {" "}
-                          <ion-icon name="grid-outline"></ion-icon> Mock-ups
-                        </li>
+                      <ul className="service-list-items service-list-items-fabrication">
+                        <ul className=" service-list-items-fabrication-cl">
+                          <li className="service-list-item ">
+                            <img
+                              src="/images/services/icons/icon1.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            CNC Router
+                          </li>
+                          <li className="service-list-item">
+                            <img
+                              src="/images/services/icons/icon2.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            Cutting
+                          </li>
+                          <li className="service-list-item">
+                            <img
+                              src="/images/services/icons/icon3.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            Bending
+                          </li>
+                        </ul>
+                        <ul className=" service-list-items-fabrication-cl">
+                          <li className="service-list-item">
+                            <img
+                              src="/images/services/icons/icon4.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            Riveting
+                          </li>
+                          <li className="service-list-item">
+                            <img
+                              src="/images/services/icons/icon5.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            Grooving
+                          </li>
+                          <li className="service-list-item">
+                            <img
+                              src="/images/services/icons/icon6.svg"
+                              alt=""
+                              className="fabrication-icons"
+                            />
+                            Perforation
+                          </li>
+                        </ul>
                       </ul>
                     </div>
                   </div>
@@ -135,6 +196,22 @@ const OurServices = () => {
                         <li className=" service-list-item">
                           <ion-icon name="keypad-outline"></ion-icon>
                           ALUCOBOND® Cladding <br></br>Turn-Key Solutions
+                        </li>
+                        <li className="service-list-item">
+                          <img
+                            src="/images/services/icons/icon7.svg"
+                            alt=""
+                            className=" installation-icons installation-icons-1"
+                          />{" "}
+                          Tray Panels
+                        </li>
+                        <li className="service-list-item">
+                          <img
+                            src="/images/services/icons/icon8.svg"
+                            alt=""
+                            className="installation-icons"
+                          />{" "}
+                          Tray Panels SZ 20
                         </li>
                       </ul>
                     </div>
