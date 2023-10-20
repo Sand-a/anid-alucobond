@@ -30,7 +30,7 @@ const ProjectPage = () => {
           </h1>
           <p className="border-line border-line-black border-line-project--info"></p>
 
-          <ul className=" project--info">
+          {/* <ul className=" project--info">
             <li className="building">
               <span>Building Type</span>
               {selectedProject.building_type}
@@ -71,7 +71,7 @@ const ProjectPage = () => {
               <span>pictures</span>
               {selectedProject.photos}
             </li>
-          </ul>
+          </ul> */}
         </div>
       </section>
     </>
