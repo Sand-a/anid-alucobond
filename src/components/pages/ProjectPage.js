@@ -49,15 +49,13 @@ const ProjectPage = () => {
             </li>
             <li className="surface display-linebreak ">
               <span>Colour surface</span>
-              <span className="line-height-short">
-                {selectedProject.colour_surface}
-              </span>
+
+              {selectedProject.colour_surface}
             </li>
             <li className="colour display-linebreak">
               <span>Colour</span>
-              <span className="line-height-short">
-                {selectedProject.colour}
-              </span>
+
+              {selectedProject.colour}
             </li>
             <li className="owner">
               <span>Building Owner</span>
