@@ -81,7 +81,7 @@ export const projectsData = [
     building_type: "Offices / Residentials",
     place: "Ashrafieh, Beirut",
     material: "ALUCOBOND® PLUS",
-    architect_planner: "Nadim Comair",
+    architect_planner: "Concept Frank Hammoutene | Developed by Bernard Costa",
     colour_surface: "Solid Colour",
     colour: "Ral White 9010",
     building_owner: "Nadim Comair",
