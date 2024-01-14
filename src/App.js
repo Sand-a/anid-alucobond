@@ -3,6 +3,7 @@ import AboutUs from "./components/pages/AboutUs";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import NotFound from "./components/pages/NotFound";
+import VideoFrame from "./components/pages/VideoFrame";
 import ProjectsPage from "./components/pages/ProjectsPage";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/videos" element={<VideoFrame />} />
       </Routes>
       <Footer />
     </>

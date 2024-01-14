@@ -14,21 +14,22 @@ const OurServices = () => {
         <div className="container query-container ">
           <p className="margin-bottom-10 bodytext">
             Being the exclusive representative of ALUCOBOND® in Lebanon, our
-            portfolio consists of many thousands of squared meters fabricated
-            and installed each year since 1981.
+            portfolio comprises many thousands of square meters fabricated and
+            installed each year since 1981.
             <br></br>
-            Furthermore, we have developed a reputation for outstanding quality
-            work and professionalism.
+            Moreover, we have earned a reputation for outstanding quality work
+            and professionalism.
             <br></br>
-            Our factory is equipped with high quality and modern european
-            machineries (CNCs) which allow us to deliver the best quality
-            output, in huge quantities and fast delivery times.
+            Our factory is equipped with high-quality and modern European
+            machinery (CNCs), enabling us to deliver the highest quality output
+            in large quantities and with fast delivery times
             <br></br>
             Our highly skilled engineers and specialized workforce are dedicated
-            to offer you the best architectural solutions in the most efficient
-            and effective way.
+            to offering you the best architectural solutions in the most
+            efficient and effective way.
             <br></br>
-            We offer a full service:
+            <br></br>
+            We provide a full-service:
           </p>
         </div>
       </div>
@@ -55,12 +56,12 @@ const OurServices = () => {
               </ul>
               <p className="bodytext">
                 Get support on your ALUCOBOND® design projects from our in-house
-                experts. Architectural creativity, individual expressiveness and
-                also unique form and colour concepts can easily be implemented
-                using the wide product range of ALUCOBOND®.<br></br>
+                experts. Architectural creativity, individual expressiveness,
+                and unique form and color concepts can be easily implemented
+                using the extensive product range of ALUCOBOND®.<br></br>
                 Possibility of project specific mock-ups including technical
                 feasibility tests.<br></br>
-                Custom colours are available upon special request subject to
+                Custom colours are available upon special request, subject to
                 minimum order quantities.
               </p>
             </div>

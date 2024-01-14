@@ -54,21 +54,18 @@ const HeroSection = () => {
               ALUCOBOND® is a Core Topic of modern construction, with
               FIRE-RETARDANT & REAR-VEBTILATED façades. <br></br>
               They can be simple & functional, exciting & representative.
-              <br></br> We build 5 performances to insure the protection of
+              <br></br> We build "5" performances to insure the protection of
               people living in the building: <br></br>Supporting structure,
-              insulation, cavity barriers, substructure and cladding.<br></br>
+              insulation, cavity barriers, substructure and cladding.
+              <br></br>
               The fire protection regulations for the building envelope can vary
               greatly from country to country.
             </p>
             <div className="youtube-link">
               <ion-icon name="logo-youtube"></ion-icon>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/watch?v=zZY0TKtUkNs"
-                className="btn btn-more"
-              >
-                YouTube
-              </a>
+              <Link to="/videos" className="btn btn-more">
+                Fire Safety
+              </Link>
             </div>
           </section>
         }
@@ -102,9 +99,9 @@ const HeroSection = () => {
 
                 <p className="bodytext">
                   ANID Construction are specialised in ALUCOBOND® cladding
-                  systhems. Our unique expertise and knowledge in the field, has
-                  made us the leading manufacturer, fabricator and installer in
-                  our local market.<br></br>
+                  systhems. Our unique expertise and knowledge in the field have
+                  positioned us as the leading manufacturer, fabricator, and
+                  installer in our local market. <br></br>
                   {/* All type of project, from compagny headquarters building to
                   private housing, cultural and educatif building such
                   universities, hospital and hotels, residential buildings,

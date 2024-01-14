@@ -7,7 +7,7 @@ export const menuData = [
   },
   {
     _id: 2,
-    title: "About us",
+    title: "About",
     path: "/about-us",
     cName: "nav-link",
   },
