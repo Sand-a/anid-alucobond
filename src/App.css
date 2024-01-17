@@ -339,6 +339,12 @@ a {
   .rear-ventialtion-img {
     width: 90%;
   }
+  .rear-ventialtion-img-container {
+    margin: 8rem 0;
+  }
+  .padding {
+    padding: 10rem 0 5rem;
+  }
 }
 @media screen and (max-width: 540px) {
   .images-container {
