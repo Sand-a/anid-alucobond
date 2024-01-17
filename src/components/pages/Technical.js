@@ -122,7 +122,7 @@ const Technical = () => {
               href="/images/technical/pdf/ALUCOBOND_Facade_fascination_EN.pdf
               "
             >
-              <img src="/images/technical/façade-fascination.jpg" alt="" />
+              <img src="/images/technical/facade-fascination.jpg" alt="" />
 
               <div className="pdf-link">
                 <ion-icon name="download-outline"></ion-icon>
