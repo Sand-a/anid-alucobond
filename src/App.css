@@ -132,6 +132,10 @@ a {
 .margin-top {
   margin-top: 10rem;
 }
+.margin-top-15 {
+  margin-top: 15rem;
+}
+
 .margin-top-5 {
   margin-top: 5rem;
 }
@@ -159,7 +163,12 @@ a {
   margin-bottom: 6rem;
 }
 /* Sections */
-
+.padding {
+  padding: 15rem 0 5rem;
+}
+.grey-background {
+  background-color: var(--light-bg);
+}
 .image-section {
   width: 100%;
   height: 35vh;
@@ -260,26 +269,38 @@ a {
 .white-cl {
   color: #fff;
 }
-
+/* rear-ventilation css */
 .download-section {
   margin: 6rem 0;
 }
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* Adjust this value to control the aspect ratio (16:9 in this example) */
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-  max-width: 120rem;
-  margin: 0 auto;
+.images-container {
+  margin-top: -5rem;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.image-box {
+  justify-self: center;
+  width: 50%;
+}
+.image-box h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
+}
+.rear-ventialtion-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0;
+}
+.rear-ventialtion-img {
+  width: 70%;
+}
+.rear-ventilation-list-container {
+  margin-left: 5rem;
+  margin-bottom: 10rem;
 }
 
 /* media query */
@@ -303,10 +324,28 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
+  .rear-ventilation-list-container {
+    margin-left: 2rem;
+  }
   .margin-top {
     margin-top: 8rem;
   }
   .primary-headline {
     font-size: 3.2rem;
+  }
+  .image-box {
+    width: 70%;
+  }
+  .rear-ventialtion-img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .images-container {
+    grid-template-columns: 1fr;
+  }
+  .image-box {
+    width: 60%;
+    margin-bottom: 5rem;
   }
 }

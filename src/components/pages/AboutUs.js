@@ -38,6 +38,7 @@ function AboutUs() {
             bodytext={data.bodytext}
             link={data.link}
             path={data.path}
+            // hash={data.hash}
             flipped={data.flipped}
           />
         ))}

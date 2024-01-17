@@ -1,0 +1,29 @@
+.video-container {
+  position: relative;
+  padding-bottom: 53%; /* Adjust this value to control the aspect ratio (16:9 in this example) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .video-container {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .video-container {
+    padding-bottom: 50%;
+  }
+}

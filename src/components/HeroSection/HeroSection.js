@@ -63,7 +63,7 @@ const HeroSection = () => {
             </p>
             <div className="youtube-link">
               <ion-icon name="logo-youtube"></ion-icon>
-              <Link to="/videos" className="btn btn-more">
+              <Link to="/technical" className="btn btn-more">
                 Fire Safety
               </Link>
             </div>

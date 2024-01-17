@@ -25,7 +25,7 @@ export const aboutUsData = [
     image: "/images/aboutus/img-2.jpg",
     alt: "",
     link: "Product Overview",
-    path: "/services",
+    path: "/technical#ventilation",
   },
   {
     title: "How to build with ALUCOBOND​‌®",
@@ -34,7 +34,8 @@ export const aboutUsData = [
     image: "/images/aboutus/img-3.jpg",
     alt: "",
     link: "Install it on The Wall",
-    path: "/services",
+    path: "/technical#wall",
+
     flipped: true,
   },
 ];

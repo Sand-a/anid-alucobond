@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ZPattern.css";
 import { useInView } from "react-intersection-observer";
+import { HashLink } from "react-router-hash-link";
 
 const ZPattern = ({
   imageSrc,
@@ -10,6 +11,7 @@ const ZPattern = ({
   bodytext,
   link,
   path,
+  hash,
   flipped,
 }) => {
   const { ref, inView } = useInView({
@@ -28,9 +30,9 @@ const ZPattern = ({
             <h1 className="headline headline-s ">{title}</h1>
             <p className="border-line border-line-black"></p>
             <p className="bodytext display-linebreak">{bodytext}</p>
-            <Link className="btn btn-more" to={path}>
+            <HashLink className="btn btn-more" to={path}>
               {link}
-            </Link>
+            </HashLink>
           </div>
         </>
       );
@@ -41,9 +43,9 @@ const ZPattern = ({
             <h1 className="headline headline-s">{title}</h1>
             <p className="border-line border-line-black"></p>
             <p className="bodytext display-linebreak">{bodytext}</p>
-            <Link className="btn btn-more" to={path}>
+            <HashLink className="btn btn-more" to={path}>
               {link}
-            </Link>
+            </HashLink>
           </div>
           <div className="z-pattern__img-box ">
             <img className="z-pattern__img" src={imageSrc} alt={imageAlt} />
