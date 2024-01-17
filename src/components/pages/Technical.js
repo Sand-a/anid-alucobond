@@ -127,7 +127,7 @@ const Technical = () => {
               <div className="pdf-link">
                 <ion-icon name="download-outline"></ion-icon>
                 Download PDF
-                <p>ALUCOBOND® At a Glance</p>
+                <p>ALUCOBOND® Façade Fascination</p>
               </div>
             </a>
           }
