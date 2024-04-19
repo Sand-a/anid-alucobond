@@ -75,7 +75,7 @@
 }
 .pdf-download {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 10rem;
   max-width: 90rem;
   padding: 1rem;

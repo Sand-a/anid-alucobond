@@ -1,14 +1,14 @@
 import React from "react";
-
+import BackToTopBtn from "../BackToTopBtn/BackToTopBtn";
 import "./Footer.css";
 
 const Footer = ({ dateUpdate }) => {
   return (
-    <footer className="footer-section text">
-      <div className="footer-container">
+    <>
+      <footer className="footer-container">
         <ul className="social-links">
           <li>
-            <a href="tel:+9613299005" className="footer-link footer-link--name">
+            <a href="tel:+9613299004" className="footer-link footer-link--name">
               <ion-icon name="call-outline"></ion-icon>
             </a>
           </li>
@@ -36,15 +36,6 @@ const Footer = ({ dateUpdate }) => {
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
-          {/* <li>
-            <a
-              href="https://www.facebook.com/kareen.abdelnour"
-              className="footer-link"
-            >
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li> */}
         </ul>
         <div className="footer-signature">
           <p className="copyright">
@@ -58,8 +49,9 @@ const Footer = ({ dateUpdate }) => {
             Developed & Designed by Sandrine Anid
           </p>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <BackToTopBtn />
+    </>
   );
 };
 

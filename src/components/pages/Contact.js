@@ -12,7 +12,7 @@ function Contact() {
         <meta
           name="description"
           content="ANID Building - Mkalless Industrial Zone - 
-                          Lebanon. Call: +961(3)299005
+                          Lebanon. Call: +961(3)299004
        "
         />
         <link rel="canonical" href="/contact" />
@@ -62,7 +62,7 @@ function Contact() {
                     </a>
                   </li> */}
                   <li className="contact-items">
-                    <a className="contact-link" href="tel:+9613299005">
+                    <a className="contact-link" href="tel:+9613299004">
                       <ion-icon name="phone-portrait-outline"></ion-icon>
                       <p className="contact-item">+961 (3) 299 004</p>
                     </a>

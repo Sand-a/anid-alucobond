@@ -1,7 +1,19 @@
+/* reset */
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 *:focus {
   /* outline: 1px solid black; */
@@ -10,9 +22,11 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   margin: 0;
   padding: 0;
+
   font-family: "Source Sans Pro", sans-serif;
 
   font-weight: 200;
@@ -20,11 +34,6 @@ body {
   color: #4b4b4b;
 
   display: block;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
 }
 
 /* general */

@@ -22,6 +22,7 @@ const App = () => {
     <>
       <Navbar navLinks={menuData} />
       <ScrollToTop />
+
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/defaultsite" element={<Home />} />

@@ -4,7 +4,7 @@ import ProjectList from "../Projects/ProjectList";
 import { projectsData } from "../Data/projectsData";
 import "../../App.css";
 import Sections from "../Sections/Sections";
-import BackToTopBtn from "../BackToTopBtn/BackToTopBtn";
+
 import { Helmet } from "react-helmet-async";
 
 const ProjectsPage = () => {
@@ -47,7 +47,6 @@ const ProjectsPage = () => {
         <SearchBox searchChange={onSearchChange} />
 
         <ProjectList data={filteredProjects} />
-        <BackToTopBtn />
       </section>
     </>
   );
