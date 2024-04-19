@@ -11,7 +11,7 @@ function Contact() {
         <title>ANID &#124; ALUCOBOND&reg; - Contact</title>
         <meta
           name="description"
-          content="ANID Building - Mkalless Industrial Zone - 
+          content="ANID Building - Mkalles Industrial Zone - 
                           Lebanon. Call: +961(3)299004
        "
         />
@@ -47,7 +47,7 @@ function Contact() {
                       <ion-icon name="location-outline"></ion-icon>
                       <div className="contact-item">
                         <p>
-                          ANID Building . Mkalless . <br></br>Industrial Zone .
+                          ANID Building . Mkalles . <br></br>Industrial Zone .
                           Lebanon
                         </p>
                         <p className="pobox">P.O.Box : 70 - 243 Antelias</p>
