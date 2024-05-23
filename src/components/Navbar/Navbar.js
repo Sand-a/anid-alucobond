@@ -15,11 +15,11 @@ const Navbar = ({ navLinks }) => {
   const showDropdown = () => setDropdown(true);
   const closeDropdown = () => setDropdown(false);
 
-  const toggleMobileMenuAndShowDropdown = () => {
-    setMenuClicked(!menuClicked);
-    setDropdown(true);
-  };
-  const toggleMobileMenu = () => setMenuClicked(!menuClicked);
+  // const toggleMobileMenuAndShowDropdown = () => {
+  //   setMenuClicked(!menuClicked);
+  //   setDropdown(true);
+  // };
+  // const toggleMobileMenu = () => setMenuClicked(!menuClicked);
 
   const menuOpen = () => {
     setMenuClicked(true);
@@ -33,7 +33,7 @@ const Navbar = ({ navLinks }) => {
   return (
     <>
       <div className="header">
-        <nav className="navbar container">
+        <nav className="navbar">
           {menuClicked ? (
             <div className="menu-icon" onClick={menuClose}>
               <ion-icon name="close-outline"></ion-icon>
