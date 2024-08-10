@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import ContactForm from "../ContactForm/ContactForm";
+
 import SectionReveal from "../SectionReveal/SectionReveal";
 import { Helmet } from "react-helmet-async";
 
@@ -41,6 +41,7 @@ function Contact() {
                   <li className="contact-items ">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="contact-link"
                       href="https://www.google.co.uk/maps/place/ALUCOBOND-ANID/@33.8618125,35.2896406,11z/data=!4m10!1m2!2m1!1sanid+construction!3m6!1s0x151f17c4e84d1bc1:0x87a93d4ed5f68907!8m2!3d33.8618125!4d35.5533125!15sChFhbmlkIGNvbnN0cnVjdGlvbloTIhFhbmlkIGNvbnN0cnVjdGlvbpIBCmNvbnRyYWN0b3LgAQA!16s%2Fg%2F11c51z3_3l"
                     >
@@ -79,6 +80,7 @@ function Contact() {
                   <li className="contact-items">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.instagram.com/alucobondlebanon/?igshid=YmMyMTA2M2Y%3D"
                       className="contact-link"
                     >
