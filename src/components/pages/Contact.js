@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import "../ContactForm/ContactForm.css";
 
 import SectionReveal from "../SectionReveal/SectionReveal";
 import { Helmet } from "react-helmet-async";
