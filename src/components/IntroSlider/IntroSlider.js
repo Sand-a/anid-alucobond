@@ -1,82 +1,111 @@
-import React, { useState, useEffect } from "react";
-import "./IntroSlider.css";
-
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function IntroSlider({ projectImages }) {
+import "./IntroSlider.css";
+
+export default function IntroSlider({ projectImages = [] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slideLength = projectImages.length;
 
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((previousSlide) =>
+      previousSlide === slideLength - 1 ? 0 : previousSlide + 1
+    );
+  }, [slideLength]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((previousSlide) =>
+      previousSlide === 0 ? slideLength - 1 : previousSlide - 1
+    );
+  }, [slideLength]);
+
   useEffect(() => {
+    if (slideLength === 0) {
+      return undefined;
+    }
+
     const timer = setTimeout(nextSlide, 6000);
+
     return () => clearTimeout(timer);
-  }, [currentSlide]);
+  }, [currentSlide, nextSlide, slideLength]);
 
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
-  };
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-  };
-
-  const onKeyPressed = (e) => {
-    e.key === "ArrowLeft" && prevSlide();
-    e.key === "ArrowRight" && nextSlide();
-  };
   useEffect(() => {
-    document.addEventListener("keydown", onKeyPressed, true);
-  }, [currentSlide]);
+    const onKeyPressed = (event) => {
+      if (event.key === "ArrowLeft") {
+        prevSlide();
+      }
 
-  const moveDot = (i) => {
-    setCurrentSlide(i);
+      if (event.key === "ArrowRight") {
+        nextSlide();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyPressed);
+
+    return () => {
+      document.removeEventListener("keydown", onKeyPressed);
+    };
+  }, [nextSlide, prevSlide]);
+
+  const moveDot = (index) => {
+    setCurrentSlide(index);
   };
+
+  if (slideLength === 0) {
+    return null;
+  }
 
   return (
     <section className="slider-container">
-      {projectImages.map((slide, i) => {
-        return (
-          <div
-            key={i}
-            className={
-              i === currentSlide ? `intro-slide active ` : `intro-slide`
-            }
-          >
-            {i === currentSlide && (
-              <div className="project-description">
-                <h1 className="headline">
-                  {" "}
-                  {slide.description}
-                  <strong>.</strong>
-                </h1>
-                <p className="project-details">
-                  {slide.name}
-                  <strong>.</strong>
-                  <span className="project-details project-details-2">
-                    {slide.region}
-                  </span>
-                </p>
-                <p className="border-line"></p>
-                <Link to="/projects">
-                  <button className="btn btn-click btn-white">
-                    Our Projects
-                  </button>
-                </Link>
-              </div>
-            )}
+      {projectImages.map((slide, index) => (
+        <div
+          key={slide.id ?? slide.image ?? index}
+          className={
+            index === currentSlide ? "intro-slide active" : "intro-slide"
+          }
+        >
+          {index === currentSlide && (
+            <div className="project-description">
+              <h1 className="headline">
+                {slide.description}
+                <strong>.</strong>
+              </h1>
 
-            <img src={process.env.PUBLIC_URL + slide.image} alt="" />
-          </div>
-        );
-      })}
+              <p className="project-details">
+                {slide.name}
+                <strong>.</strong>
+
+                <span className="project-details project-details-2">
+                  {slide.region}
+                </span>
+              </p>
+
+              <div className="border-line" />
+
+              <Link to="/projects" className="btn btn-click btn-white">
+                Our Projects
+              </Link>
+            </div>
+          )}
+
+          <img
+            src={`${process.env.PUBLIC_URL}${slide.image}`}
+            alt={slide.description || slide.name || ""}
+          />
+        </div>
+      ))}
 
       <div className="dots-container">
-        {Array.from({ length: projectImages.length }).map((item, i) => (
-          <div
-            key={i}
-            onClick={() => moveDot(i)}
-            className={i === currentSlide ? "dot active" : "dot"}
-          ></div>
+        {projectImages.map((slide, index) => (
+          <button
+            key={slide.id ?? slide.image ?? index}
+            type="button"
+            onClick={() => moveDot(index)}
+            className={index === currentSlide ? "dot active" : "dot"}
+            aria-label={`Go to slide ${index + 1}`}
+            aria-current={index === currentSlide ? "true" : undefined}
+          />
         ))}
       </div>
     </section>

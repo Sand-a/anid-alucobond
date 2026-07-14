@@ -25,6 +25,7 @@ const ColoursAndSurfacesSubPage = ({ item }) => {
           <a
             className="container pdf-download"
             target="_blank"
+            rel="noreferrer"
             href={`${item.pdf}`}
           >
             <img src={item.imgLink} alt="" />

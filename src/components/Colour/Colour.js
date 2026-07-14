@@ -44,7 +44,7 @@ export function Colour({ colour }) {
                   ${colour.product_specifications.colour_specialities}`}
                 </li>
               </ul>
-              <a className="pdf-link" target="_blank" href={`${colour.pdf}`}>
+              <a className="pdf-link" target="_blank" rel="noreferrer" href={`${colour.pdf}`}>
                 <ion-icon name="download-outline"></ion-icon>
                 Download PDF
                 <p>ALUCOBOND® {`${colour.chart} Colour Chart`}</p>
