@@ -81,7 +81,7 @@ display:none;
         {images.map((img, i) => {
           return (
             <swiper-slide key={img}>
-              <img src={img} alt={` Project Image ${i + 1}`} />
+              <img src={img} alt={`Project ${i + 1}`} />
             </swiper-slide>
           );
         })}

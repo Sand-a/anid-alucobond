@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 
 import "./ProjectList.css";
-import Modal from "../Modal/Modal";
 
 const ProjectList = ({ data }) => {
   // const [openModal, setOpenModal] = useState(false);
