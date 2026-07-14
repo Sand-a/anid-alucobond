@@ -24,7 +24,11 @@ const ColoursAndSurfacesPage = () => {
         <link rel="canonical" href="/colours-surfaces" />
       </Helmet>
       <div className="image-section image-section-display">
-        <img className="image-display" src={`${imageCoverDisplay}`}></img>
+        <img
+          className="image-display"
+          src={`${imageCoverDisplay}`}
+          alt="ALUCOBOND colour and surface finish"
+        ></img>
       </div>
       <div className="headline-container query-container">
         <h1 className="margin-top headline sec-headline headline-s">
